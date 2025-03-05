@@ -1,8 +1,13 @@
-import React from "react";
-import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
-import NotFound from "./pages/NotFound";
+import React from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+import Home from './pages/Home'
+import NotFound from './pages/NotFound'
 
+/**
+ * The main application component.
+ *
+ * @returns {JSX.Element} The App component.
+ */
 const App: React.FC = () => {
   return (
     <Router>
@@ -11,7 +16,7 @@ const App: React.FC = () => {
         <Route path="*" element={<NotFound />} />
       </Routes>
     </Router>
-  );
-};
+  )
+}
 
-export default App;
+export default App

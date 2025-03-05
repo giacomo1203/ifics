@@ -52,3 +52,51 @@ export default tseslint.config({
   },
 })
 ```
+
+# IFICS
+
+This project is a React application built with TypeScript and Vite. It provides a basic structure for creating web pages from static data.
+
+## Purpose
+
+The purpose of this project is to generate React pages from static objects, allowing for easy content management and deployment.
+
+## How to run
+
+1.  Clone the repository:
+
+    ```bash
+    git clone <repository_url>
+    ```
+2.  Install the dependencies:
+
+    ```bash
+    npm install
+    ```
+3.  Run the development server:
+
+    ```bash
+    npm run dev
+    ```
+4.  Open the application in your browser at `http://localhost:5173`.
+
+## How to contribute
+
+1.  Fork the repository.
+2.  Create a new branch for your feature or bug fix.
+3.  Make your changes and commit them with descriptive commit messages.
+4.  Push your changes to your fork.
+5.  Submit a pull request.
+
+## Technologies used
+
+-   React
+-   TypeScript
+-   Vite
+-   React Router
+-   React Helmet Async
+-   Bootstrap
+
+## License
+
+MIT
