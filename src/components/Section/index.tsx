@@ -1,4 +1,5 @@
 import React from 'react'
+import styles from './Section.module.scss'
 
 /**
  * Props for the Section component.
@@ -17,14 +18,14 @@ interface SectionProps {
  */
 const Section: React.FC<SectionProps> = ({ title, image, text }) => {
   return (
-    <section>
-      <h2>{title}</h2>
+    <section className={styles.section}>
+      <h2 className={styles.title}>{title}</h2>
       <img
         src={image}
         alt={title}
-        style={{ width: '100%', maxHeight: '300px' }}
+        className={styles.image}
       />
-      <p>{text}</p>
+      <p className={styles.text}>{text}</p>
     </section>
   )
 }

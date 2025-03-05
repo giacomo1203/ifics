@@ -1,5 +1,7 @@
 import React from 'react'
 import SEO from './SEO'
+import Header from './Header/index'
+import Footer from './Footer/index'
 
 /**
  * Props for the Layout component.
@@ -33,7 +35,9 @@ const Layout: React.FC<LayoutProps> = ({
         keywords={keywords}
         image={image}
       />
+      <Header title={title} />
       <main>{children}</main>
+      <Footer />
     </>
   )
 }
