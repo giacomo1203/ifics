@@ -5,7 +5,7 @@ import NotFound from "./pages/NotFound";
 
 const App: React.FC = () => {
   return (
-    <Router basename="/nombre-del-repo">
+    <Router basename="/ifics">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="*" element={<NotFound />} />
