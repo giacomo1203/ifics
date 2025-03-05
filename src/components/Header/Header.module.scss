@@ -5,9 +5,11 @@ header {
   color: var.$main-white;
   padding: 1rem;
   text-align: center;
+  font-family: var.$font-family-base;
 }
 
 h1 {
   font-size: var.$font-size-lg;
   margin: 0;
+  font-family: var.$font-family-title;
 }
