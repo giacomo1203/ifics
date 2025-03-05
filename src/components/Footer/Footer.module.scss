@@ -1,6 +1,8 @@
+@use "../../styles/variables.scss" as var;
+
 footer {
-  background-color: #333;
-  color: #fff;
+  background-color: var.$main-blue;
+  color: var.$main-white;
   padding: 1rem;
   text-align: center;
 }

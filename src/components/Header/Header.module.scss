@@ -1,10 +1,13 @@
+@use "../../styles/variables.scss" as var;
+
 header {
-  background-color: #f0f0f0;
+  background-color: var.$main-blue;
+  color: var.$main-white;
   padding: 1rem;
   text-align: center;
 }
 
 h1 {
-  font-size: 2rem;
+  font-size: var.$font-size-lg;
   margin: 0;
 }

@@ -1,0 +1,53 @@
+// Grid Mixin
+@mixin make-col($size, $columns: 12) {
+  width: percentage($size / $columns);
+  flex-basis: percentage($size / $columns);
+  max-width: percentage($size / $columns);
+}
+
+// Media Query Breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+  xxl: 1400px
+);
+
+// Grid Container
+.container {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+
+  @each $breakpoint, $value in $grid-breakpoints {
+    @if $breakpoint != xs {
+      @media (min-width: $value) {
+        max-width: $value - 30px;
+      }
+    }
+  }
+}
+
+// Grid Columns
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-right: -15px;
+  margin-left: -15px;
+}
+
+@for $i from 1 through 4 {
+  .col-xs-#{$i} {
+    @include make-col($i, 4);
+  }
+}
+
+@for $i from 1 through 12 {
+  .col-md-#{$i} {
+    @include make-col($i, 12);
+  }
+}
