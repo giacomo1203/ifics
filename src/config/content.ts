@@ -1,24 +1,24 @@
 export const content = {
-    title: "Mi Web Estática",
-    description: "Bienvenido a mi sitio web creado con React",
+    title: "IFICS",
+    description: "Descripción de prueba!",
     meta: {
-      title: "Mi Web Estática - Página Principal",
-      description: "Explora nuestra web estática generada desde objetos de configuración.",
+      title: "IFICS - TÍTULO",
+      description: "",
       keywords: "React, Static Website, Helmet, SEO",
-      image: "/assets/images/hero.jpg",
+      image: "https://placehold.co/800x400",
     },
     sections: [
       {
         id: "hero",
         title: "Bienvenido",
-        image: "/assets/images/hero.jpg",
-        text: "Este es un sitio web generado a partir de datos estáticos.",
+        image: "https://placehold.co/800x400",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tempora.",
       },
       {
         id: "about",
         title: "Sobre Nosotros",
-        image: "/assets/images/logo.png",
-        text: "Somos una empresa dedicada a la innovación.",
+        image: "https://placehold.co/600x400",
+        text: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tempora.",
       },
     ],
   };
