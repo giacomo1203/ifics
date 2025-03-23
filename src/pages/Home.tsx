@@ -14,7 +14,10 @@ const Home: React.FC = () => {
       <h1>{content.title}</h1>
       <p>{content.description}</p>
       {content.sections.map((section) => (
-        <Section key={section.id} {...section} />
+        <>
+          <Section key={section.id} {...section} />
+          <span>IDIOMA: {__APP_ENV__}</span>
+        </>
       ))}
     </Layout>
   )

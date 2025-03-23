@@ -2,9 +2,9 @@
 
 // Grid Mixin
 @mixin make-col($size, $columns: 12) {
-  width: percentage(math.div($size, $columns));
-  flex-basis: percentage(math.div($size, $columns));
-  max-width: percentage(math.div($size, $columns));
+  // width: percentage(math.div($size, $columns));
+  // flex-basis: percentage(math.div($size, $columns));
+  // max-width: percentage(math.div($size, $columns));
 }
 
 // Media Query Breakpoints
