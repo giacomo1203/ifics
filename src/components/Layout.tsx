@@ -35,8 +35,8 @@ const Layout: React.FC<LayoutProps> = ({
         keywords={keywords}
         image={image}
       />
-      <Header title={title} />
-      <main>{children}</main>
+      <Header />
+      <main style={{ paddingTop: '64px' }}>{children}</main>
       <Footer />
     </>
   )

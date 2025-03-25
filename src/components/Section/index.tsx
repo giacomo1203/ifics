@@ -4,9 +4,9 @@ import styles from './Section.module.scss'
 /**
  * Props for the Section component.
  */
-interface SectionProps {
+export interface SectionProps {
   title: string
-  image: string
+  image?: string
   text: string
 }
 
@@ -20,11 +20,13 @@ const Section: React.FC<SectionProps> = ({ title, image, text }) => {
   return (
     <section className={styles.section}>
       <h2 className={styles.title}>{title}</h2>
-      <img
-        src={image}
-        alt={title}
-        className={styles.image}
-      />
+      {image && (
+        <img
+          src={image}
+          alt={title}
+          className={styles.image}
+        />
+      )}
       <p className={styles.text}>{text}</p>
     </section>
   )

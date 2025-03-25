@@ -7,7 +7,7 @@ export default defineConfig(({ mode }) => {
   return {
     base: '/ifics/',
     define: {
-      __APP_ENV__: JSON.stringify(env.INITIAL_LANGUAGE),
+      __APP_ENV__: JSON.stringify(env.VITE_INITIAL_LANGUAGE),
     },
     plugins: [react()],
     css: {

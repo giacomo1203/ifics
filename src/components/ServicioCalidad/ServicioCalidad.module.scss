@@ -1,0 +1,55 @@
+@use '../../styles/variables.scss' as var;
+
+.servicio-calidad {
+  min-height: 642px;
+
+  &__container {
+    margin: 56px 16px 24px 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  &__title {
+    font-family: var.$font-family-title;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    color: var.$main-orange;
+  }
+
+  &__description {
+    font-family: var.$font-family-base;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    color: var.$main-gray;
+  }
+
+  &__items {
+    padding: 0 16px 24px 16px;
+    gap: 16px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__item {
+    display: flex;
+    align-items: center;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: var.$main-gray;
+    font-family: var.$font-family-base;
+
+    img {
+      margin-right: 16px;
+    }
+  }
+
+  &__image-container {
+    min-height: 250px;
+    background-color: var.$main-gray;
+    margin: 24px 16px 0 16px;
+  }
+}

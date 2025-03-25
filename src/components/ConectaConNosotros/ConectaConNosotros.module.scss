@@ -1,0 +1,114 @@
+@use '../../styles/variables.scss' as var;
+
+.conectaConNosotros {
+  min-height: 1370.84px;
+}
+
+.conectaConNosotros__container {
+  margin: 56px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.conectaConNosotros__title {
+  font-family: var.$font-family-title;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: var.$main-orange;
+}
+
+.conectaConNosotros__description {
+  font-family: var.$font-family-base;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var.$main-gray;
+}
+
+.conectaConNosotros__item {
+  min-height: 337.61px;
+  background-color: var.$main-lightgray;
+}
+
+.conectaConNosotros__image {
+  height: 179.82px;
+  width: 100%;
+}
+
+.conectaConNosotros__items {
+  margin: 0px 16px 0px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.conectaConNosotros__itemSection {
+  display: flex;
+  padding: 23.02px 11.51px;
+}
+
+.conectaConNosotros__date {
+  align-self: center;
+  font-family: var.$font-family-base;
+  font-weight: 700;
+  font-size: 10px;
+  line-height: 18.7px;
+}
+
+.conectaConNosotros__itemTitle {
+  font-family: var.$font-family-base;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  color: var.$secondary-blue;
+  margin: 0;
+}
+
+.conectaConNosotros__itemDescription {
+  font-family: var.$font-family-base;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  color: var.$main-gray;
+}
+
+.conectaConNosotros__itemTitleDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5.75px;
+  margin-left: 17.26px;
+}
+
+.conectaConNosotros__calendarIcon {
+  width: 40.28px;
+  height: 40.28px;
+}
+
+.conectaConNosotros__dateContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 5.75px;
+  text-align: center;
+}
+
+.conectaConNosotros__callToAction {
+  height: 52px;
+  background-color: var.$main-blue;
+  margin: 88px;
+  padding: 16px 32px;
+  text-decoration: none;
+  font-family: var.$font-family-base;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0px;
+  color: var.$main-white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+

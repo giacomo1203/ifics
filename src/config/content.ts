@@ -20,5 +20,10 @@ export const content = {
       image: 'https://placehold.co/600x400',
       text: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio, tempora.',
     },
+    {
+      id: 'Home',
+      title: 'Es un atributo del instituto',
+      text: 'Por tanto, seleccionamos con rigurosidad las áreas de trabajo en las que contamos con una ventaja comparativa para lograr el impacto esperado.',
+    },
   ],
 }

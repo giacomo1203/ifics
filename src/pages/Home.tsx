@@ -1,7 +1,12 @@
-import React from 'react'
-import { content } from '../config/content'
-import Section from '../components/Section/index'
-import Layout from '../components/Layout'
+import React from 'react';
+import { content } from '../config/content';
+import Section, { SectionProps } from '../components/Section/index';
+import Layout from '../components/Layout';
+
+interface HomeSectionProps extends Omit<SectionProps, 'image'> {
+  id: string;
+  image?: string;
+}
 
 const Home: React.FC = () => {
   return (
@@ -13,14 +18,11 @@ const Home: React.FC = () => {
     >
       <h1>{content.title}</h1>
       <p>{content.description}</p>
-      {content.sections.map((section) => (
-        <>
-          <Section key={section.id} {...section} />
-          <span>IDIOMA: {__APP_ENV__}</span>
-        </>
+      {content.sections.map((section: HomeSectionProps) => (
+        <Section key={section.id} {...section} />
       ))}
     </Layout>
-  )
-}
+  );
+};
 
-export default Home
+export default Home;

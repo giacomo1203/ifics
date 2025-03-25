@@ -1,0 +1,62 @@
+@use '../../styles/variables.scss' as var;
+
+.areasEspecialidad {
+  min-height: 1286px;
+}
+
+.title {
+  font-family: var.$font-family-title;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: var.$main-orange;
+}
+
+.container {
+  padding: 56px 16px 24px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+}
+
+.description {
+  font-family: var.$font-family-base;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  color: var.$main-gray;
+}
+
+.item {
+  background-image:
+    linear-gradient(to top, var.$main-blue 20%, rgba(255, 255, 255, 0) 50%),
+    url('../../assets/Home/areaEspecialidadImg.png');
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  min-height: 240px;
+  margin-left: 16px;
+  margin-right: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.items {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.itemDescription {
+  color: var.$main-white;
+  font-family: var.$font-family-base;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 26px;
+  text-align: left;
+  padding: 16px;
+}

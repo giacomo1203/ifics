@@ -1,15 +1,162 @@
-@use "../../styles/variables.scss" as var;
+@use '../../styles/variables.scss' as var;
 
-header {
+.header {
   background-color: var.$main-blue;
   color: var.$main-white;
-  padding: 1rem;
-  text-align: center;
   font-family: var.$font-family-base;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  padding: 16px;
+}
+ 
+.rightSection {
+  display: flex;
+  gap: 16px;
 }
 
-h1 {
+.mobileHeader {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  img {
+    width: 71.05px;
+    height: 32px;
+  }
+}
+
+.mobileLogo {
+  width: 72px;
+  height: 32px;
+}
+
+.desktopLogo {
+  display: none;
+}
+
+@media (min-width: 769px) {
+  .mobileLogo {
+    display: none;
+  }
+  .desktopLogo {
+    display: block;
+    width: 120px;
+    height: 64px;
+  }
+}
+
+.languageButtonContainer {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+  font-weight: 500px;
+  button {
+    background: none;
+    border: none;
+    color: var.$main-white;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.8;
+    }
+
+    &.activeLanguage {
+      color: var.$main-orange;
+    }
+  }
+
+  .separator {
+    color: var.$main-white;
+  }
+}
+
+.h1 {
   font-size: var.$font-size-lg;
   margin: 0;
   font-family: var.$font-family-title;
+}
+
+.menuButton {
+  background: none;
+  border: none;
+  color: var.$main-white;
+  cursor: pointer;
+  display: block;
+  z-index: 2;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  @media (min-width: 769px) {
+    display: none;
+  }
+}
+
+.nav {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: var.$main-blue;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 1;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transform: translateY(-150%);
+  transition: transform 1s ease;
+  margin-top: 4rem;
+  display: flex;
+  pointer-events: none;
+  overflow: hidden;
+  gap: 8px;
+  a {
+    color: var.$main-white;
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    text-align: left;
+    transition: background-color 0.3s ease;
+    padding-left: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+
+    &:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+  }
+
+  &.active {
+    transform: translateY(0);
+    pointer-events: all;
+  }
+
+  @media (min-width: 769px) {
+    position: static;
+    transform: none;
+    padding: 0;
+    flex-direction: row;
+    gap: 2rem;
+    margin: 0;
+    box-shadow: none;
+    pointer-events: all;
+    overflow: visible;
+
+    a {
+      width: auto;
+      padding: 0;
+      text-align: left;
+
+      &:hover {
+        background-color: transparent;
+        opacity: 0.8;
+      }
+    }
+  }
 }
