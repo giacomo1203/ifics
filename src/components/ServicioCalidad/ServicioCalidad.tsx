@@ -1,4 +1,3 @@
-import React from 'react'
 import styles from './ServicioCalidad.module.scss'
 
 import listCheck from '../../assets/Home/listCheckNoBg.svg'
