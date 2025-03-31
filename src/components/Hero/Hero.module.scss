@@ -12,6 +12,8 @@
   align-items: center;
   gap: 8px;
   padding: 61px 0;
+
+  @apply lg:min-h-[800px] lg:gap-6;
 }
 
 .hero__content {
@@ -21,6 +23,8 @@
   padding: 16px 8px;
   text-align: center;
   margin: 0 24px;
+  @apply lg:p-8;
+  @apply lg:w-[960px];
 }
 
 .hero__title {
@@ -32,6 +36,7 @@
   text-align: center;
   letter-spacing: 0px;
   margin: 0;
+  @apply lg:text-[64px] lg:leading-20;
 }
 
 .hero__description {
@@ -42,6 +47,7 @@
   font-weight: 400;
   text-align: center;
   letter-spacing: 0px;
+  @apply lg:text-2xl;
 }
 
 .hero__callToAction {
@@ -54,4 +60,5 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0px;
+  @apply lg:text-[16px];
 }

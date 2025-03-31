@@ -1,0 +1,41 @@
+@use '../../styles/variables.scss' as var;
+
+.quote {
+  min-height: 500px;
+  background:
+    linear-gradient(180deg, rgba(9, 18, 66, 0.4) 0%, #091242 89.5%),
+    url(https://s3-alpha-sig.figma.com/img/a92b/8445/cf8af4565bf33d8fce7eb23fe7f3b10c?Expires=1743984000&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hgWqxbdLqaILXiHKL~W8456vBOKVqiNXU~BJIkjoQboUyWr005pORPVLL1U0TfPHuaXEaMeyRqvBN4xTmpIlnLRNX3-VOFJcwEOyudAk--F7nBNAuzr8SqELoE6WQKLoGVmzTt2ZTkiWfMIwSq6LFEvgMkxuGRCfnIrt0GW05vDMOy31Fl4IU0H5Z8wiQNiAr9vwVyH3JreAuUtE~FVXedZFwHDQJ5TNkS0ZPuQlJHWk1tCENxy5dQZjmWgW4mUk2917PtPTd~4ZwT9086jgYVA5IsScBBqPrvbsT8zActaCXgO882cYU7El042GsJHQhGL9D34m7oSsfo-gFGO6ag__);
+  background-position: 45% 30%;
+  background-size: 450%;
+
+  padding: 87px 16px;
+  color: white;
+
+  @media (min-width: 769px) {
+    padding: 170px 16px 210px;
+  }
+}
+
+.quote__text {
+  font-family: var.$font-family-title;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  letter-spacing: 0px;
+  text-align: center;
+  @apply lg:max-w-6xl lg:mx-auto;
+  @apply lg:text-3xl lg:font-medium;
+}
+
+.quote__sub {
+  font-family: Roboto;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0px;
+  text-align: center;
+
+  margin-top: 24px;
+  @apply lg:max-w-6xl lg:mx-auto;
+  @apply lg:text-lg;
+}

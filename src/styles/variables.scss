@@ -1,12 +1,12 @@
 // Color Palette
 $main-blue: #091242;
-$main-orange: #FF7A00;
-$main-white: #FFF;
+$main-orange: #ff7a00;
+$main-white: #fff;
 $main-black: #091242;
-$main-gray: #6B718E;
-$main-lightgray: #F7F7F9;
-$secondary-blue: #1C1F35;
-
+$main-gray: #6b718e;
+$main-lightgray: #f7f7f9;
+$secondary-blue: #1c1f35;
+$light-bg: #3a4168;
 
 $primary-color: $main-blue;
 $secondary-color: $main-orange;
@@ -24,3 +24,12 @@ $font-size-lg: 1.25rem;
 
 // Other Styles
 $border-radius: 0.25rem;
+
+$breakpoint-sm: 576px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 992px;
+$breakpoint-xl: 1200px;
+$breakpoint-xxl: 1400px;
+
+/* stylelint-disable-next-line at-rule-no-unknown */
+@reference "../../index.css";

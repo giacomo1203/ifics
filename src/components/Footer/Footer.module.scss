@@ -1,9 +1,95 @@
-@use "../../styles/variables.scss" as var;
+@use '../../styles/variables.scss' as var;
 
 footer {
   background-color: var.$main-blue;
   color: var.$main-white;
-  padding: 1rem;
   text-align: center;
   font-family: var.$font-family-base;
+  @apply border-t-0 border-white/20;
+  @apply md:border-t-1 md:border-white/20;
+}
+
+.footer__bottom {
+  width: 100%;
+  padding: 1rem;
+  background-color: var.$light-bg;
+  font-size: 12px;
+}
+
+.footer__top {
+  padding: 56px 16px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0px;
+  @apply md:py-7;
+  @apply lg:grid lg:py-[72px] lg:grid-cols-3 lg:gap-4;
+
+  .logo {
+    display: flex;
+    gap: 1rem;
+    padding-block: 2rem;
+    flex: 1;
+    min-width: 300px;
+    @apply h-fit;
+    @apply lg:py-0;
+
+    img {
+      flex: 1;
+      max-width: 160px;
+      height: 72px;
+    }
+
+    .divider {
+      width: 2px;
+      background-color: white;
+    }
+
+    span {
+      flex: 1;
+      max-width: 100px;
+      font-weight: 500;
+      font-size: 16px;
+      line-height: 18px;
+      letter-spacing: 0%;
+      font-family: var.$font-family-title;
+    }
+  }
+
+  .footer__topContent {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+    @apply md:mb-8;
+    @apply lg:col-span-2 lg:grid lg:grid-cols-2 lg:gap-4;
+  }
+
+  .title {
+    font-family: var.$font-family-title;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0px;
+  }
+
+  .icon {
+    color: #ff7a00;
+    font-size: 18px;
+  }
+
+  span {
+    text-align: left;
+  }
+
+  .contacList {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 1rem;
+    .listItem {
+      display: flex;
+      gap: 11px;
+    }
+  }
 }

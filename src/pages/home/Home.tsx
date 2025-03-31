@@ -8,6 +8,7 @@ import { ComercioInternacional } from '../../components/ComercioInternacional/Co
 import { AreasEspecialidad } from '../../components/AreasEspecialidad/AreasEspecialidad'
 import { ServicioCalidad } from '../../components/ServicioCalidad/ServicioCalidad'
 import { ConectaConNosotros } from '../../components/ConectaConNosotros/ConectaConNosotros'
+import { Quote } from '../../components/Quote/Quote'
 
 const Home: React.FC = () => {
   const { currentLanguage } = useLanguage()
@@ -20,11 +21,41 @@ const Home: React.FC = () => {
       image={content.meta.image}
     >
       <>
-        <Hero title={dataHome[currentLanguage].hero.title} description={dataHome[currentLanguage].hero.description} callToAction={dataHome[currentLanguage].hero.callToAction} callToActionHref={dataHome[currentLanguage].hero.callToActionHref} />
-        <ComercioInternacional title={dataHome[currentLanguage].comercioInternacional.title} titleTwo={dataHome[currentLanguage].comercioInternacional.titleTwo} description={dataHome[currentLanguage].comercioInternacional.description} items={dataHome[currentLanguage].comercioInternacional.items} />
-        <AreasEspecialidad title={dataHome[currentLanguage].areaEspecialidad.title} description={dataHome[currentLanguage].areaEspecialidad.description} items={dataHome[currentLanguage].areaEspecialidad.items} />
-        <ServicioCalidad title={dataHome[currentLanguage].servicioCalidad.title} description={dataHome[currentLanguage].servicioCalidad.description} items={dataHome[currentLanguage].servicioCalidad.items} />
-        <ConectaConNosotros title={dataHome[currentLanguage].conectaConNosotros.title} description={dataHome[currentLanguage].conectaConNosotros.description} items={dataHome[currentLanguage].conectaConNosotros.items} callToAction={dataHome[currentLanguage].conectaConNosotros.callToAction} />
+        <Hero
+          title={dataHome[currentLanguage].hero.title}
+          description={dataHome[currentLanguage].hero.description}
+          callToAction={dataHome[currentLanguage].hero.callToAction}
+          callToActionHref={dataHome[currentLanguage].hero.callToActionHref}
+        />
+        <ComercioInternacional
+          title={dataHome[currentLanguage].comercioInternacional.title}
+          titleTwo={dataHome[currentLanguage].comercioInternacional.titleTwo}
+          description={
+            dataHome[currentLanguage].comercioInternacional.description
+          }
+          items={dataHome[currentLanguage].comercioInternacional.items}
+        />
+        <AreasEspecialidad
+          title={dataHome[currentLanguage].areaEspecialidad.title}
+          titleTwo={dataHome[currentLanguage].areaEspecialidad.titleTwo}
+          description={dataHome[currentLanguage].areaEspecialidad.description}
+          items={dataHome[currentLanguage].areaEspecialidad.items}
+        />
+        <ServicioCalidad
+          title={dataHome[currentLanguage].servicioCalidad.title}
+          description={dataHome[currentLanguage].servicioCalidad.description}
+          items={dataHome[currentLanguage].servicioCalidad.items}
+        />
+        <ConectaConNosotros
+          title={dataHome[currentLanguage].conectaConNosotros.title}
+          description={dataHome[currentLanguage].conectaConNosotros.description}
+          items={dataHome[currentLanguage].conectaConNosotros.items}
+        />
+
+        <Quote
+          text={dataHome[currentLanguage].quote.text}
+          sub={dataHome[currentLanguage].quote.sub}
+        />
       </>
     </Layout>
   )

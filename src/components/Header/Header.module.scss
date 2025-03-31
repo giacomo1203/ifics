@@ -1,33 +1,96 @@
 @use '../../styles/variables.scss' as var;
 
 .header {
-  background-color: var.$main-blue;
-  color: var.$main-white;
-  font-family: var.$font-family-base;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   right: 0;
   height: 64px;
   padding: 16px;
+  z-index: 2;
+  background-color: var.$main-blue;
+  @media (min-width: #{var.$breakpoint-xl}) {
+    @apply h-35 p-0;
+  }
 }
- 
+
+.header__container {
+  height: 100%;
+  color: var.$main-white;
+  font-family: var.$font-family-base;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: #{var.$breakpoint-md}) {
+    @apply mx-8;
+  }
+  @media (min-width: #{var.$breakpoint-lg}) {
+    @apply max-w-xl-content 2xl:mx-auto;
+  }
+}
+
+.logo {
+  display: flex;
+  gap: 1rem;
+  padding-block: 2rem;
+  flex: 1;
+  // min-width: 300px;
+  @apply h-fit;
+  @apply lg:py-0;
+
+  img {
+    flex: 1;
+    max-width: 160px;
+    height: 32px;
+    object-position: left;
+    object-fit: contain;
+
+    @apply h-8;
+
+    @apply xl:h-18;
+  }
+
+  .divider {
+    width: 2px;
+    background-color: white;
+
+    display: none;
+
+    @apply xl:flex;
+  }
+
+  span {
+    flex: 1;
+    max-width: 100px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0%;
+    font-family: var.$font-family-title;
+    display: none;
+    @apply xl:flex;
+  }
+}
+
 .rightSection {
   display: flex;
   gap: 16px;
+
+  @media (min-width: #{var.$breakpoint-lg}) {
+    @apply h-full;
+    @apply flex-row-reverse;
+  }
 }
 
 .mobileHeader {
   display: flex;
   align-items: center;
   gap: 1rem;
-  img {
-    width: 71.05px;
-    height: 32px;
-  }
+  // img {
+  //   width: 71.05px;
+  //   height: 32px;
+  // }
 }
 
 .mobileLogo {
@@ -39,14 +102,25 @@
   display: none;
 }
 
-@media (min-width: 769px) {
+@media (min-width: #{var.$breakpoint-md}) {
   .mobileLogo {
     display: none;
   }
   .desktopLogo {
     display: block;
-    width: 120px;
-    height: 64px;
+    width: 450px;
+    height: auto;
+  }
+}
+
+@media (min-width: #{var.$breakpoint-xl}) {
+  .desktopLogo {
+    object-fit: cover;
+    object-position: left;
+
+    display: block;
+    width: auto;
+    height: 72px;
   }
 }
 
@@ -61,6 +135,8 @@
     border: none;
     color: var.$main-white;
     cursor: pointer;
+
+    @apply text-[16px];
 
     &:hover {
       opacity: 0.8;
@@ -94,7 +170,7 @@
     opacity: 0.8;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: #{var.$breakpoint-xl}) {
     display: none;
   }
 }
@@ -137,7 +213,7 @@
     pointer-events: all;
   }
 
-  @media (min-width: 769px) {
+  @media (min-width: #{var.$breakpoint-xl}) {
     position: static;
     transform: none;
     padding: 0;
@@ -157,6 +233,15 @@
         background-color: transparent;
         opacity: 0.8;
       }
+    }
+  }
+
+  @media (min-width: #{var.$breakpoint-xl}) {
+    @apply h-full gap-0;
+
+    a {
+      @apply flex justify-center items-center px-6 font-semibold;
+      @apply hover:bg-white/10;
     }
   }
 }

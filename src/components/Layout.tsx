@@ -36,7 +36,7 @@ const Layout: React.FC<LayoutProps> = ({
         image={image}
       />
       <Header />
-      <main style={{ paddingTop: '64px' }}>{children}</main>
+      <main>{children}</main>
       <Footer />
     </>
   )

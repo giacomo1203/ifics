@@ -7,7 +7,7 @@ export const dataNav = {
             },
             {
                 name: 'Nosotros',
-                url: '/nosotros'
+                url: '/#/nosotros'
             },
             {
                 name: 'Soluciones',

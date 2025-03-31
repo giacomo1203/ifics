@@ -2,6 +2,7 @@ import styles from './AreasEspecialidad.module.scss'
 
 interface AreasEspecialidadProps {
   title: string
+  titleTwo: string
   description?: string
   items: {
     description: string
@@ -11,13 +12,16 @@ interface AreasEspecialidadProps {
 
 export const AreasEspecialidad = ({
   title,
+  titleTwo,
   description,
   items,
 }: AreasEspecialidadProps) => {
   return (
     <div className={styles.areasEspecialidad}>
       <div className={styles.container}>
-        <h2 className={styles.title}>{title}</h2>
+        <h2 className={styles.title}>
+          {title} <span className={styles['title--accent']}>{titleTwo}</span>
+        </h2>
         <p className={styles.description}>{description}</p>
       </div>
       <div className={styles.items}>

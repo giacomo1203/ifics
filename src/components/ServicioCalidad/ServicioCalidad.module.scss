@@ -1,13 +1,44 @@
 @use '../../styles/variables.scss' as var;
 
 .servicio-calidad {
-  min-height: 642px;
+  // min-height: 642px;
+  @apply bg-main-lightgray;
+  @apply lg:bg-transparent;
+
+  @media (min-width: #{var.$breakpoint-lg}) {
+    position: relative;
+    background-image:
+      linear-gradient(180deg, rgba(9, 18, 66, 0) 0%, #091242 100%),
+      url(https://s3-alpha-sig.figma.com/img/1ea3/0812/2e06fc2b2e1943593343f58fd83b63cb?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=f6NmrwIgRlEzOgLYN~K3FgdWtSmDLCvvPyqryJIdr4W7PQ37h3kz~uaSR-hQ38wpaxoZRxQkMk2nonAWnT0728qwdKeYgNsCESoUvMHOuqD8Ix3gGDULbYgOJE-psFd4NeKeZdIadkaJ6ZHmQiGaSV4I4O13Nk1~mZdNDNbswFNle8LOxey-bJsKOyAO9-UFKFFDFkM8A8xtO3cQgGbHP9i537Fx4YmOvweOaz8M-tmZH-tfE6uSIloz6gM3Ba1LzHo10PvlxZ2O~YLXZN7ofXLEmSnTMtCwInZh~eecF1IclYbpphvDj5giXuF3jBdSCm92fd3~MmcXvY8ea7QzQA__);
+
+    background-size: cover;
+    background-position: bottom;
+
+    margin-bottom: 300px;
+  }
 
   &__container {
-    margin: 56px 16px 24px 16px;
+    @apply mx-4 pb-24 py-14;
+    @apply md:mx-8 md:py-16 md:pb-14;
+    @apply lg:flex lg:flex-row-reverse lg:gap-6 lg:min-h-[680px] lg:max-w-xl-content lg:py-14;
+    @apply 2xl:mx-auto;
+
+    @apply bg-bg-lightgray;
+    @apply lg:px-14;
+
+    @media (min-width: #{var.$breakpoint-lg}) {
+      top: 300px;
+      position: relative;
+    }
+  }
+
+  &__title_container {
     display: flex;
     flex-direction: column;
     gap: 8px;
+    @apply mx-4 pb-8;
+    @apply md:mx-8;
+    @apply lg:mx-0;
   }
 
   &__title {
@@ -16,6 +47,7 @@
     font-size: 20px;
     line-height: 30px;
     color: var.$main-orange;
+    @apply lg:text-4xl;
   }
 
   &__description {
@@ -24,13 +56,16 @@
     font-size: 16px;
     line-height: 20px;
     color: var.$main-gray;
+    @apply lg:text-xl;
   }
 
   &__items {
-    padding: 0 16px 24px 16px;
+    margin: 0 16px 24px 16px;
     gap: 16px;
     display: flex;
     flex-direction: column;
+    @apply md:mx-8;
+    @apply lg:mx-0;
   }
 
   &__item {
@@ -41,6 +76,7 @@
     line-height: 18px;
     color: var.$main-gray;
     font-family: var.$font-family-base;
+    @apply lg:text-xl;
 
     img {
       margin-right: 16px;
@@ -49,7 +85,30 @@
 
   &__image-container {
     min-height: 250px;
-    background-color: var.$main-gray;
     margin: 24px 16px 0 16px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+
+    @apply grid grid-cols-4;
+    @apply md:mx-0;
+    @apply lg:flex-1 lg:my-0;
+  }
+
+  &__image-1 {
+    background-color: var.$main-gray;
+    aspect-ratio: 1/1;
+    @apply col-span-3 md:aspect-3/2;
+    @apply lg:aspect-1/1 lg:w-[92%];
+  }
+
+  &__image-2 {
+    background-color: var.$main-gray;
+    aspect-ratio: 211/212;
+    min-width: 212px;
+    width: 60%;
+    @apply col-span-2 absolute right-0 -bottom-10;
+    @apply md:bottom-0 md:w-[67%] md:aspect-3/2;
+    @apply lg:aspect-1/1 lg:-bottom-0 lg:w-[62.5%];
   }
 }

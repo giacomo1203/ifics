@@ -1,4 +1,4 @@
-import areaEspecialidadImg from '../../assets/Home/areaEspecialidadImg.png';
+import areaEspecialidadImg from '../../assets/Home/areaEspecialidadImg.png'
 
 export const dataHome = {
   ES: {
@@ -22,7 +22,8 @@ export const dataHome = {
       ],
     },
     areaEspecialidad: {
-      title: 'Nuestras Áreas de Especialidad',
+      title: 'Nuestras Áreas',
+      titleTwo: 'de Especialidad',
       description:
         'Nos enfocamos en áreas estratégicas donde contamos con ventajas comparativas, asegurando resultados de alto impacto',
       items: [
@@ -46,42 +47,63 @@ export const dataHome = {
     },
     servicioCalidad: {
       title: 'Servicio de Calidad para Empresas y Entidades Públicas',
-      description: 'Ofrecemos soluciones diseñadas con altos estándares y metodologías basadas en las mejores prácticas internacionales.',
-      items: [
-        'Consultoría IFIX',
-        'Análisis e Investigación',
-        'Capacitación'
-      ],
+      description:
+        'Ofrecemos soluciones diseñadas con altos estándares y metodologías basadas en las mejores prácticas internacionales.',
+      items: ['Consultoría IFIX', 'Análisis e Investigación', 'Capacitación'],
     },
     conectaConNosotros: {
       title: 'Conecta con nosotros',
-      description: 'Descubre nuestros eventos y actividades, espacios diseñados para inspirar, aprender y crecer juntos.',
+      description:
+        'Descubre nuestros eventos y actividades, espacios diseñados para inspirar, aprender y crecer juntos.',
       items: [
         {
           title: 'Seminario Comercio Exterior y Competitividad – COMEX',
-          description: 'El martes 13 de junio, nuestro Director Ejecutivo, participó como moderador en el...',
+          description:
+            'El martes 13 de junio, nuestro Director Ejecutivo, participó como moderador en el...',
           image: areaEspecialidadImg,
           date: '13 Junio',
         },
         {
           title: 'Culminación del proyecto “Mejora de la eficiencia de la...',
-          description: 'En Marzo del 2023, concluye un importante proyecto para mejorar el control sanitario en el...',
+          description:
+            'En Marzo del 2023, concluye un importante proyecto para mejorar el control sanitario en el...',
           image: areaEspecialidadImg,
           date: '31 Marzo',
         },
         {
           title: 'Seminario E-commerce, Comercio Internacional y Adu...',
-          description: 'Alfredo Lindley-Russo, el Vicepresidente de IFCOM, participó como ponente en el evento E...',
+          description:
+            'Alfredo Lindley-Russo, el Vicepresidente de IFCOM, participó como ponente en el evento E...',
+          image: areaEspecialidadImg,
+          date: '24 Enero',
+        },
+        {
+          title: 'Seminario Comercio Exterior y Competitividad – COMEX',
+          description:
+            'El martes 13 de junio, nuestro Director Ejecutivo, participó como moderador en el...',
+          image: areaEspecialidadImg,
+          date: '13 Junio',
+        },
+        {
+          title: 'Culminación del proyecto “Mejora de la eficiencia de la...',
+          description:
+            'En Marzo del 2023, concluye un importante proyecto para mejorar el control sanitario en el...',
+          image: areaEspecialidadImg,
+          date: '31 Marzo',
+        },
+        {
+          title: 'Seminario E-commerce, Comercio Internacional y Adu...',
+          description:
+            'Alfredo Lindley-Russo, el Vicepresidente de IFCOM, participó como ponente en el evento E...',
           image: areaEspecialidadImg,
           date: '24 Enero',
         },
       ],
-      callToAction: {
-        text: 'Ver más eventos',
-        href: '/events',
-      },
-      
-    }
+    },
+    quote: {
+      text: 'La palabra "facilitar" significa hacer simple o más simple, y este es precisamente el objetivo de la facilitación del comercio - hacer los procesos y procedimientos del comercio internacional tan simple y eficiente como sea posible para comerciantes, autoridades y gobiernos.',
+      sub: 'Centro de Facilitación de Negocios y Comercio Electrónico de las Naciones Unidas',
+    },
   },
   EN: {
     hero: {
@@ -104,7 +126,8 @@ export const dataHome = {
       ],
     },
     areaEspecialidad: {
-      title: 'Our Areas of Expertise',
+      title: 'Our Areas',
+      titleTwo: 'of Expertise',
       description:
         'We focus on strategic areas where we have comparative advantages, ensuring high-impact results.',
       items: [
@@ -128,41 +151,63 @@ export const dataHome = {
     },
     servicioCalidad: {
       title: 'Quality Service for Companies and Public Entities',
-      description: 'We offer solutions designed with high standards and methodologies based on best international practices.',
-      items: [
-        'IFIX Consulting',
-        'Analysis and Research',
-        'Training'
-      ],
+      description:
+        'We offer solutions designed with high standards and methodologies based on best international practices.',
+      items: ['IFIX Consulting', 'Analysis and Research', 'Training'],
     },
     conectaConNosotros: {
       title: 'Connect with us',
-      description: 'Discover our events and activities, spaces designed to inspire, learn, and grow together.',
+      description:
+        'Discover our events and activities, spaces designed to inspire, learn, and grow together.',
       items: [
         {
           title: 'Seminar on Foreign Trade and Competitiveness – COMEX',
-          description: 'On Tuesday, June 13, our Executive Director participated as a moderator in the...',
+          description:
+            'On Tuesday, June 13, our Executive Director participated as a moderator in the...',
           image: areaEspecialidadImg,
           date: 'June 13',
         },
         {
-          title: 'Completion of the project "Improving the efficiency of the...',
-          description: 'In March 2023, an important project to improve sanitary control in the...',
+          title:
+            'Completion of the project "Improving the efficiency of the...',
+          description:
+            'In March 2023, an important project to improve sanitary control in the...',
           image: areaEspecialidadImg,
           date: 'March 31',
         },
         {
           title: 'Seminar E-commerce, International Trade and Customs...',
-          description: 'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
+          description:
+            'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
+          image: areaEspecialidadImg,
+          date: 'January 24',
+        },
+        {
+          title: 'Seminar E-commerce, International Trade and Customs...',
+          description:
+            'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
+          image: areaEspecialidadImg,
+          date: 'January 24',
+        },
+        {
+          title: 'Seminar E-commerce, International Trade and Customs...',
+          description:
+            'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
+          image: areaEspecialidadImg,
+          date: 'January 24',
+        },
+        {
+          title: 'Seminar E-commerce, International Trade and Customs...',
+          description:
+            'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
           image: areaEspecialidadImg,
           date: 'January 24',
         },
       ],
-      callToAction: {
-        text: 'See more events',
-        href: '/events',
-      },
-      
-    }
+    },
+    quote: {
+      "text": "The word 'facilitate' means to make simple or simpler, and this is precisely the goal of trade facilitation – to make international trade processes and procedures as simple and efficient as possible for traders, authorities, and governments.",
+      "sub": "United Nations Centre for Trade Facilitation and Electronic Business"
+    },
   },
 }

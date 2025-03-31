@@ -1,0 +1,44 @@
+@use '../../styles/variables.scss' as var;
+
+.section {
+  overflow: hidden;
+}
+.section__container {
+  @apply mx-4 pt-14;
+  @apply md:mx-8 md:py-16 md:pb-14;
+  @apply lg:pt-30 lg:pb-4;
+  @apply xl:max-w-xl-content xl:py-14;
+  @apply 2xl:mx-auto;
+
+  @apply flex flex-col items-center;
+}
+
+.content {
+  flex: 1;
+  @apply xl:my-20;
+}
+
+.title {
+  font-family: var.$font-family-title;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: left;
+  color: var.$main-orange;
+
+  @apply mb-4 text-center;
+  @apply xl:text-4xl;
+
+  &--accent {
+    color: var.$main-blue;
+    // @apply xl:block;
+  }
+}
+
+.sub {
+  line-height: 1.15;
+  letter-spacing: 0px;
+  color: var.$main-gray;
+  @apply max-w-4xl text-center;
+  @apply xl:text-[18px];
+}

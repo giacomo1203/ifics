@@ -1,9 +1,12 @@
 @use '../../styles/variables.scss' as var;
 
 .comercioInternacional {
+  background-color: var.$main-lightgray;
   &__container {
-    min-height: 524px;
-    padding: 56px 16px;
+    // min-height: 524px;
+    @apply mx-4 py-14;
+    @apply md:mx-8 md:py-22;
+    @apply lg:flex lg:max-w-xl-content lg:gap-6 lg:py-44 2xl:mx-auto;
   }
   &__title {
     color: var.$main-blue;
@@ -12,14 +15,16 @@
     letter-spacing: 0;
     font-family: var.$font-family-title;
     font-weight: 700;
+    @apply lg:text-4xl;
   }
-  &__title--two {
+  &__titleTwo {
     color: var.$main-orange;
     font-size: 20px;
     line-height: 30px;
     letter-spacing: 0;
     font-family: var.$font-family-title;
     font-weight: 700;
+    @apply lg:text-4xl;
   }
   &__description {
     color: var.$main-gray;
@@ -30,7 +35,12 @@
     font-weight: 400;
     margin-top: 8px;
     margin-bottom: 24px;
+    @apply lg:text-2xl;
   }
+  &__heading {
+    @apply lg:flex-1/2;
+  }
+
   &__items {
     color: var.$main-blue;
     font-size: 14px;
@@ -42,10 +52,17 @@
     display: flex;
     flex-direction: column;
     gap: 32px;
+    @apply lg:flex-1/2;
+    @apply lg:text-[18px];
   }
   &__item {
     display: flex;
     gap: 8px;
     align-items: center;
+    @apply lg:gap-4;
+
+    img {
+      @apply lg:min-w-14;
+    }
   }
 }

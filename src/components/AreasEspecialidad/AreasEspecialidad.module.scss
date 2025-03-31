@@ -1,7 +1,9 @@
 @use '../../styles/variables.scss' as var;
 
 .areasEspecialidad {
-  min-height: 1286px;
+  @apply mx-4 py-22 min-h-auto;
+  @apply md:mx-8;
+  @apply lg:max-w-xl-content 2xl:mx-auto lg:pt-30 lg:pb-50;
 }
 
 .title {
@@ -11,10 +13,15 @@
   line-height: 30px;
   text-align: center;
   color: var.$main-orange;
+  @apply lg:text-4xl;
+
+  &--accent {
+    color: var.$main-blue;
+  }
 }
 
 .container {
-  padding: 56px 16px 24px 16px;
+  padding-bottom: 16px;
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -28,6 +35,7 @@
   line-height: 20px;
   text-align: center;
   color: var.$main-gray;
+  @apply max-w-3xl lg:text-lg;
 }
 
 .item {
@@ -43,12 +51,16 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  @apply md:mx-0;
+  @apply lg:min-h-[450px];
 }
 
 .items {
   display: flex;
   flex-direction: column;
   gap: 24px;
+  @apply md:grid md:grid-cols-2 md:gap-6;
+  @apply lg:grid-cols-4;
 }
 
 .itemDescription {
@@ -59,4 +71,6 @@
   line-height: 26px;
   text-align: left;
   padding: 16px;
+
+  @apply lg:text-[20px];
 }
