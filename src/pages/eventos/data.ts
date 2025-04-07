@@ -12,7 +12,11 @@ export const eventosData = {
           title: "Seminario Comercio Exterior y Competitivi...",
           description: "El martes 13 de junio, nuestro Director Ejecutivo, participó como mod...",
           image: "https://s3-alpha-sig.figma.com/img/0b1d/91c3/88b09098fae7b1711c657e00f895ec56?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=KTspydqiGLZFaW8GiT2Ox90vzmtW5EfBsW21gaqEca6VlybbEFjde7oMmdxvmofbAaUgwdp-I3EQS3u4KNLY3CXD1FEZ-VkeMOr-1gIfusp7rJmqi-2jWihMnPgPWOorDvB3qtKTNCPElNf5aaIFUO7t-FYWpGLs5CA8Hwomdt0nZyZxUFM0oYGjPl34X7VAqJ0xz6-yCB6hACtF1Eg8DBi67Euc8F4wy2k-Ebi2pTIzg68-dQm83VTbt4LH67RO~Xj5n~Rzg79GtY~AFuHZp3HrxuUe7hShLpF7dPhUENVNGXwI7yHj~kXXv3VHZMiuBu9gqpNk9VyuKQQEoXegjQ__",
-          href: "#"
+          href: "#",
+          date: {
+            day: "13",
+            month: "Junio",
+          }
         },
         {
           title: "Ejecución del proyecto Alianza Global para...",
