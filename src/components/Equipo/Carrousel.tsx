@@ -51,7 +51,8 @@ interface CarouselProps {
 }
 
 const Carousel: React.FC<CarouselProps> = ({ team }) => {
-  const [selectedMember, setSelectedMember] = useState<TeamItem | null>(null)
+  const [selectedMember, setSelectedMember] = useState<TeamItem | null>(null);
+  const [isSliding, setIsSliding] = useState(false);
 
   const settings = {
     dots: false,
@@ -65,6 +66,12 @@ const Carousel: React.FC<CarouselProps> = ({ team }) => {
     variableWidth: false,
     nextArrow: <SampleNextArrow />,
     prevArrow: <SamplePrevArrow />,
+    beforeChange: () => {
+      setIsSliding(true);
+    },
+    afterChange: () => {
+      setIsSliding(false);
+    },
     responsive: [
       {
         breakpoint: 2000,
@@ -113,7 +120,11 @@ const Carousel: React.FC<CarouselProps> = ({ team }) => {
             <div
               key={index}
               className="!px-3 !w-60 !box-content xl:!w-full lg:!box-border"
-              onClick={() => setSelectedMember(item)}
+              onClick={() => {
+                if (!isSliding) {
+                  setSelectedMember(item);
+                }
+              }}
             >
               <img
                 src={item.img}

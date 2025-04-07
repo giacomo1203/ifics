@@ -14,6 +14,14 @@
   padding: 61px 0;
 
   @apply lg:min-h-[800px] lg:gap-6;
+
+  @media (min-width: var.$breakpoint-sm) {
+    background-image: url('../../assets/Home/heroTablet.jpg');
+  }
+
+  @media (min-width: var.$breakpoint-lg) {
+    background-image: url('../../assets/Home/heroDesktop.jpg');
+  }
 }
 
 .hero__content {

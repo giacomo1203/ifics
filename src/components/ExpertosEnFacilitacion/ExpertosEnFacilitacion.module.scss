@@ -1,0 +1,69 @@
+@use '../../styles/variables.scss' as var;
+
+.ExpertosEnFacilitacion {
+  background-color: var.$main-blue;
+
+  &__container {
+    position: relative;
+    // min-height: 524px;
+    @apply mx-4 py-14;
+    @apply md:mx-8 md:py-22;
+    @apply lg:flex lg:max-w-xl-content lg:gap-6 lg:py-0 2xl:mx-auto;
+    // @apply lg:translate-x-[-10%]
+  }
+  &__title {
+    color: var.$main-white;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+    font-family: var.$font-family-title;
+    font-weight: 700;
+    @apply lg:text-4xl;
+  }
+  &__titleTwo {
+    color: var.$main-orange;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0;
+    font-family: var.$font-family-title;
+    font-weight: 700;
+    @apply lg:text-4xl;
+    margin-bottom: 16px;
+  }
+  &__description {
+    color: var.$main-white;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0;
+    font-family: var.$font-family-base;
+    font-weight: 400;
+    @apply lg:text-xl;
+    margin-bottom: 32px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+  }
+  &__heading {
+    @apply lg:flex-1/2 py-14 md:py-22 lg:py-44 order-1;
+    @apply lg:order-2 lg:mx-16;
+    @media (min-width: #{var.$breakpoint-lg}) {
+      width: 50%;
+      margin-left: 50%;
+    }
+  }
+  &__image {
+    @apply w-full flex justify-center order-2 lg:order-1;
+
+    img {
+      @apply lg:h-full lg:object-cover;
+    }
+
+    @media (min-width: #{var.$breakpoint-lg}) {
+      position: absolute;
+      left: -18%;
+      width: 60%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+}

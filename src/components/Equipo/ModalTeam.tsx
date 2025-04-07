@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react'
 import { TeamItem } from './Equipo'
+import cancel from '../../assets/cancel.svg'
 
 const Modal: React.FC<{ member: TeamItem | null; onClose: () => void }> = ({
   member,
@@ -19,21 +20,19 @@ const Modal: React.FC<{ member: TeamItem | null; onClose: () => void }> = ({
 
   return (
     <div
-      className={`fixed inset-0 bg-[#091242]/60 z-10 flex items-center justify-center transition-opacity duration-300 ${
-        visible ? 'opacity-100' : 'opacity-0'
-      }`}
+      className={`fixed inset-0 bg-[#091242]/60 z-10 flex items-center justify-center transition-opacity duration-300 ${visible ? 'opacity-100' : 'opacity-0'
+        }`}
       onClick={onClose}
     >
       <div
         className="bg-white rounded-3xl w-full max-w-278 relative transition-transform duration-300 transform scale-95 !h-[calc(100vh-32px)] md:!h-auto overflow-auto"
         onClick={(e) => e.stopPropagation()}
       >
-        <button
+        <img
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-500 cursor-pointer"
-        >
-          ✕
-        </button>
+          src={cancel}
+        />
         <div className="!px-3 !py-6 md:!p-12 flex flex-col lg:flex-row lg:gap-6">
           <img
             src={member.img}
