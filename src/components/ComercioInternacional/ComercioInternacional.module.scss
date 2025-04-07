@@ -2,6 +2,12 @@
 
 .comercioInternacional {
   background-color: var.$main-lightgray;
+  background-image: url('../../assets/map.svg');
+  background-size: cover;
+  background-repeat: repeat;
+  background-position: left;
+  fill: rgba(204, 205, 215, 0.6);
+  
   &__container {
     // min-height: 524px;
     @apply mx-4 py-14;
