@@ -3,7 +3,6 @@ import { content } from '../../config/content'
 import { dataNosotros } from './data'
 import Layout from '../../components/Layout'
 import { useLanguage } from '../../context/LanguageContext'
-import { Quote } from '../../components/Quote/Quote'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import InnovacionYEficiencia from '../../components/InnovacionYEficiencia/InnovacionYEficiencia'
 import Equipo from '../../components/Equipo/Equipo'
@@ -45,11 +44,6 @@ const Nosotros: React.FC = () => {
           titleTwo={dataNosotros[currentLanguage].team.titleTwo}
           sub={dataNosotros[currentLanguage].team.sub}
           team={dataNosotros[currentLanguage].team.team}
-        />
-
-        <Quote
-          text={dataNosotros[currentLanguage].quote.text}
-          sub={dataNosotros[currentLanguage].quote.sub}
         />
       </>
     </Layout>

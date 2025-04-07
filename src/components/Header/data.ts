@@ -3,7 +3,7 @@ export const dataNav = {
         nav: [
             {
                 name: 'Inicio',
-                url: '/'
+                url: '/#/'
             },
             {
                 name: 'Nosotros',
@@ -11,19 +11,19 @@ export const dataNav = {
             },
             {
                 name: 'Soluciones',
-                url: '/soluciones'
+                url: '/#/soluciones'
             },
             {
                 name: 'Noticias',
-                url: '/noticias'
+                url: '/#/noticias'
             },
             {
                 name: 'Eventos',
-                url: '/eventos'
+                url: '/#/eventos'
             },
             {
                 name: 'Contacto',
-                url: '/contacto'
+                url: '/#/contacto'
             },
         ]
     },
@@ -31,27 +31,27 @@ export const dataNav = {
         nav: [
             {
                 name: 'Home',
-                url: '/'
+                url: '/#/'
             },
             {
                 name: 'About Us',
-                url: '/nosotros'
+                url: '/#/nosotros'
             },
             {
                 name: 'Solutions',
-                url: '/soluciones'
+                url: '/#/soluciones'
             },
             {
                 name: 'News',
-                url: '/noticias'
+                url: '/#/noticias'
             },
             {
                 name: 'Events',
-                url: '/eventos'
+                url: '/#/eventos'
             },
             {
                 name: 'Contact',
-                url: '/contacto'
+                url: '/#/contacto'
             },
         ]
     }

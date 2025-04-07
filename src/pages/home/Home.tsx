@@ -8,7 +8,6 @@ import { ComercioInternacional } from '../../components/ComercioInternacional/Co
 import { AreasEspecialidad } from '../../components/AreasEspecialidad/AreasEspecialidad'
 import { ServicioCalidad } from '../../components/ServicioCalidad/ServicioCalidad'
 import { ConectaConNosotros } from '../../components/ConectaConNosotros/ConectaConNosotros'
-import { Quote } from '../../components/Quote/Quote'
 
 const Home: React.FC = () => {
   const { currentLanguage } = useLanguage()
@@ -50,11 +49,6 @@ const Home: React.FC = () => {
           title={dataHome[currentLanguage].conectaConNosotros.title}
           description={dataHome[currentLanguage].conectaConNosotros.description}
           items={dataHome[currentLanguage].conectaConNosotros.items}
-        />
-
-        <Quote
-          text={dataHome[currentLanguage].quote.text}
-          sub={dataHome[currentLanguage].quote.sub}
         />
       </>
     </Layout>

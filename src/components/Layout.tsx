@@ -2,6 +2,9 @@ import React from 'react'
 import SEO from './SEO'
 import Header from './Header/index'
 import Footer from './Footer/index'
+import { Quote } from './Quote/Quote'
+import { dataHome } from '../pages/home/data'
+import { useLanguage } from '../context/LanguageContext'
 
 /**
  * Props for the Layout component.
@@ -27,6 +30,8 @@ const Layout: React.FC<LayoutProps> = ({
   image,
   children,
 }) => {
+  const { currentLanguage } = useLanguage()
+
   return (
     <>
       <SEO
@@ -37,6 +42,10 @@ const Layout: React.FC<LayoutProps> = ({
       />
       <Header />
       <main>{children}</main>
+      <Quote
+        text={dataHome[currentLanguage].quote.text}
+        sub={dataHome[currentLanguage].quote.sub}
+      />
       <Footer />
     </>
   )
