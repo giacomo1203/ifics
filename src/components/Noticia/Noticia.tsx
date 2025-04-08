@@ -2,6 +2,7 @@ import styles from './Noticia.module.scss'
 import calendarWhite from '../../assets/calendar.svg'
 import calendarBlack from '../../assets/Home/calendar.svg'
 import { useEffect, useState } from 'react'
+import { useWindowWidth } from '../../utils'
 
 interface NoticiaDate {
     day: string
@@ -21,20 +22,6 @@ interface NoticiaProps {
 export const Noticia = ({
     items,
 }: NoticiaProps) => {
-    function useWindowWidth() {
-        const [width, setWidth] = useState(window.innerWidth);
-
-        useEffect(() => {
-            const handleResize = () => setWidth(window.innerWidth);
-
-            window.addEventListener('resize', handleResize);
-
-            return () => window.removeEventListener('resize', handleResize);
-        }, []);
-
-        return width;
-    }
-
     const windowWidth = useWindowWidth();
     const isDesktop = windowWidth >= 992;
 
