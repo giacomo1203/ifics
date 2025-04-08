@@ -1,7 +1,7 @@
 import styles from './Noticia.module.scss'
 import calendarWhite from '../../assets/calendar.svg'
 import calendarBlack from '../../assets/Home/calendar.svg'
-import { useEffect, useState } from 'react'
+import React, { forwardRef } from 'react'
 import { useWindowWidth } from '../../utils'
 
 interface NoticiaDate {
@@ -16,19 +16,26 @@ interface NoticiaProps {
         image: string
         href: string
         date?: NoticiaDate
-    }[]
+    }[];
+    currentPage: number;
+    maxItemsPerPage: number;
 }
 
-export const Noticia = ({
+export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(({
     items,
-}: NoticiaProps) => {
+    currentPage,
+    maxItemsPerPage
+}: NoticiaProps, ref) => {
     const windowWidth = useWindowWidth();
     const isDesktop = windowWidth >= 992;
+    const startIndex = (currentPage - 1) * maxItemsPerPage;
+    const endIndex = startIndex + maxItemsPerPage;
+    const itemsToRender = items?.slice(startIndex, endIndex);
 
     return (
-        <div className={styles.noticia}>
+        <div className={styles.noticia} ref={ref}>
             <div className={styles.noticia__items}>
-                {items?.map((item, index) => (
+                {itemsToRender?.map((item, index) => (
                     <div key={index} className={styles.noticia__item}>
                         <div className={`${styles.noticia__imageContainer} ${item.date && item.date.month && item.date.day && styles.opacity}`}>
                             <a href={item.href}>
@@ -72,4 +79,4 @@ export const Noticia = ({
             </div>
         </div>
     );
-}
+});

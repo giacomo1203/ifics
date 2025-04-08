@@ -1,0 +1,45 @@
+@use '../../styles/variables.scss' as var;
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  padding-bottom: 56px;
+
+  @apply xl:pb-24;
+}
+
+.arrowButton {
+  background-color: var.$main-white;
+  color: var.$main-blue;
+  border: 1px solid var.$main-blue;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+
+  &:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.pageButton {
+  background-color: var.$main-white;
+  border: 1px solid var.$main-blue;
+  padding: 8px 12px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-weight: 600;
+  color: var.$main-blue;
+
+  &.active {
+    background-color: var.$main-blue;
+    color: #fff;
+    border-color: var.$main-blue;
+  }
+}

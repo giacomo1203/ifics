@@ -61,6 +61,24 @@ export const dataNoticias = {
           description: "El martes 13 de junio, nuestro Director Ejecutivo, participó como mod...",
           image: "https://s3-alpha-sig.figma.com/img/37fb/6856/8c2b82e8613269556e30f4fea373d940?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HjxcPVNV3Y8JGP2lOvJ2tMb57bvCWAsdKOgx-RW4UN9lFw4PyiyTh0N5YZl8fknWwn6re4poJoxqnZk5tbuozt~9z5VZjh7n0blaX2~jLN-BRLx~esQ5Siyu83nk0LFzLCajgFKhCpAFOpIKL34tcjTTFN9mD4JlYSO28BAnsx4RSxh49S4bWBtEk1RuV0D-J5W2GK4PcoTOZtycRzgzEc6AnVv32LJIVHeXFZUufck8EwK0Yddd7HS6dwsanYisJIJb3OqftFXYjBW5v8iQdeJI5BLNi24aFt0tcaGb-rSl3oevvx2L8H8MD-emYzJkdyzk0LlxONC-R7xwJCci8w__",
           href: '#'
+        },
+        {
+          title: "Seminario Comercio Exterior y Competitivi...",
+          description: "El martes 13 de junio, nuestro Director Ejecutivo, participó como mod...",
+          image: "https://s3-alpha-sig.figma.com/img/e5e7/08fa/89ba8aea574af096c97025ba466e2efe?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=I-Ui2Ppab0bm4pf1w4qkmblNqnzDxiftSAQ34zoTJiSpoD5ROISivMO5bL51ixMyOHwQW~FpyEINujYJRWk7q~04tBYlnoaFult2C4obNSCAGEwe9UpFWwU3VcwhDqJR3tNSeo6eUZrkTOpM-Gkh2BwKC9R8~9AbQHNl7I5HsaykFifXWi2uxDjF3~TK6JINsDmbJyJ7IxB2Rb~BrTi7GOi5jdt17l~7VJiQCOTgpiE~F5DOGYSSV2u3N3axZIu2kDFNUxEei9JPn44bDcy-BDesuEldakM9xdCv2IE31IfMwCrSZJ0eRTC6s0V7fAB4uEO9K-HrgbVzQ3v5937dIw__",
+          href: '#'
+        },
+        {
+          title: "Seminario Comercio Exterior y Competitivi...",
+          description: "El martes 13 de junio, nuestro Director Ejecutivo, participó como mod...",
+          image: "https://s3-alpha-sig.figma.com/img/ae1f/9d01/6a92d643a3843afe2b403d6999a626fe?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Oct1u-8yKEWZmjH7sMBbgjhzeIU3WxaUXDgIabBQylMbOOEJU7lNJ3k7HG9Gs7bh5z8pA-mPn--FVJPvzil0Ml6V~ZIpJhxVoEsZz~B-U19d~w6v-8ennzX9DDbZxFYSZsFtWiUj5sauWiCA4RpGSEPiDAzrdy4wa8LWALDPRcawEATJ8NuOBJ2DTdmSTLKBOH5x7dIlURARYrxCl0pv0Z-ZENIXbJQsYmayufCop1aC6scbz4hRvC3EfX2L-Dg4lN8fWiLYVtjU4LXYajVD0BOCh7P7UnU~HLt0qFTc8ykxM0iVi9rILLQBcIzEi3K0pgDJLapzCsdQjXGLwQ6ezw__",
+          href: '#'
+        },
+        {
+          title: "Seminario Comercio Exterior y Competitivi...",
+          description: "El martes 13 de junio, nuestro Director Ejecutivo, participó como mod...",
+          image: "https://s3-alpha-sig.figma.com/img/37fb/6856/8c2b82e8613269556e30f4fea373d940?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HjxcPVNV3Y8JGP2lOvJ2tMb57bvCWAsdKOgx-RW4UN9lFw4PyiyTh0N5YZl8fknWwn6re4poJoxqnZk5tbuozt~9z5VZjh7n0blaX2~jLN-BRLx~esQ5Siyu83nk0LFzLCajgFKhCpAFOpIKL34tcjTTFN9mD4JlYSO28BAnsx4RSxh49S4bWBtEk1RuV0D-J5W2GK4PcoTOZtycRzgzEc6AnVv32LJIVHeXFZUufck8EwK0Yddd7HS6dwsanYisJIJb3OqftFXYjBW5v8iQdeJI5BLNi24aFt0tcaGb-rSl3oevvx2L8H8MD-emYzJkdyzk0LlxONC-R7xwJCci8w__",
+          href: '#'
         }
       ]
   },
@@ -104,6 +122,24 @@ export const dataNoticias = {
           title: "International Trade and Competitiveness Seminar...",
           description: "On Tuesday, June 13, our Executive Director participated as a moderator...",
           image: "https://s3-alpha-sig.figma.com/img/4852/1b23/5672881770bed57c773bbb3b1d8a45c2?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=c8Vz1HAIu2nMDeQ5As-RFE9ny01oA6KGv7W89KN77hRY348brFIfRwhGcwNQPTeodAeKguD9uGfEHme6bsbr6jmW-EjNQ9DUGO-Ag8s7mmP~G1pH0g6fQbpd9CHAmT9zmOaw5K79rH8grIob1Xo6hHG~7jcQKnqG8V-g1XFgPEi-sSV9o1c9zurNevStKx4zSkQwsIcvhNNrL04UcMEfu9zqDuFr1zKZrZ5~XRi9UFIh~oZ5tXIYpodcd50gJQpp1Y-EvwI43y3Qr5ggj-nueVqXy0hijU-KTHY9cW~QgdjuDOdZgx41JWdak4flNm2D9Sc4gyFTMznjS4LdmOzEvw__",
+          href: '#'
+        },
+        {
+          title: "International Trade and Competitiveness Seminar...",
+          description: "On Tuesday, June 13, our Executive Director participated as a moderator...",
+          image: "https://s3-alpha-sig.figma.com/img/ae1f/9d01/6a92d643a3843afe2b403d6999a626fe?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=Oct1u-8yKEWZmjH7sMBbgjhzeIU3WxaUXDgIabBQylMbOOEJU7lNJ3k7HG9Gs7bh5z8pA-mPn--FVJPvzil0Ml6V~ZIpJhxVoEsZz~B-U19d~w6v-8ennzX9DDbZxFYSZsFtWiUj5sauWiCA4RpGSEPiDAzrdy4wa8LWALDPRcawEATJ8NuOBJ2DTdmSTLKBOH5x7dIlURARYrxCl0pv0Z-ZENIXbJQsYmayufCop1aC6scbz4hRvC3EfX2L-Dg4lN8fWiLYVtjU4LXYajVD0BOCh7P7UnU~HLt0qFTc8ykxM0iVi9rILLQBcIzEi3K0pgDJLapzCsdQjXGLwQ6ezw__",
+          href: '#'
+        },
+        {
+          title: "International Trade and Competitiveness Seminar...",
+          description: "On Tuesday, June 13, our Executive Director participated as a moderator...",
+          image: "https://s3-alpha-sig.figma.com/img/37fb/6856/8c2b82e8613269556e30f4fea373d940?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HjxcPVNV3Y8JGP2lOvJ2tMb57bvCWAsdKOgx-RW4UN9lFw4PyiyTh0N5YZl8fknWwn6re4poJoxqnZk5tbuozt~9z5VZjh7n0blaX2~jLN-BRLx~esQ5Siyu83nk0LFzLCajgFKhCpAFOpIKL34tcjTTFN9mD4JlYSO28BAnsx4RSxh49S4bWBtEk1RuV0D-J5W2GK4PcoTOZtycRzgzEc6AnVv32LJIVHeXFZUufck8EwK0Yddd7HS6dwsanYisJIJb3OqftFXYjBW5v8iQdeJI5BLNi24aFt0tcaGb-rSl3oevvx2L8H8MD-emYzJkdyzk0LlxONC-R7xwJCci8w__",
+          href: '#'
+        },
+        {
+          title: "International Trade and Competitiveness Seminar...",
+          description: "On Tuesday, June 13, our Executive Director participated as a moderator...",
+          image: "https://s3-alpha-sig.figma.com/img/37fb/6856/8c2b82e8613269556e30f4fea373d940?Expires=1745193600&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=HjxcPVNV3Y8JGP2lOvJ2tMb57bvCWAsdKOgx-RW4UN9lFw4PyiyTh0N5YZl8fknWwn6re4poJoxqnZk5tbuozt~9z5VZjh7n0blaX2~jLN-BRLx~esQ5Siyu83nk0LFzLCajgFKhCpAFOpIKL34tcjTTFN9mD4JlYSO28BAnsx4RSxh49S4bWBtEk1RuV0D-J5W2GK4PcoTOZtycRzgzEc6AnVv32LJIVHeXFZUufck8EwK0Yddd7HS6dwsanYisJIJb3OqftFXYjBW5v8iQdeJI5BLNi24aFt0tcaGb-rSl3oevvx2L8H8MD-emYzJkdyzk0LlxONC-R7xwJCci8w__",
           href: '#'
         },
         {
