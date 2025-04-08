@@ -32,16 +32,18 @@ const Noticias: React.FC = () => {
                     maxItemsPerPage={maxItemsPerPage}
                     ref={noticiaRef}
                 />
-                <Pagination
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    onPageChange={(page) => {
-                        setCurrentPage(page);
-                        noticiaRef.current?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                />
+                {totalPages > 1 ? (
+                    <Pagination
+                        currentPage={currentPage}
+                        totalPages={totalPages}
+                        onPageChange={(page) => {
+                            setCurrentPage(page);
+                            noticiaRef.current?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                    />
+                ) : null}
             </>
-        </Layout>
+        </Layout >
     )
 }
 

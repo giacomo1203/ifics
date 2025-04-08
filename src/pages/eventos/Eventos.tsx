@@ -6,6 +6,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import { Noticia } from '../../components/Noticia/Noticia';
 import Pagination from '../../components/Pagination/Pagination'
+import { useWindowWidth } from '../../utils'
 
 const Eventos: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -13,6 +14,9 @@ const Eventos: React.FC = () => {
     const maxItemsPerPage = 9;
     const totalPages = Math.ceil(eventosData[currentLanguage].items.length / maxItemsPerPage);
     const noticiaRef = React.useRef<HTMLDivElement>(null);
+    const windowWidth = useWindowWidth();
+    const isDesktop = windowWidth >= 992;
+
     return (
         <Layout
             title={content.meta.title}
@@ -31,17 +35,20 @@ const Eventos: React.FC = () => {
                     maxItemsPerPage={maxItemsPerPage}
                     ref={noticiaRef}
                 />
-                <Pagination
-                    currentPage={currentPage}
-                    totalPages={totalPages}
-                    onPageChange={(page) => {
-                        setCurrentPage(page);
-                        noticiaRef.current?.scrollIntoView({ behavior: 'smooth' });
-                    }}
-                />
+                {totalPages > 1 ? (
+                    <Pagination
+                        currentPage={currentPage}
+                        totalPages={totalPages}
+                        onPageChange={(page) => {
+                            setCurrentPage(page);
+                            noticiaRef.current?.scrollIntoView({ behavior: 'smooth' });
+                        }}
+                    />
+                ) : <div style={{ paddingBottom: isDesktop ? '120px' : '56px' }}></div>}
             </>
         </Layout>
     )
 }
 
 export default Eventos
+
