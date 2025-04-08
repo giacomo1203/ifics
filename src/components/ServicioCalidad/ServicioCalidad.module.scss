@@ -2,7 +2,7 @@
 
 .servicio-calidad {
   // min-height: 642px;
-  @apply bg-main-lightgray;
+  // @apply bg-main-lightgray;
   @apply lg:bg-transparent;
 
   @media (min-width: #{var.$breakpoint-lg}) {
@@ -20,10 +20,10 @@
   &__container {
     @apply mx-4 pb-24 py-14;
     @apply md:mx-8 md:py-16 md:pb-14;
-    @apply lg:flex lg:flex-row-reverse lg:gap-6 lg:min-h-[680px] lg:max-w-xl-content lg:py-14;
+    @apply lg:flex lg:flex-row-reverse lg:gap-6 lg:min-h-[600px] lg:max-w-xl-content lg:py-14 xl:min-h-[680px];
     @apply 2xl:mx-auto;
 
-    @apply bg-bg-lightgray;
+    @apply lg:bg-bg-lightgray;
     @apply lg:px-14;
 
     @media (min-width: #{var.$breakpoint-lg}) {
@@ -85,6 +85,7 @@
 
   &__image-container {
     min-height: 250px;
+    // max-height: 500px;
     margin: 24px 16px 0 16px;
     position: relative;
     display: flex;
@@ -99,7 +100,8 @@
     background-color: var.$main-gray;
     aspect-ratio: 1/1;
     @apply col-span-3 md:aspect-3/2;
-    @apply lg:aspect-1/1 lg:w-[92%];
+    @apply lg:aspect-1/1 lg:w-[100%];
+    @apply xl:w-[92%];
   }
 
   &__image-2 {
@@ -109,6 +111,7 @@
     width: 60%;
     @apply col-span-2 absolute right-0 -bottom-10;
     @apply md:bottom-0 md:w-[67%] md:aspect-3/2;
-    @apply lg:aspect-1/1 lg:-bottom-0 lg:w-[62.5%];
+    @apply lg:aspect-1/1 lg:-bottom-0 lg:w-[70%];
+    @apply xl:w-[62.5%];
   }
 }

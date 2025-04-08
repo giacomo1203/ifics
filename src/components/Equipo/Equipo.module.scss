@@ -42,3 +42,11 @@
   @apply max-w-4xl text-center;
   @apply xl:text-[18px];
 }
+
+.slider {
+  @apply mt-6 mb-14 lg:mb-30;
+
+  @apply ml-4;
+  @apply md:!ml-8;
+  @apply xl:max-w-xl-content xl:!mx-auto;
+}

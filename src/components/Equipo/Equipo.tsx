@@ -26,7 +26,7 @@ const Equipo: React.FC<EquipoProps> = ({ titleOne, titleTwo, sub, team }) => {
         <p className={styles.sub}>{sub}</p>
       </div>
 
-      <div className="!mt-6 !mb-14 lg:!mb-30">
+      <div className={styles.slider}>
         <Carousel team={team} />
       </div>
     </div>
