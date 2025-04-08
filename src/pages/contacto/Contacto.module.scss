@@ -11,7 +11,7 @@
     flex-direction: column;
     width: 100%;
     @apply lg:pb-14;
-    @apply xl:bg-[#FAFBFD] xl:flex-row xl:w-full xl:justify-center xl:pb-48;
+    @apply xl:bg-[#FAFBFD] xl:flex-row xl:w-full xl:justify-center xl:py-48;
 
     &__1 {
         display: none;
