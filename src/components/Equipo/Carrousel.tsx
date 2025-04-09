@@ -290,8 +290,8 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
       isScrollPrevented.current = false
       return
     }
-    setSelectedMember(item)
-    setShowModal(true)
+    setSelectedMember(item);
+    setTimeout(() => setShowModal(true), 10);
   }
   const handleCloseModal = () => {
     setShowModal(false)
@@ -503,8 +503,8 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
                   loading="lazy"
                   draggable="false"
                 />
-                <div className="!p-4 bg-main-blue text-white text-center h-20 flex flex-col justify-center">
-                  <p className="!font-bold !leading-tight">{item.name}</p>
+                <div className="!p-4 bg-main-blue text-white text-center min-h-28 flex flex-col justify-center">
+                  <p className="!font-[500] !leading-tight">{item.name}</p>
                   <p className="!italic text-sm !leading-tight">{item.role}</p>
                 </div>
               </div>
@@ -540,8 +540,8 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
         </>
       )}
 
-      {showModal && selectedMember && (
-        <Modal member={selectedMember} onClose={handleCloseModal} />
+      {selectedMember && (
+        <Modal isVisible={showModal} member={selectedMember} onClose={handleCloseModal} />
       )}
     </div>
   )

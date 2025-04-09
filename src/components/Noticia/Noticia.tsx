@@ -65,10 +65,10 @@ export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(({
                                         styles.noticia__itemTitleDescriptionContainer
                                     }
                                 >
-                                    <h3 className={styles.noticia__itemTitle}>
+                                    <h3 className={`${styles.noticia__itemTitle} line-clamp-2-title`}>
                                         {item.title}
                                     </h3>
-                                    <p className={styles.noticia__itemDescription}>
+                                    <p className={`${styles.noticia__itemDescription} line-clamp-2-description`}>
                                         {item.description}
                                     </p>
                                 </div>
