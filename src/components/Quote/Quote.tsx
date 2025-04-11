@@ -1,4 +1,4 @@
-import styles from './quote.module.scss'
+import styles from './Quote.module.scss'
 
 interface QuoteProps {
   text: string
