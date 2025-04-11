@@ -1,12 +1,12 @@
-import { useState, useEffect } from 'react'
+import { useEffect } from 'react'
 import { TeamItem } from './Equipo'
 import cancel from '../../assets/cancel.svg'
 
-const Modal: React.FC<{ member: TeamItem | null; onClose: () => void; isVisible: boolean }> = ({
-  member,
-  onClose,
-  isVisible
-}) => {
+const Modal: React.FC<{
+  member: TeamItem | null
+  onClose: () => void
+  isVisible: boolean
+}> = ({ member, onClose, isVisible }) => {
   // const [visible, setVisible] = useState(false)
 
   // useEffect(() => {
@@ -19,20 +19,18 @@ const Modal: React.FC<{ member: TeamItem | null; onClose: () => void; isVisible:
 
   useEffect(() => {
     if (isVisible) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = 'hidden'
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = 'unset'
     }
     return () => {
-      document.body.style.overflow = 'unset';
-    };
-  }, [isVisible]);
+      document.body.style.overflow = 'unset'
+    }
+  }, [isVisible])
 
   // if (!member) return null
 
-  useEffect(() => {
-
-  }, [isVisible])
+  useEffect(() => {}, [isVisible])
 
   return (
     <div
