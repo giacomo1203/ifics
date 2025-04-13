@@ -1,0 +1,82 @@
+@use '../../styles/variables.scss' as var;
+
+.wysiwygContainer {
+    @apply mx-4 pb-14 min-h-auto;
+    @apply md:mx-8;
+    @apply lg:max-w-xl-content 2xl:mx-auto lg:py-16;
+    overflow: hidden;
+
+    img {
+        display: block;
+        text-align: center;
+        margin: 32px auto;
+        width: 100%;
+    }
+
+    h1, h2, h3 {
+        font-family: var.$font-family-title;
+        font-size: 20px;
+        color: var.$main-blue;
+        font-weight: 700;
+        line-height: 100%;
+        margin: 32px 0 16px;
+
+        &:first-child {
+            margin-top: 0;
+        }
+
+        @apply lg:text-4xl;
+    }
+
+    b {
+        font-weight: 700;
+        line-height: 100%;
+    }
+
+    p {
+        color: var.$main-gray;
+        font-size: 16px;
+        line-height: 20px;
+        margin-bottom: 16px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+
+        @apply lg:text-xl
+    }
+
+    ul {
+        list-style-type: disc;
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            font-size: 16px;
+            @apply lg:text-xl
+        } 
+    }
+
+    ol {
+        list-style-type: decimal;
+        padding-left: 1.5rem;
+        margin: 1rem 0;
+
+        li {
+            margin-bottom: 0.5rem;
+            line-height: 1.5;
+            font-size: 16px;
+            @apply lg:text-xl
+        } 
+    }
+    
+    a {
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .5;
+        }
+    }
+}

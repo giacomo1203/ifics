@@ -8,6 +8,7 @@ import Noticias from './pages/noticias/Noticias'
 import Eventos from './pages/eventos/Eventos'
 import Contacto from './pages/contacto/Contacto'
 import Soluciones from './pages/soluciones/Soluciones'
+import NoticiaPage from './pages/noticia-page/Noticia-Page'
 
 /**
  * The main application component.
@@ -25,6 +26,7 @@ const App: React.FC = () => {
             <Route path="/eventos" element={<Eventos />} />
             <Route path="/noticias" element={<Noticias />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/noticia" element={<NoticiaPage />} />
             <Route path="/soluciones" element={<Soluciones />} />
             <Route path="*" element={<NotFound />} />
           </Routes>
@@ -37,6 +39,7 @@ const App: React.FC = () => {
             <Route path="/eventos" element={<Eventos />} />
             <Route path="/noticias" element={<Noticias />} />
             <Route path="/contacto" element={<Contacto />} />
+            <Route path="/noticia" element={<NoticiaPage />} />
             <Route path="/soluciones" element={<Soluciones />} />
             <Route path="*" element={<NotFound />} />
           </Routes>

@@ -10,8 +10,14 @@ export const Quote = ({ text, sub }: QuoteProps) => {
     <div className={styles.quote}>
       {/* <div className="absolute inset-0 bg-[#000639]/30"></div> */}
 
-      <div className={styles.quote__text}>{text}</div>
-      <div className={styles.quote__sub}>{sub}</div>
+      {
+        text &&
+        <div className={styles.quote__text}>{text}</div>
+      }
+      {
+        sub &&
+        <div className={styles.quote__sub}>{sub}</div>
+      }
     </div>
   )
 }
