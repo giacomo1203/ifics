@@ -2,7 +2,7 @@
 
 .servicio-calidad {
   // min-height: 642px;
-  // @apply bg-main-lightgray;
+  background-color: var.$main-lightgray;
   @apply lg:bg-transparent;
 
   @media (min-width: #{var.$breakpoint-lg}) {
@@ -20,7 +20,7 @@
   &__container {
     @apply mx-4 pb-24 py-14;
     @apply md:mx-8 md:py-16 md:pb-14;
-    @apply lg:flex lg:flex-row-reverse lg:gap-6 lg:min-h-[600px] lg:max-w-xl-content lg:py-14 xl:min-h-[680px];
+    @apply lg:flex lg:flex-row-reverse lg:gap-12 lg:min-h-[600px] lg:max-w-xl-content lg:py-14 xl:min-h-[680px];
     @apply 2xl:mx-auto;
 
     @apply lg:bg-bg-lightgray;

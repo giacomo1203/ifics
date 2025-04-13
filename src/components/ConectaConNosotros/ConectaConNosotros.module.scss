@@ -68,6 +68,29 @@
   line-height: 18.7px;
 
   @apply lg:text-[16px];
+
+  &__day {
+    display: block;
+    text-align: center;
+    font-weight: 700;
+    color: black;
+    font-size: 20px;
+    margin-bottom: 2px;
+    @media (min-width: var.$breakpoint-lg) {
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  &__month {
+    display: block;
+    text-align: center;
+    font-size: 10px;
+    font-weight: 700;
+    @media (min-width: var.$breakpoint-lg) {
+      font-size: 16px;
+    }
+  }
 }
 
 .conectaConNosotros__itemTitle {
@@ -120,6 +143,7 @@
   flex-direction: column;
   gap: 5.75px;
   text-align: center;
+  min-width: 38px;
 }
 
 .conectaConNosotros__callToAction {
@@ -138,4 +162,18 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: opacity .5s, border-radius .5s;
+  
+  &:hover {
+    opacity: .9;
+    border-radius: 6px;
+  }
+}
+
+.orange {
+  color: var.$main-orange;
+}
+
+.blue {
+  color: var.$secondary-blue;
 }

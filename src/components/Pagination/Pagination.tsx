@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './Pagination.module.scss';
+import { AiOutlineLeft, AiOutlineRight } from 'react-icons/ai';
 
 interface PaginationProps {
   currentPage: number;
@@ -17,7 +18,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         disabled={currentPage === 1}
         className={styles.arrowButton}
       >
-        <span>&lt;</span>
+        <AiOutlineLeft />
       </button>
 
       {pageNumbers.map((page) => (
@@ -35,7 +36,7 @@ const Pagination: React.FC<PaginationProps> = ({ currentPage, totalPages, onPage
         disabled={currentPage === totalPages}
         className={styles.arrowButton}
       >
-        <span>&gt;</span>
+        <AiOutlineRight />
       </button>
     </div>
   );

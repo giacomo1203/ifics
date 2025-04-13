@@ -10,7 +10,10 @@ interface ConectaConNosotrosProps {
     title: string
     description: string
     image: string
-    date: string
+    date: {
+      day: string
+      month: string
+    }
   }[]
 }
 
@@ -31,7 +34,15 @@ export const ConectaConNosotros = ({
   return (
     <div className={styles.conectaConNosotros}>
       <div className={styles.conectaConNosotros__container}>
-        <h2 className={styles.conectaConNosotros__title}>{title}</h2>
+        <h2 className={styles.conectaConNosotros__title}>
+          {title.split(' ').map((word, index, array) => {
+            if (index === 0) {
+              return <span key={index} className={styles.orange}>{word} </span>;
+            } else {
+              return <span key={index} className={styles.blue}>{word} </span>;
+            }
+          })}
+        </h2>
         <p className={styles.conectaConNosotros__description}>{description}</p>
       </div>
 
@@ -52,7 +63,10 @@ export const ConectaConNosotros = ({
                   alt="Calendar Icon"
                   className={styles.conectaConNosotros__calendarIcon}
                 />
-                <p className={styles.conectaConNosotros__date}>{item.date}</p>
+                <div className={styles.conectaConNosotros__date}>
+                  <span className={styles.conectaConNosotros__date__day}>{item.date.day}</span>
+                  <span className={styles.conectaConNosotros__date__month}>{item.date.month}</span>
+                </div>
               </div>
               <div
                 className={

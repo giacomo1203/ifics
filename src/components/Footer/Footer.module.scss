@@ -9,6 +9,15 @@ footer {
   @apply md:border-t-1 md:border-white/20;
 }
 
+.footer__container {
+  margin: 0 16px 0 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  @apply md:mx-8 lg:max-w-xl-content 2xl:mx-auto;
+  
+}
+
 .footer__bottom {
   width: 100%;
   padding: 1rem;

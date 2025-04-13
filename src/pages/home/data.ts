@@ -61,42 +61,60 @@ export const dataHome = {
           description:
             'El martes 13 de junio, nuestro Director Ejecutivo, participó como moderador en el...',
           image: areaEspecialidadImg,
-          date: '13 Junio',
+          date: {
+            day: "13",
+            month: "Junio"
+          },
         },
         {
           title: 'Culminación del proyecto “Mejora de la eficiencia de la...',
           description:
             'En Marzo del 2023, concluye un importante proyecto para mejorar el control sanitario en el...',
           image: areaEspecialidadImg,
-          date: '31 Marzo',
+          date: {
+            day: "21",
+            month: "Marzo"
+          },
         },
         {
           title: 'Seminario E-commerce, Comercio Internacional y Adu...',
           description:
             'Alfredo Lindley-Russo, el Vicepresidente de IFCOM, participó como ponente en el evento E...',
           image: areaEspecialidadImg,
-          date: '24 Enero',
+          date: {
+            day: "24",
+            month: "Enero"
+          },
         },
         {
           title: 'Seminario Comercio Exterior y Competitividad – COMEX',
           description:
             'El martes 13 de junio, nuestro Director Ejecutivo, participó como moderador en el...',
           image: areaEspecialidadImg,
-          date: '13 Junio',
+          date: {
+            day: "13",
+            month: "Junio"
+          },
         },
         {
           title: 'Culminación del proyecto “Mejora de la eficiencia de la...',
           description:
             'En Marzo del 2023, concluye un importante proyecto para mejorar el control sanitario en el...',
           image: areaEspecialidadImg,
-          date: '31 Marzo',
+          date: {
+            day: "31",
+            month: "Marzo"
+          },
         },
         {
           title: 'Seminario E-commerce, Comercio Internacional y Adu...',
           description:
             'Alfredo Lindley-Russo, el Vicepresidente de IFCOM, participó como ponente en el evento E...',
           image: areaEspecialidadImg,
-          date: '24 Enero',
+          date: {
+            day: "13",
+            month: "Junio"
+          },
         },
       ],
     },
@@ -165,7 +183,10 @@ export const dataHome = {
           description:
             'On Tuesday, June 13, our Executive Director participated as a moderator in the...',
           image: areaEspecialidadImg,
-          date: 'June 13',
+          date: {
+            day: "13",
+            month: "June"
+          },
         },
         {
           title:
@@ -173,35 +194,50 @@ export const dataHome = {
           description:
             'In March 2023, an important project to improve sanitary control in the...',
           image: areaEspecialidadImg,
-          date: 'March 31',
+          date: {
+            day: "31",
+            month: "March"
+          },
         },
         {
           title: 'Seminar E-commerce, International Trade and Customs...',
           description:
             'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
           image: areaEspecialidadImg,
-          date: 'January 24',
+          date: {
+            day: "24",
+            month: "January"
+          },
         },
         {
           title: 'Seminar E-commerce, International Trade and Customs...',
           description:
             'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
           image: areaEspecialidadImg,
-          date: 'January 24',
+          date: {
+            day: "24",
+            month: "January"
+          },
         },
         {
           title: 'Seminar E-commerce, International Trade and Customs...',
           description:
             'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
           image: areaEspecialidadImg,
-          date: 'January 24',
+          date: {
+            day: "24",
+            month: "January"
+          },
         },
         {
           title: 'Seminar E-commerce, International Trade and Customs...',
           description:
             'Alfredo Lindley-Russo, Vice President of IFCOM, participated as a speaker at the E...',
           image: areaEspecialidadImg,
-          date: 'January 24',
+          date: {
+            day: "24",
+            month: "January"
+          },
         },
       ],
     },

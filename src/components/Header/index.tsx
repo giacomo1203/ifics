@@ -40,7 +40,11 @@ const Header = () => {
 
           <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ''}`}>
             {dataNav[currentLanguage].nav.map((item, index) => (
-              <a key={index} href={item.url}>
+              <a
+                key={index}
+                href={item.url}
+                className={"/" + window.location.hash === item.url ? styles.active : ''}
+              >
                 {item.name}
               </a>
             ))}
