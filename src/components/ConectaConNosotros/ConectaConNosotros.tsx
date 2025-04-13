@@ -35,7 +35,7 @@ export const ConectaConNosotros = ({
     <div className={styles.conectaConNosotros}>
       <div className={styles.conectaConNosotros__container}>
         <h2 className={styles.conectaConNosotros__title}>
-          {title.split(' ').map((word, index, array) => {
+          {title.split(' ').map((word, index) => {
             if (index === 0) {
               return <span key={index} className={styles.orange}>{word} </span>;
             } else {
