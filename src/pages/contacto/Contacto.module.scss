@@ -39,6 +39,11 @@
 
     a {
         font-weight: 400;
+        transition: opacity .3s;
+
+        &:hover {
+            opacity: .5;
+        }
     }
 }
 

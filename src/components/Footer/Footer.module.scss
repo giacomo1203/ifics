@@ -7,6 +7,14 @@ footer {
   font-family: var.$font-family-base;
   @apply border-t-0 border-white/20;
   @apply md:border-t-1 md:border-white/20;
+
+  a {
+    transition: opacity .3s;
+    
+    &:hover {
+      opacity: 0.5;
+    }
+  }
 }
 
 .footer__container {

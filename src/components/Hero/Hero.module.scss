@@ -14,7 +14,7 @@
   padding: 61px 0;
   margin-top: 64px;
 
-  @apply lg:min-h-[800px] lg:gap-6 md:mt-0;
+  @apply lg:min-h-[800px] lg:gap-6 md:mt-0 lg:mt-35;
 
   @media (min-width: var.$breakpoint-sm) {
     background-image: url('../../assets/Home/heroTablet.jpg');
