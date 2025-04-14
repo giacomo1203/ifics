@@ -5,6 +5,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import { dataNoticiaPage } from './data'
 import styles from './Noticia-Page.module.scss'
+import { NoticiasRecientes } from '../../components/NoticiasRecientes/NoticiasRecientes'
 
 const NoticiaPage: React.FC = () => {
     const { currentLanguage } = useLanguage();
@@ -22,7 +23,7 @@ const NoticiaPage: React.FC = () => {
                     noOverlay
                 />
                 <div className={styles.wysiwygContainer} dangerouslySetInnerHTML={{ __html: dataNoticiaPage[currentLanguage].content }} />
-
+                <NoticiasRecientes title={dataNoticiaPage[currentLanguage].title} />
             </>
         </Layout >
     )

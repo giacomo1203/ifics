@@ -1,0 +1,11 @@
+@use '../../styles/variables.scss' as var;
+
+.noticiasRecientes {
+    background: var.$main-lightgray;
+
+    &Container {
+        @apply mx-4 py-14 min-h-auto;
+        @apply md:mx-8;
+        @apply lg:max-w-xl-content 2xl:mx-auto lg:pt-0 lg:pb-24 lg:!pt-24;
+    }
+}

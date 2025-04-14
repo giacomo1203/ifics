@@ -19,10 +19,12 @@ interface NoticiaProps {
   }[]
   currentPage: number
   maxItemsPerPage: number
+  title?: string
+  noPaddingTop?: boolean
 }
 
 export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
-  ({ items, currentPage, maxItemsPerPage }: NoticiaProps, ref) => {
+  ({ items, currentPage, maxItemsPerPage, title, noPaddingTop }: NoticiaProps, ref) => {
     const windowWidth = useWindowWidth()
     const isDesktop = windowWidth >= 992
     const startIndex = (currentPage - 1) * maxItemsPerPage
@@ -30,7 +32,12 @@ export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
     const itemsToRender = items?.slice(startIndex, endIndex)
 
     return (
-      <div className={styles.noticia} ref={ref}>
+      <div className={`${styles.noticia} ${noPaddingTop ? "!pt-0" : ""}`} ref={ref}>
+        {
+          title && (
+            <h2 className={styles.noticiasRecientesTitle}>{title}</h2>
+          )
+        }
         <div className={styles.noticia__items}>
           {itemsToRender?.map((item, index) => (
             <div key={index} className={styles.noticia__item}>

@@ -160,20 +160,19 @@
 
   &__itemSection {
     display: flex;
-    padding: 23.02px 11.51px;
     width: 100%;
   }
 
   &__itemTitle {
     font-family: var.$font-family-base;
-    font-weight: 700;
+    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
-    color: var.$secondary-blue;
-    margin: 0;
+    color: var.$main-blue;
+    margin: 0 0 16px;
     width: 100%;
   
-    @apply lg:text-2xl;
+    @apply lg:text-2xl lg:!mt-5;
     overflow: hidden;
     text-overflow: ellipsis;
     word-break: break-word;
@@ -234,5 +233,18 @@
     display: flex;
     justify-content: center;
     align-items: center;
+  }
+}
+
+
+.noticiasRecientesTitle {
+  margin-bottom: 24px;
+  color: var.$main-blue;
+  font-weight: 700;
+  font-size: 20px;
+  font-family: var.$font-family-title;
+
+  @media screen and (min-width: var.$breakpoint-lg) {
+    font-size: 36px;
   }
 }
