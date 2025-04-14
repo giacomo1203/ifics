@@ -1,6 +1,6 @@
 import styles from './Noticia.module.scss'
-import { LazyLoadImage } from 'react-lazy-load-image-component';
-import 'react-lazy-load-image-component/src/effects/blur.css';
+import { LazyLoadImage } from 'react-lazy-load-image-component'
+import 'react-lazy-load-image-component/src/effects/blur.css'
 import calendarWhite from '../../assets/calendar.svg'
 import calendarBlack from '../../assets/Home/calendar.svg'
 import { forwardRef } from 'react'
@@ -26,7 +26,10 @@ interface NoticiaProps {
 }
 
 export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
-  ({ items, currentPage, maxItemsPerPage, title, noPaddingTop }: NoticiaProps, ref) => {
+  (
+    { items, currentPage, maxItemsPerPage, title, noPaddingTop }: NoticiaProps,
+    ref
+  ) => {
     const windowWidth = useWindowWidth()
     const isDesktop = windowWidth >= 992
     const startIndex = (currentPage - 1) * maxItemsPerPage
@@ -34,12 +37,11 @@ export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
     const itemsToRender = items?.slice(startIndex, endIndex)
 
     return (
-      <div className={`${styles.noticia} ${noPaddingTop ? "!pt-0" : ""}`} ref={ref}>
-        {
-          title && (
-            <h2 className={styles.noticiasRecientesTitle}>{title}</h2>
-          )
-        }
+      <div
+        className={`${styles.noticia} ${noPaddingTop ? '!pt-0' : ''}`}
+        ref={ref}
+      >
+        {title && <h2 className={styles.noticiasRecientesTitle}>{title}</h2>}
         <div className={styles.noticia__items}>
           {itemsToRender?.map((item, index) => (
             <div key={index} className={styles.noticia__item}>
@@ -51,6 +53,7 @@ export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
                     src={item.image}
                     alt={item.title}
                     className={styles.noticia__image}
+                    wrapperClassName="w-full block"
                     effect="blur"
                   />
                 </a>
@@ -67,7 +70,7 @@ export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
                         media="(min-width: 768px)"
                         srcSet={calendarBlack}
                       />
-                      <LazyLoadImage src={calendarBlack} alt="calendar" effect="blur" />
+                      <img src={calendarBlack} alt="calendar" />
                     </picture>
                     <span className={styles.noticia__calendar__day}>
                       {item.date?.day}

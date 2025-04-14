@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './InnovacionYEficiencia.module.scss'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export interface InnovacionYEficienciaProps {
   titleOne: string
@@ -8,7 +7,7 @@ export interface InnovacionYEficienciaProps {
   text: string[]
   image1: string
   image2?: string
-  secondBg?: "blue" | "orange"
+  secondBg?: 'blue' | 'orange'
 }
 
 const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
@@ -17,13 +16,19 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
   text,
   image1,
   image2,
-  secondBg
+  secondBg,
 }) => {
   return (
-    <div className={`${styles.section} ${secondBg ? styles[`section--${secondBg}`] : ''}`}>
-      <div className={`${styles.section__container} ${secondBg ? styles[`section__container--${secondBg}`] : ''}`}>
+    <div
+      className={`${styles.section} ${secondBg ? styles[`section--${secondBg}`] : ''}`}
+    >
+      <div
+        className={`${styles.section__container} ${secondBg ? styles[`section__container--${secondBg}`] : ''}`}
+      >
         <div className={styles.content}>
-          <h1 className={`${styles.title} ${secondBg ? styles[`title--${secondBg}`] : ''}`}>
+          <h1
+            className={`${styles.title} ${secondBg ? styles[`title--${secondBg}`] : ''}`}
+          >
             {titleOne}{' '}
             <span className={styles['title--accent']}>{titleTwo}</span>
           </h1>
@@ -36,9 +41,13 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
         </div>
         <div className={styles.image}>
           <img className={styles['image--1']} src={image1} />
-          {
-            secondBg ? <div className={`${styles[`image--2`]} ${styles[`image--2--${secondBg}`]}`}></div> : <img className={styles['image--2']} src={image2} />
-          }
+          {secondBg ? (
+            <div
+              className={`${styles[`image--2`]} ${styles[`image--2--${secondBg}`]}`}
+            ></div>
+          ) : (
+            <img className={styles['image--2']} src={image2} />
+          )}
         </div>
       </div>
     </div>

@@ -4,7 +4,8 @@ import logo from '@/assets/Global/logo.svg'
 
 import { useLanguage } from '../../context/LanguageContext'
 import { dataNav } from './data'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
+
+const basename = import.meta.env.MODE === 'production' ? '/ifics' : ''
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -18,9 +19,13 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.logo}>
-          <a href="/#/"><LazyLoadImage src={logo} alt="IFICS Logo" effect="blur" /></a>
+          <a href="/#/">
+            <img src={logo} alt="IFICS Logo" />
+          </a>
           <div className={styles.divider} />
-          <span className={styles.span}>Instituto de Facilitación del Comercio Sostenible</span>
+          <span className={styles.span}>
+            Instituto de Facilitación del Comercio Sostenible
+          </span>
         </div>
         <div className={styles.rightSection}>
           <div className={styles.languageButtonContainer}>
@@ -43,8 +48,10 @@ const Header = () => {
             {dataNav[currentLanguage].nav.map((item, index) => (
               <a
                 key={index}
-                href={item.url}
-                className={"/" + window.location.hash === item.url ? styles.active : ''}
+                href={basename + item.url}
+                className={
+                  '/' + window.location.hash === item.url ? styles.active : ''
+                }
               >
                 {item.name}
               </a>

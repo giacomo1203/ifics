@@ -291,8 +291,8 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
       isScrollPrevented.current = false
       return
     }
-    setSelectedMember(item);
-    setTimeout(() => setShowModal(true), 10);
+    setSelectedMember(item)
+    setTimeout(() => setShowModal(true), 10)
   }
   const handleCloseModal = () => {
     setShowModal(false)
@@ -501,6 +501,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
                   src={item.img}
                   alt="Calendar Icon"
                   className="h-64 md:h-80 lg:h-96 object-cover object-center w-full block"
+                  wrapperClassName="w-full block"
                   effect="blur"
                   draggable="false"
                 />
@@ -542,7 +543,11 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
       )}
 
       {selectedMember && (
-        <Modal isVisible={showModal} member={selectedMember} onClose={handleCloseModal} />
+        <Modal
+          isVisible={showModal}
+          member={selectedMember}
+          onClose={handleCloseModal}
+        />
       )}
     </div>
   )

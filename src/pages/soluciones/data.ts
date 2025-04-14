@@ -1,5 +1,5 @@
 const PageHeader =
-  'https://s3-alpha-sig.figma.com/img/849d/ea2c/221c7319c6ea86b3a75fe3eecc55a070?Expires=1744588800&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=OikzP4jYpOrOUaHHTVaLm9wUKKPY1Kt4TYtVybAmOWJr~85PEX25RESD8KsrFELQC~y6VhXO0bGCAVeNpgcqaNpTxfaqhQlljnq2Kudngay86SW1py403g0yt-u4wwplwZhQdrDfszdRZBOBv3Mz34MoB5SXIuppG9keVknB8Qvm3OWkHfFLa4Gq~kj0Umg5ch3H~g6m5ZCi4XsAIoc-pbASywLxgNfEJ6iXqrBLVMV1J6KxHNIHhyzMO8phva8VJlRREmE02D1apqJSLWVDNqO3bv9SsiAet4HhkWhADQRmyzNy5xzYK3HWdOpoR1YJ-bNBVeyQ3RNYoxKkejCkrg__'
+  'https://s3-alpha-sig.figma.com/img/a527/ddf8/d21b852e0737895094e188369cc02de3?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=U8qy-xkfGO6UkDG5A~oCU9sL5v7Vy9XT0d8Z2avXR6PIKh-jSuUw3UnG1Yrc95b648A3~UGeJP6~A3idOBjH3-PlBrU37-MTvHxGI1jq6DrGzTBBZ4bg5gdJi3fBj7b0awUhM6PZgf4wO~Kvgd~YAaLpLx6LtpHos6ESR4rPTIc~kNap16FQR3zQ3zUvGMmjBF7Cfmof7h~JWpl3I93fbhdrBGc7vSWKDkD37Bc5FFI4UJgkQ8tuyv03CIbANqQMzqbKRYSlQUL9ZGY6NuCfzJDie4xKC~w3pYknof3cRngzRcnI7dA7bVWytc20VotrBAi365MFpFsWZB1o3VRYsA__'
 
 export const dataSoluciones = {
   ES: {
@@ -62,7 +62,7 @@ export const dataSoluciones = {
         image1:
           'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
       },
-    ]
+    ],
   },
   EN: {
     pageHeader: {
@@ -78,7 +78,8 @@ export const dataSoluciones = {
           'Authorities that regulate the entry, stay, and exit of restricted goods such as food or medicine, or the provision of cargo services, are active agents in trade facilitation. However, they require better coordination among themselves and institutional strengthening to meet the growing demand for services.',
           'We develop improvements in the legal frameworks regarding transparency, information exchange, and permit control procedures for the entry and exit of goods and means of transport. We conduct regulatory impact analyses and benchmarks of international best practices in regulation and regulatory convergence.',
         ],
-        image1: 'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__',
+        image1:
+          'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__',
       },
       {
         color: 'orange',
@@ -88,7 +89,8 @@ export const dataSoluciones = {
           'We design and provide digital platforms for cross-border trade and single windows. We centralize and digitize all trade facilitation and logistical processes necessary to carry out foreign trade operations quickly, efficiently, and safely. We offer services in process reengineering, automation, and document digitization.',
           'The Single Window for Foreign Trade is one of the most representative tools of trade facilitation, and its platform should serve to accelerate process optimization and, in general, improve trade management.',
         ],
-        image1: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
+        image1:
+          'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
       },
       {
         color: 'blue',
@@ -96,9 +98,10 @@ export const dataSoluciones = {
         titleTwo: 'Logistics Processes and Customs Services',
         text: [
           'Logistics inefficiencies can have effects equivalent to tariff barriers. Therefore, we analyze these processes in port and airport contexts to promote an optimal supply chain. International transport logistics must operate in harmony with customs processes.',
-          'Customs plays the most important public role in the implementation of trade facilitation due to its inherent responsibility in goods traffic. A third of clearance time is taken up by the customs process, meaning any flaw in its service negatively affects the country\'s competitiveness (World Bank).',
+          "Customs plays the most important public role in the implementation of trade facilitation due to its inherent responsibility in goods traffic. A third of clearance time is taken up by the customs process, meaning any flaw in its service negatively affects the country's competitiveness (World Bank).",
         ],
-        image1: 'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__',
+        image1:
+          'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__',
       },
       {
         color: 'orange',
@@ -108,7 +111,8 @@ export const dataSoluciones = {
           'Non-tariff barriers take on various forms of trade restrictions, sometimes difficult to identify.',
           'Standardization, Technical Regulations, and Conformity Assessment are increasingly necessary disciplines for fair and efficient trade. In this area, regulatory impact studies are especially relevant to mitigate the deficiencies of governmental measures that create obstacles incompatible with international trade commitments.',
         ],
-        image1: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
+        image1:
+          'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
       },
       {
         color: 'blue',
@@ -117,8 +121,9 @@ export const dataSoluciones = {
         text: [
           'Special Economic Zones or Free Zones are important mechanisms for attracting investment, industrial diversification, and business internationalization, with consistent growth worldwide, especially in emerging economies. Our partnership with the prestigious Colombian firm Araujo Ibarra & Asociados (one of the world’s leading consultants on SEZs) allows us to offer highly specialized services in the setup and expansion of investments in SEZs, assisting clients with operational, logistical, and regulatory compliance needs related to the entry, stay, and exit of goods. We also advise on SEZ policy design according to international best practices.',
         ],
-        image1: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
+        image1:
+          'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
       },
-    ]
+    ],
   },
 }
