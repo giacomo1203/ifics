@@ -35,9 +35,9 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
           </div>
         </div>
         <div className={styles.image}>
-          <LazyLoadImage className={styles['image--1']} src={image1} effect='blur' />
+          <img className={styles['image--1']} src={image1} />
           {
-            secondBg ? <div className={`${styles[`image--2`]} ${styles[`image--2--${secondBg}`]}`}></div> : <LazyLoadImage className={styles['image--2']} src={image2} effect="blur" />
+            secondBg ? <div className={`${styles[`image--2`]} ${styles[`image--2--${secondBg}`]}`}></div> : <img className={styles['image--2']} src={image2} />
           }
         </div>
       </div>

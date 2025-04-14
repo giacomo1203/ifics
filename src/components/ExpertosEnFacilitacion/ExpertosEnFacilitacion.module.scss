@@ -58,7 +58,8 @@
     @apply w-full flex justify-center order-2 lg:order-1;
 
     img {
-      @apply lg:h-full lg:object-cover;
+      @apply lg:h-full lg:object-cover lg:absolute;
+      transform: translateY(-16px);
     }
 
     @media (min-width: #{var.$breakpoint-lg}) {
