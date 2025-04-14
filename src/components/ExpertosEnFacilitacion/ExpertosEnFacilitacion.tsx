@@ -36,7 +36,7 @@ export const ExpertosEnFacilitacion = ({
                         <source media="(min-width: 992px)" srcSet={expertosDesktop} />
                         <source media="(min-width: 768px)" srcSet={expertosTablet} />
                         <LazyLoadImage
-                            className="top-4 right-4 text-gray-500 cursor-pointer"
+                            className="top-4 right-4 text-gray-500"
                             src={expertosMobile}
                             alt="Expertos en Facilitación"
                         />

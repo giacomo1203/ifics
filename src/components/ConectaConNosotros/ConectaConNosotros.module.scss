@@ -39,6 +39,10 @@
 .conectaConNosotros__item {
   min-height: 337.61px;
   background-color: var.$main-lightgray;
+  
+  span {
+    width: 100%;
+  }
 }
 
 .conectaConNosotros__image {

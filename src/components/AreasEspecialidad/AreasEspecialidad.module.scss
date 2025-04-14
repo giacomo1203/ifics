@@ -40,8 +40,7 @@
 
 .item {
   background-image:
-    linear-gradient(to top, var.$main-blue 20%, rgba(255, 255, 255, 0) 50%),
-    url('../../assets/Home/areaEspecialidadImg.png');
+    linear-gradient(to top, var.$main-blue 20%, rgba(255, 255, 255, 0) 50%);
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
@@ -53,6 +52,18 @@
   justify-content: flex-end;
   @apply md:mx-0;
   @apply lg:min-h-[450px];
+  position: relative;
+
+  span {
+    height: 100%;
+    z-index: -1;
+  }
+
+  img {
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+  }
 }
 
 .items {
@@ -71,6 +82,9 @@
   line-height: 26px;
   text-align: left;
   padding: 16px;
+  position: absolute;
+  width: 100%;
+  
 
   @apply lg:text-[20px];
 }

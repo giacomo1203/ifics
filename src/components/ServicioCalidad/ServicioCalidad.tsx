@@ -29,15 +29,15 @@ export const ServicioCalidad = ({
           <ul className={styles['servicio-calidad__items']}>
             {items.map((item, index) => (
               <li key={index} className={styles['servicio-calidad__item']}>
-                <LazyLoadImage src={listCheck} effect="blur" />
+                <img src={listCheck} />
                 {item}
               </li>
             ))}
           </ul>
         </div>
         <div className={styles['servicio-calidad__image-container']}>
-          <LazyLoadImage src={serviciosCalidad2} className={styles['servicio-calidad__image-1']} effect="blur" />
-          <LazyLoadImage src={serviciosCalidad1} className={styles['servicio-calidad__image-2']} effect="blur" />
+          <img src={serviciosCalidad2} className={styles['servicio-calidad__image-1']} />
+          <img src={serviciosCalidad1} className={styles['servicio-calidad__image-2']} />
         </div>
       </div>
     </div>
