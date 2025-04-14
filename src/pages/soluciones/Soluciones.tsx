@@ -4,6 +4,7 @@ import { dataSoluciones } from './data'
 import Layout from '../../components/Layout'
 import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
+import InnovacionYEficiencia from '../../components/InnovacionYEficiencia/InnovacionYEficiencia'
 
 const Soluciones: React.FC = () => {
     const { currentLanguage } = useLanguage()
@@ -20,6 +21,18 @@ const Soluciones: React.FC = () => {
                     bg={dataSoluciones[currentLanguage].pageHeader.bg}
                     text={dataSoluciones[currentLanguage].pageHeader.text}
                 />
+                {
+                    dataSoluciones[currentLanguage].innovacionEficiencia?.map((item) => (
+                        <InnovacionYEficiencia
+                            titleOne={item.titleOne}
+                            titleTwo={item.titleTwo}
+                            text={item.text}
+                            image1={item.image1}
+                            secondBg={item.color as any}
+                        />
+                    ))
+                }
+
             </>
         </Layout>
     )

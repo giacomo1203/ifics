@@ -2,12 +2,64 @@
 
 .section {
   overflow: hidden;
+
+  &--blue {
+    background-color: var.$main-lightgray;
+  }
 }
 .section__container {
   @apply mx-4 pb-24 py-14;
   @apply md:mx-8 md:py-16 md:pb-14;
   @apply xl:flex xl:gap-16 xl:min-h-[680px] xl:max-w-xl-content xl:py-14;
   @apply 2xl:mx-auto;
+
+  &--blue {
+    .content {
+      order: 2;
+    }
+
+    .image {
+      order: 1;
+      transform: translateX(-40%);
+
+      &--1 {
+        z-index: -1;
+        aspect-ratio: 1;
+        object-fit: cover;
+        width: 65%;
+        position: absolute;
+
+        bottom: -20px;
+        right: 0;
+
+        @media (min-width: #{var.$breakpoint-md}) {
+          width: 62%;
+          @apply bottom-0 -right-0;
+        }
+        @media (min-width: #{var.$breakpoint-xl}) {
+          width: 85%;
+          right: -30%;
+          @apply bottom-10;
+        }
+        @media (min-width: #{var.$breakpoint-xxl}) {
+          width: 85%;
+          right: -40%;
+          @apply bottom-10;
+        }
+      }
+
+      &--2 {
+        z-index: -2;
+        aspect-ratio: 1;
+        object-fit: cover;
+        width: 70%;
+        left: 0;
+        @media (min-width: #{var.$breakpoint-xl}) {
+          width: 92%;
+        }
+      }
+    }
+  }
 }
 
 .content {
@@ -29,6 +81,12 @@
   &--accent {
     color: var.$main-blue;
     @apply xl:block;
+  }
+
+  &--orange {
+    span {
+      color: var.$main-orange !important;
+    }
   }
 }
 
@@ -76,6 +134,16 @@
       width: 85%;
       right: -40%;
       @apply bottom-10;
+    }
+
+    &--blue {
+      background-color: var.$main-blue;
+      z-index: -1;
+    }
+
+    &--orange {
+      background-color: var.$main-orange;
+      z-index: -1;
     }
   }
 }

@@ -10,12 +10,18 @@ interface LanguageContextType {
 const LanguageContext = createContext<LanguageContextType | undefined>(undefined);
 
 export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
-  const [currentLanguage, setCurrentLanguage] = useState<Language>(__APP_ENV__ as Language);
+  const [currentLanguage, setCurrentLanguage] = useState<Language>(
+    (localStorage.getItem('language') as Language) || 'ES'
+  );
 
   const contextValue: LanguageContextType = {
     currentLanguage,
     setLanguage: setCurrentLanguage,
   };
+
+  React.useEffect(() => {
+    localStorage.setItem('language', currentLanguage);
+  }, [currentLanguage]);
 
   return (
     <LanguageContext.Provider value={contextValue}>

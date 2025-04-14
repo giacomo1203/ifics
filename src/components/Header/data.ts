@@ -11,7 +11,7 @@ export const dataNav = {
             },
             {
                 name: 'Soluciones',
-                url: '/#/soluciones'
+                url: '/#'
             },
             {
                 name: 'Noticias',
@@ -39,7 +39,7 @@ export const dataNav = {
             },
             {
                 name: 'Solutions',
-                url: '/#/soluciones'
+                url: '/#'
             },
             {
                 name: 'News',
