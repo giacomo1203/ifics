@@ -18,7 +18,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.logo}>
-          <LazyLoadImage src={logo} alt="IFICS Logo" effect="blur" />
+          <a href="/#/"><LazyLoadImage src={logo} alt="IFICS Logo" effect="blur" /></a>
           <div className={styles.divider} />
           <span className={styles.span}>Instituto de Facilitación del Comercio Sostenible</span>
         </div>
