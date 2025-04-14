@@ -2,6 +2,7 @@ import styles from './ExpertosEnFacilitacion.module.scss'
 import expertosMobile from '../../assets/expertos-mobile.png'
 import expertosTablet from '../../assets/expertos-tablet.png'
 import expertosDesktop from '../../assets/expertos-desktop.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
 interface ExpertosEnFacilitacionProps {
@@ -34,7 +35,11 @@ export const ExpertosEnFacilitacion = ({
                     <picture>
                         <source media="(min-width: 992px)" srcSet={expertosDesktop} />
                         <source media="(min-width: 768px)" srcSet={expertosTablet} />
-                        <img src={expertosMobile} alt="Expertos en Facilitación" />
+                        <LazyLoadImage
+                            className="absolute top-4 right-4 text-gray-500 cursor-pointer"
+                            src={expertosMobile}
+                            alt="Expertos en Facilitación"
+                        />
                     </picture>
                 </div>
 

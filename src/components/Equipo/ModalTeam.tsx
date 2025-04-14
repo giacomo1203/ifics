@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { TeamItem } from './Equipo'
 import cancel from '../../assets/cancel.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Modal: React.FC<{
   member: TeamItem | null
@@ -30,7 +31,7 @@ const Modal: React.FC<{
 
   // if (!member) return null
 
-  useEffect(() => {}, [isVisible])
+  useEffect(() => { }, [isVisible])
 
   return (
     <div
@@ -44,7 +45,7 @@ const Modal: React.FC<{
         className="bg-white rounded-3xl w-full max-w-278 relative transition-transform duration-300 transform scale-95 !h-[calc(100vh-82px)] sm:!h-fit overflow-auto translate-y-7"
         onClick={(e) => e.stopPropagation()}
       >
-        <img
+        <LazyLoadImage
           onClick={onClose}
           className="absolute top-4 right-4 text-gray-500 cursor-pointer"
           src={cancel}

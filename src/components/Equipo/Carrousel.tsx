@@ -3,6 +3,7 @@ import { GoChevronLeft, GoChevronRight } from 'react-icons/go'
 // Asegúrate de que estas importaciones sean correctas para tu proyecto
 import { TeamItem } from './Equipo'
 import Modal from './ModalTeam'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 // --- Configuración ---
 const TRANSITION_DURATION_MS = 500
@@ -496,11 +497,11 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
                 className="px-3 h-full cursor-pointer"
                 onClick={() => handleItemClick(item)} // Llamar a handleItemClick
               >
-                <img
+                <LazyLoadImage
                   src={item.img}
-                  alt={`Miembro del equipo ${item.name}`}
+                  alt="Calendar Icon"
                   className="h-64 md:h-80 lg:h-96 object-cover object-center w-full block"
-                  loading="lazy"
+                  effect="blur"
                   draggable="false"
                 />
                 <div className="!p-4 bg-main-blue text-white text-center min-h-28 flex flex-col justify-center">

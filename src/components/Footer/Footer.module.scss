@@ -51,7 +51,15 @@ footer {
     @apply h-fit;
     @apply lg:py-0;
 
-    img {
+    span {
+      max-width: 160px !important;
+    }
+
+    .span {
+      max-width: 100px !important;
+    }
+
+    img, span {
       flex: 1;
       max-width: 160px;
       height: 72px;

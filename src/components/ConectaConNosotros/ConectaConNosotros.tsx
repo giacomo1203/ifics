@@ -2,6 +2,7 @@ import React from 'react';
 import styles from './ConectaConNosotros.module.scss'
 import calendar from '../../assets/Home/calendar.svg'
 import { useLanguage } from '../../context/LanguageContext';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface ConectaConNosotrosProps {
   title: string
@@ -50,18 +51,20 @@ export const ConectaConNosotros = ({
         {items.slice(0, visibleItems).map((item, index) => (
           <div key={index} className={styles.conectaConNosotros__item}>
             <div className={styles.conectaConNosotros__imageContainer}>
-              <img
+              <LazyLoadImage
                 src={item.image}
                 alt={item.title}
                 className={styles.conectaConNosotros__image}
+                effect="blur"
               />
             </div>
             <div className={styles.conectaConNosotros__itemSection}>
               <div className={styles.conectaConNosotros__dateContainer}>
-                <img
+                <LazyLoadImage
                   src={calendar}
                   alt="Calendar Icon"
                   className={styles.conectaConNosotros__calendarIcon}
+                  effect="blur"
                 />
                 <div className={styles.conectaConNosotros__date}>
                   <span className={styles.conectaConNosotros__date__day}>{item.date.day}</span>

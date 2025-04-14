@@ -4,6 +4,7 @@ import logo from '@/assets/Global/logo.svg'
 
 import { useLanguage } from '../../context/LanguageContext'
 import { dataNav } from './data'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -17,9 +18,9 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.logo}>
-          <img src={logo} alt="IFICS Logo" />
+          <LazyLoadImage src={logo} alt="IFICS Logo" effect="blur" />
           <div className={styles.divider} />
-          <span>Instituto de Facilitación del Comercio Sostenible</span>
+          <span className={styles.span}>Instituto de Facilitación del Comercio Sostenible</span>
         </div>
         <div className={styles.rightSection}>
           <div className={styles.languageButtonContainer}>

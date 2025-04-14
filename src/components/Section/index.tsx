@@ -1,4 +1,6 @@
 import React from 'react'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import styles from './Section.module.scss'
 
 /**
@@ -21,10 +23,11 @@ const Section: React.FC<SectionProps> = ({ title, image, text }) => {
     <section className={styles.section}>
       <h2 className={styles.title}>{title}</h2>
       {image && (
-        <img
+        <LazyLoadImage
           src={image}
           alt={title}
           className={styles.image}
+          effect="blur"
         />
       )}
       <p className={styles.text}>{text}</p>

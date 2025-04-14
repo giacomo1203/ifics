@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './InnovacionYEficiencia.module.scss'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export interface InnovacionYEficienciaProps {
   titleOne: string
@@ -34,9 +35,9 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
           </div>
         </div>
         <div className={styles.image}>
-          <img className={styles['image--1']} src={image1} />
+          <LazyLoadImage className={styles['image--1']} src={image1} effect='blur' />
           {
-            secondBg ? <div className={`${styles[`image--2`]} ${styles[`image--2--${secondBg}`]}`}></div> : <img className={styles['image--2']} src={image2} />
+            secondBg ? <div className={`${styles[`image--2`]} ${styles[`image--2--${secondBg}`]}`}></div> : <LazyLoadImage className={styles['image--2']} src={image2} effect="blur" />
           }
         </div>
       </div>

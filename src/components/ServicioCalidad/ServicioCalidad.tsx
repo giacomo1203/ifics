@@ -3,6 +3,7 @@ import styles from './ServicioCalidad.module.scss'
 import listCheck from '../../assets/Home/listCheckNoBg.svg'
 import serviciosCalidad1 from '../../assets/serviciosCalidad1.png'
 import serviciosCalidad2 from '../../assets/serviciosCalidad2.png'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 interface ServicioCalidadProps {
   title: string
@@ -28,15 +29,15 @@ export const ServicioCalidad = ({
           <ul className={styles['servicio-calidad__items']}>
             {items.map((item, index) => (
               <li key={index} className={styles['servicio-calidad__item']}>
-                <img src={listCheck} />
+                <LazyLoadImage src={listCheck} effect="blur" />
                 {item}
               </li>
             ))}
           </ul>
         </div>
         <div className={styles['servicio-calidad__image-container']}>
-          <img src={serviciosCalidad2} className={styles['servicio-calidad__image-1']} />
-          <img src={serviciosCalidad1} className={styles['servicio-calidad__image-2']} />
+          <LazyLoadImage src={serviciosCalidad2} className={styles['servicio-calidad__image-1']} effect="blur" />
+          <LazyLoadImage src={serviciosCalidad1} className={styles['servicio-calidad__image-2']} effect="blur" />
         </div>
       </div>
     </div>

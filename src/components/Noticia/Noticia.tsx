@@ -1,4 +1,6 @@
 import styles from './Noticia.module.scss'
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
 import calendarWhite from '../../assets/calendar.svg'
 import calendarBlack from '../../assets/Home/calendar.svg'
 import { forwardRef } from 'react'
@@ -45,10 +47,11 @@ export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
                 className={`${styles.noticia__imageContainer} ${item.date && item.date.month && item.date.day && styles.opacity}`}
               >
                 <a href={item.href}>
-                  <img
+                  <LazyLoadImage
                     src={item.image}
                     alt={item.title}
                     className={styles.noticia__image}
+                    effect="blur"
                   />
                 </a>
               </div>
@@ -64,7 +67,7 @@ export const Noticia = forwardRef<HTMLDivElement, NoticiaProps>(
                         media="(min-width: 768px)"
                         srcSet={calendarBlack}
                       />
-                      <img src={calendarBlack} alt="calendar" />
+                      <LazyLoadImage src={calendarBlack} alt="calendar" effect="blur" />
                     </picture>
                     <span className={styles.noticia__calendar__day}>
                       {item.date?.day}

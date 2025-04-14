@@ -5,6 +5,7 @@ import { RiMailLine, RiMapPin2Line } from 'react-icons/ri'
 import { MdOutlineLocalPhone } from 'react-icons/md'
 import { dataFooter } from './data'
 import { useLanguage } from '../../context/LanguageContext'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Footer: React.FC = () => {
   const { currentLanguage } = useLanguage()
@@ -15,9 +16,9 @@ const Footer: React.FC = () => {
       <div className={styles.footer__container}>
         <div className={styles.footer__top}>
           <div className={styles.logo}>
-            <img src={logo} alt="IFICS Logo" />
+            <LazyLoadImage src={logo} alt="IFICS Logo" effect="blur" />
             <div className={styles.divider} />
-            <span>Instituto de Facilitación del Comercio Sostenible</span>
+            <span className={styles.span}>Instituto de Facilitación del Comercio Sostenible</span>
           </div>
 
           <div className={styles.footer__topContent}>

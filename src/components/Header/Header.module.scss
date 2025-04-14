@@ -42,10 +42,14 @@
   @apply h-fit;
   @apply lg:py-0;
 
-  img {
+  .span {
+    max-width: 100px !important;
+  }
+  
+  img, span {
     background-color: var.$main-blue;
     flex: 1;
-    max-width: 160px;
+    max-width: 160px !important;
     height: 32px;
     object-position: left;
     object-fit: contain;

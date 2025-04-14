@@ -9,6 +9,7 @@ import phone from '../../assets/phone.svg'
 import email from '../../assets/email.svg'
 import contacto from '../../assets/contacto.png'
 import styles from './Contacto.module.scss'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 const Contacto: React.FC = () => {
     const { currentLanguage } = useLanguage()
@@ -32,19 +33,19 @@ const Contacto: React.FC = () => {
 
                         <div className={styles.itemsContainer}>
                             <div className={styles.itemsContainer__1}>
-                                <img src={contacto} alt="Contacto" />
+                                <LazyLoadImage src={contacto} alt="Contacto" effect="blur" />
                             </div>
                             <div className={styles.itemsContainer__2}>
                                 <div className={styles.address}>
-                                    <img src={address} alt="Dirección" />
+                                    <LazyLoadImage src={address} alt="Dirección" effect="blur" />
                                     {dataContacto[currentLanguage].address}
                                 </div>
                                 <div className={styles.phone}>
-                                    <img src={phone} alt="Teléfono" />
+                                    <LazyLoadImage src={phone} alt="Teléfono" effect="blur" />
                                     <a href={`tel:${dataContacto[currentLanguage].phone.replace(/\D/g, '')}`} target="_blank">{dataContacto[currentLanguage].phone}</a>
                                 </div>
                                 <div className={styles.email}>
-                                    <img src={email} alt="Correo" />
+                                    <LazyLoadImage src={email} alt="Correo" effect="blur" />
                                     <a href={`mailto:${dataContacto[currentLanguage].email}`} target="_blank">{dataContacto[currentLanguage].email}</a>
                                 </div>
                             </div>

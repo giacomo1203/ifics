@@ -1,5 +1,6 @@
 import styles from './ComercioInternacional.module.scss'
 import listCheck from '../../assets/Home/listCheck.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 interface ComercioInternacionalProps {
   title: string
@@ -27,7 +28,12 @@ export const ComercioInternacional = ({
         <ul className={styles.comercioInternacional__items}>
           {items.map((item, index) => (
             <li key={index} className={styles.comercioInternacional__item}>
-              <img src={listCheck} alt="check icon" />
+              <LazyLoadImage
+                src={listCheck}
+                alt={title}
+                className={styles.image}
+                effect="blur"
+              />
               {item}
             </li>
           ))}
