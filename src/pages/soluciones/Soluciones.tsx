@@ -22,13 +22,14 @@ const Soluciones: React.FC = () => {
                     text={dataSoluciones[currentLanguage].pageHeader.text}
                 />
                 {
-                    dataSoluciones[currentLanguage].innovacionEficiencia?.map((item) => (
+                    dataSoluciones[currentLanguage].innovacionEficiencia?.map((item, index) => (
                         <InnovacionYEficiencia
                             titleOne={item.titleOne}
                             titleTwo={item.titleTwo}
                             text={item.text}
                             image1={item.image1}
                             secondBg={item.color as any}
+                            key={index}
                         />
                     ))
                 }
