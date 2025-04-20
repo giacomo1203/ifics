@@ -39,16 +39,21 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
             ))}
           </div>
         </div>
-        <div className={styles.image}>
-          <img className={styles['image--1']} src={image1} />
-          {secondBg ? (
-            <div
-              className={`${styles[`image--2`]} ${styles[`image--2--${secondBg}`]}`}
-            ></div>
+        {
+          secondBg ? (
+            <div className={styles.bgBox}>
+              <img className={styles['bgBox--1']} src={image1} />
+              <div
+                  className={`${styles[`bgBox--bg`]} ${styles[`bgBox--bg--${secondBg}`]}`}
+                ></div>
+            </div>
           ) : (
-            <img className={styles['image--2']} src={image2} />
-          )}
-        </div>
+            <div className={styles.image}>
+              <img className={styles['image--1']} src={image1} />
+              <img className={styles['image--2']} src={image2} />
+            </div>
+          )
+        }
       </div>
     </div>
   )
