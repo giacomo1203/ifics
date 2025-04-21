@@ -127,12 +127,14 @@ button:focus-visible {
   padding: 16px;
   border-color: transparent !important;
   transition: opacity .5s, border .5s;
-  margin-right: 24px;
 }
 
 @media screen and (min-width: 992px) {
   .nav-tabs .nav-link {
     padding: 24px 32px;
+  }
+  .nav-tabs .nav-link {
+    margin-right: 24px;
   }
 }
 

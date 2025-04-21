@@ -15,7 +15,7 @@ interface TabsProps {
 
 const TabsComponent: React.FC<TabsProps> = ({ tabs }) => {
     return (
-        <Tabs defaultActiveKey={tabs[0].title} id="soluciones-tabs" className="justify-content-center">
+        <Tabs defaultActiveKey={tabs[0].title} id="soluciones-tabs" className={`${styles.tabsDraggable}`}>
             {tabs.map((tab) => (
                 <Tab
                     eventKey={tab.title}
