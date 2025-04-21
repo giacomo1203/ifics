@@ -50,7 +50,7 @@ const Header = () => {
                 key={index}
                 href={basename + item.url}
                 className={
-                  '/' + window.location.hash === item.url ? styles.active : ''
+                  window.location.pathname === item.url ? styles.active : ''
                 }
               >
                 {item.name}

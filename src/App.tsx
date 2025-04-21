@@ -1,5 +1,5 @@
 import React from 'react'
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { Routes, Route, BrowserRouter } from 'react-router-dom'
 import Home from './pages/home/Home'
 import Nosotros from './pages/nosotros/Nosotros'
 import NotFound from './pages/NotFound'
@@ -18,7 +18,7 @@ import NoticiaPage from './pages/noticia-page/Noticia-Page'
 const App: React.FC = () => {
   return (
     <LanguageProvider>
-      <HashRouter>
+      <BrowserRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/nosotros" element={<Nosotros />} />
@@ -29,7 +29,7 @@ const App: React.FC = () => {
           <Route path="/soluciones" element={<Soluciones />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </HashRouter>
+      </BrowserRouter>
     </LanguageProvider>
   )
 }

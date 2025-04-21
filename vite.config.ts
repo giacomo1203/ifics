@@ -6,7 +6,7 @@ import path from 'path'
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
-    base: '/ifics/',
+    base: '/',
     define: {
       __APP_ENV__: JSON.stringify(env.VITE_INITIAL_LANGUAGE),
       'process.env.NODE_ENV': JSON.stringify(mode),
