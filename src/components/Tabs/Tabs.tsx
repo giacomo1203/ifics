@@ -2,6 +2,7 @@ import React from 'react';
 import Tab from 'react-bootstrap/Tab';
 import Tabs from 'react-bootstrap/Tabs';
 import styles from './Tabs.module.scss';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 interface TabItem {
     title: string;
@@ -32,7 +33,7 @@ const TabsComponent: React.FC<TabsProps> = ({ tabs }) => {
                                 ))}
                             </div>
                             <div className={styles.tabContentImage}>
-                                <img src={tab.image} alt={tab.title} />
+                                <LazyLoadImage src={tab.image} alt={tab.title} effect="blur" />
                             </div>
                         </div>
                     </div>

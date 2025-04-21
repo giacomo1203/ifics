@@ -13,3 +13,13 @@ export function useWindowWidth() {
 
     return width;
 }
+
+export function slugify (text: string) {
+    return text
+      .normalize("NFD")                      // handle accents
+      .replace(/[\u0300-\u036f]/g, "")       // remove accents
+      .replace(/[^\w\s-]/g, '')              // remove non-word characters
+      .trim()
+      .replace(/\s+/g, '-')                  // replace spaces with -
+      .toLowerCase();
+}
