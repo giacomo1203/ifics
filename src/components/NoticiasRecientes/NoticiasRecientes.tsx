@@ -4,6 +4,7 @@ import { dataNoticias } from '../../pages/noticias/data'
 import { Card } from '../Card/Card'
 import styles from './NoticiasRecientes.module.scss'
 import React from 'react'
+import { eventosData } from '../../pages/eventos/data'
 
 interface NoticiasRecientesProps {
   title: string
@@ -20,7 +21,7 @@ export const NoticiasRecientes = ({ title, type }: NoticiasRecientesProps) => {
     <div className={styles.noticiasRecientes}>
       <div className={styles.noticiasRecientesContainer}>
         <Card
-          items={dataNoticias[currentLanguage].items}
+          items={type === 'news' ? dataNoticias[currentLanguage].items : eventosData[currentLanguage].items}
           currentPage={currentPage}
           maxItemsPerPage={maxItemsPerPage}
           ref={noticiaRef}
