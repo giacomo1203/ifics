@@ -4,7 +4,7 @@ import { eventosData } from './data'
 import Layout from '../../components/Layout'
 import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
-import { Noticia } from '../../components/Noticia/Noticia';
+import { Card } from '../../components/Card/Card';
 import Pagination from '../../components/Pagination/Pagination'
 import { useWindowWidth } from '../../utils'
 
@@ -29,7 +29,7 @@ const Eventos: React.FC = () => {
                     bg={eventosData[currentLanguage].pageHeader.bg}
                     text={eventosData[currentLanguage].pageHeader.text}
                 />
-                <Noticia
+                <Card
                     items={eventosData[currentLanguage].items}
                     currentPage={currentPage}
                     maxItemsPerPage={maxItemsPerPage}

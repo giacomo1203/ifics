@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import { useLanguage } from '../../context/LanguageContext'
 import { dataNoticias } from '../../pages/noticias/data'
-import { Noticia } from '../Noticia/Noticia'
+import { Card } from '../Card/Card'
 import styles from './NoticiasRecientes.module.scss'
 import React from 'react'
 
@@ -18,7 +18,7 @@ export const NoticiasRecientes = ({ title }: NoticiasRecientesProps) => {
   return (
     <div className={styles.noticiasRecientes}>
       <div className={styles.noticiasRecientesContainer}>
-        <Noticia
+        <Card
           items={dataNoticias[currentLanguage].items}
           currentPage={currentPage}
           maxItemsPerPage={maxItemsPerPage}

@@ -1,10 +1,11 @@
+
 import React, { useState } from 'react'
 import { content } from '../../config/content'
 import { dataNoticias } from './data'
 import Layout from '../../components/Layout'
 import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
-import { Noticia } from '../../components/Noticia/Noticia';
+import { Card } from '../../components/Card/Card';
 import Pagination from '../../components/Pagination/Pagination'
 
 const Noticias: React.FC = () => {
@@ -26,7 +27,7 @@ const Noticias: React.FC = () => {
                     bg={dataNoticias[currentLanguage].pageHeader.bg}
                     text={dataNoticias[currentLanguage].pageHeader.text}
                 />
-                <Noticia
+                <Card
                     items={dataNoticias[currentLanguage].items}
                     currentPage={currentPage}
                     maxItemsPerPage={maxItemsPerPage}
