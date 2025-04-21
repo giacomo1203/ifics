@@ -16,12 +16,16 @@ interface AreasEstrategicasProps {
 const getImageSource = (item: any) => {
     switch (item.title) {
         case 'Facilitación del comercio':
+        case 'Trade Facilitation':
             return FacilitacionDelComercio;
         case 'Optimización logística':
+        case 'Logistics Optimization':
             return OptimizacionLogistica;
         case 'Regulación y normativas':
+        case 'Regulation and Standards':
             return RegulacionYNormativas;
         case 'Innovación tecnológica':
+        case 'Technological Innovation':
             return InnovacionTecnologica;
         default:
             return item.image;

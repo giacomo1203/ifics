@@ -10,6 +10,8 @@ footer {
 
   a {
     transition: opacity .3s;
+    text-decoration: none !important;
+    color: inherit !important;
     
     &:hover {
       opacity: 0.5;

@@ -121,31 +121,34 @@ export const dataSoluciones = {
     },
     tabs: [
       {
-        title: 'Consultoría',
+        title: 'Consulting',
         description: [
-          ''
+          'We evaluate and provide solutions to correct inefficiencies in international trade transactions, adding value to the decisions of the actors involved in the international supply logistics chain: importers, exporters, banking and insurance institutions, logistics operators, as well as public control entities.',
+          'Our approach is evidence-based, with a multidisciplinary perspective on problems, considering the impact of information technologies applied to trade. We address new challenges in the regulation of international trade facilitation in all areas covered by the World Trade Organization’s Trade Facilitation Agreement, as well as regional preferential agreements and recent initiatives such as the Digital Economy Partnership Agreement (DEPA), evaluating the performance of business operations, practices, government measures, and institutions.',
+          'Our specialists have over 20 years of experience in the field of international trade, playing key roles in private practice and the design of public policies and regulations. We are passionate about critical and strategic thinking, analytical rigor, and responsibility in delivering services to our clients.'
         ],
         image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
       },
       {
-        title: 'Tecnología y digitalización',
+        title: 'Technology and Digitalization',
         description: [
-          ''
+          'We offer comprehensive technology development and digitalization solutions, designed to optimize the processes of goods entry and exit, as well as international transport logistics and related government controls. Our goal is to transform and modernize our clients’ global supply chain, ensuring efficiency, resilience, sustainability, precision, and competitiveness in an ever-evolving market. We apply advanced technologies and artificial intelligence.',
+          'We specialize in custom and innovative software development, implementation of technological solutions, and document digitalization. Our document digitalization solutions convert physical files into accessible and organized digital formats, improving document management efficiency. By combining our experience in software development, digitalization, and a focus on interoperability, we help international trade and logistics organizations maximize operational efficiency and quickly adapt to a constantly changing business environment.'
         ],
         image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
       },
       {
-        title: 'Capacitación',
+        title: 'Training',
         description: [
-          ''
+          'IFICS designs and delivers training and coaching programs through workshops, seminars, and courses in its areas of expertise, using cutting-edge content and methodologies, aiming for participants to reinforce specific skills and knowledge about the regulatory framework of trade facilitation and key concepts of the political, social, and legal environment of foreign markets.'
         ],
         image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
       }
     ],
     serviciosDeExcelencia: {
-      title: 'Servicios de excelencia para',
-      titleTwo: 'Empresas y Entidades Públicas',
-      desc: 'Ofrecemos soluciones diseñadas con altos estándares y metodologías basadas en las mejores prácticas internacionales, garantizando calidad e impacto.'
+      title: 'Excellence Services for',
+      titleTwo: 'Companies and Public Entities',
+      desc: 'We offer solutions designed with high standards and methodologies based on international best practices, ensuring quality and impact.'
     },
     innovacionEficiencia: [
       {
@@ -153,74 +156,69 @@ export const dataSoluciones = {
         titleOne: '',
         titleTwo: 'Improvement of Procedures and Regulations',
         text: [
-          'Authorities that regulate the entry, stay, and exit of restricted goods such as food or medicine, or the provision of cargo services, are active agents in trade facilitation. However, they require better coordination among themselves and institutional strengthening to meet the growing demand for services.',
-          'We develop improvements in the legal frameworks regarding transparency, information exchange, and permit control procedures for the entry and exit of goods and means of transport. We conduct regulatory impact analyses and benchmarks of international best practices in regulation and regulatory convergence.',
+          'Authorities regulating the entry, stay, and exit of restricted goods such as food or medicines, or the provision of cargo services, are active agents in trade facilitation but require better coordination and institutional strengthening to meet the growing demand for services.',
+          'We formulate improvements to legal frameworks for transparency, information exchange, and control procedures for the entry and exit of goods and means of transport. We conduct regulatory impact analysis and benchmarking of international best practices in regulation and regulatory convergence.'
         ],
-        image1:
-          'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__',
+        image1: 'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__'
       },
       {
         color: 'orange',
         titleOne: '',
         titleTwo: 'Digital Platforms and Single Windows',
         text: [
-          'We design and provide digital platforms for cross-border trade and single windows. We centralize and digitize all trade facilitation and logistical processes necessary to carry out foreign trade operations quickly, efficiently, and safely. We offer services in process reengineering, automation, and document digitization.',
-          'The Single Window for Foreign Trade is one of the most representative tools of trade facilitation, and its platform should serve to accelerate process optimization and, in general, improve trade management.',
+          'We design and provide digital platforms for cross-border trade and single windows. We centralize and digitize all trade facilitation and logistics processes necessary to carry out foreign trade operations quickly, efficiently, and safely. We provide process reengineering and automation services, as well as document digitalization.',
+          'The Single Window for Foreign Trade is one of the most representative tools of trade facilitation, and its platform should serve to accelerate the optimization of processes and procedures, and generally improve trade management.'
         ],
-        image1:
-          'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
+        image1: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
       },
       {
         color: 'blue',
         titleOne: '',
-        titleTwo: 'Logistics Processes and Customs Services',
+        titleTwo: 'Logistics Processes and Customs Service',
         text: [
-          'Logistics inefficiencies can have effects equivalent to tariff barriers. Therefore, we analyze these processes in port and airport contexts to promote an optimal supply chain. International transport logistics must operate in harmony with customs processes.',
-          "Customs plays the most important public role in the implementation of trade facilitation due to its inherent responsibility in goods traffic. A third of clearance time is taken up by the customs process, meaning any flaw in its service negatively affects the country's competitiveness (World Bank).",
+          'Logistics inefficiencies can have effects equivalent to tariff barriers. Therefore, we analyze these processes in port and airport environments to promote an optimal supply chain. International transport logistics must operate in harmony with customs processes.',
+          'Customs performs the most important public function in the implementation of trade facilitation due to its inherent responsibility in the movement of goods. A third of the clearance time is occupied by the customs process, so any deficiency in its service negatively impacts the country’s competitiveness (World Bank).'
         ],
-        image1:
-          'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__',
+        image1: 'https://s3-alpha-sig.figma.com/img/929e/a7f7/112fe7ede4e48ec732449d424319877b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=VfSKz7QrDtJ8W6yXXGh3fDGn69~hR9k~xzwu-hcyXAWGXnnX29F1QlnYm3czPSmC6nNm22-4xg0LG39~jJOFAUK2bI6cn6H4F0kAAMGUQB2WlleJlnmD5tEiKFEiMlzmVS1ki58XnOhlBqulJmVsqfdWXn6Sc3HLMQB-gz2Eu4lSxuopA-FPX2fRrtb7ykTKRilT0nb1gy8qJdI~hJ6bANCNpNl0gYBKXmknNiCxzvBOEqE96xWUBlgx8fAZ3HP~Xd7ZqM3gzhiGa7znenHNTm~-1RN-5jY7Hb78uCaclvvy4y46ETHTdLOuBKu~v9-nK4H-LY-ObLK3KVHc60-1Vg__'
       },
       {
         color: 'orange',
         titleOne: '',
-        titleTwo: 'Non-Tariff Barriers and Quality Systems',
+        titleTwo: 'Non-Tariff Barriers and Quality System',
         text: [
-          'Non-tariff barriers take on various forms of trade restrictions, sometimes difficult to identify.',
-          'Standardization, Technical Regulations, and Conformity Assessment are increasingly necessary disciplines for fair and efficient trade. In this area, regulatory impact studies are especially relevant to mitigate the deficiencies of governmental measures that create obstacles incompatible with international trade commitments.',
+          'Non-tariff barriers take different forms of trade restriction, sometimes hard to identify.',
+          'Standardization, Technical Regulations, and Conformity Assessment are increasingly necessary disciplines for fair and efficient trade. Regulatory impact studies stand out in this area to mitigate the shortcomings of government measures that create obstacles incompatible with international trade commitments.'
         ],
-        image1:
-          'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
+        image1: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
       },
       {
         color: 'blue',
         titleOne: '',
         titleTwo: 'Special Economic Zones',
         text: [
-          'Special Economic Zones or Free Zones are important mechanisms for attracting investment, industrial diversification, and business internationalization, with consistent growth worldwide, especially in emerging economies. Our partnership with the prestigious Colombian firm Araujo Ibarra & Asociados (one of the world’s leading consultants on SEZs) allows us to offer highly specialized services in the setup and expansion of investments in SEZs, assisting clients with operational, logistical, and regulatory compliance needs related to the entry, stay, and exit of goods. We also advise on SEZ policy design according to international best practices.',
+          'Special Economic Zones or Free Trade Zones are an important mechanism for attracting investment, industrial diversification, and business internationalization, and their growth is constant worldwide, especially in emerging economies. Our alliance with the prestigious Colombian firm Araujo Ibarra & Asociados (one of the world’s leading SEZ consultants) allows us to provide highly specialized services in the installation and expansion of investments in SEZs, assisting clients in their operational, logistics, and compliance needs regarding the rules governing the entry, stay, and exit of goods; we also advise on the design of SEZ implementation policies in line with international best practices.'
         ],
-        image1:
-          'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
-      },
+        image1: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
+      }
     ],
     areasEstrategicas: {
-      title: 'Áreas Estratégicas de',
-      titleTwo: 'Impacto',
-      desc: 'Seleccionamos con precisión nuestras áreas de trabajo, enfocándonos en ventajas comparativas para generar un impacto significativo en el comercio internacional.',
+      title: 'Strategic Areas of',
+      titleTwo: 'Impact',
+      desc: 'We carefully select our areas of work, focusing on comparative advantages to generate significant impact on international trade.',
       items: [
         {
-          title: 'Facilitación del comercio',
+          title: 'Trade Facilitation'
         },
         {
-          title: 'Optimización logística',
+          title: 'Logistics Optimization'
         },
         {
-          title: 'Regulación y normativas',
+          title: 'Regulation and Standards'
         },
         {
-          title: 'Innovación tecnológica',
+          title: 'Technological Innovation'
         }
       ]
     }
-  },
+  }
 }
