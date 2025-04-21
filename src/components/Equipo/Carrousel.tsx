@@ -505,7 +505,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
                   effect="blur"
                   draggable="false"
                 />
-                <div className="!p-4 bg-main-blue text-white text-center min-h-28 flex flex-col justify-center translate-y-[-6px]">
+                <div className="!p-4 bg-main-blue text-white text-center flex flex-col justify-center translate-y-[-6px] min-h-[164px]">
                   <p className="!font-[500] !leading-tight">{item.name}</p>
                   <p className="!italic text-sm !leading-tight">{item.role}</p>
                 </div>
