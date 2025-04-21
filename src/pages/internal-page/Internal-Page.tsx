@@ -1,19 +1,23 @@
 import React from 'react'
-import { content } from '../../config/content'
-import Layout from '../../components/Layout'
-import { useLanguage } from '../../context/LanguageContext'
-import PageHeader from '../../components/PageHeader/PageHeader'
-import { dataNoticiaPage } from './data'
-import styles from './Internal-Page.module.scss'
-import { NoticiasRecientes } from '../../components/NoticiasRecientes/NoticiasRecientes'
+import { content } from '../../config/content';
+import Layout from '../../components/Layout';
+import PageHeader from '../../components/PageHeader/PageHeader';
+import styles from './Internal-Page.module.scss';
+import { NoticiasRecientes } from '../../components/NoticiasRecientes/NoticiasRecientes';
 
 interface InternalPageProps {
-    isEvent?: boolean;
+    title: string;
+    description: string;
+    image: string;
+    date?: {
+        day: string;
+        month: string;
+    };
+    type: "news" | "event";
+    htmlContent?: any;
 }
 
-const InternalPage: React.FC<InternalPageProps> = ({ isEvent }) => {
-    const { currentLanguage } = useLanguage();
-
+const InternalPage: React.FC<InternalPageProps> = ({ title, description, image, date, type, htmlContent }) => {
     return (
         <Layout
             title={content.meta.title}
@@ -23,19 +27,26 @@ const InternalPage: React.FC<InternalPageProps> = ({ isEvent }) => {
         >
             <>
                 <PageHeader
-                    bg={dataNoticiaPage[currentLanguage].pageHeader.bg}
-                    text={dataNoticiaPage[currentLanguage].pageHeader.text}
-                    noOverlay
+                    bg={image}
+                    text={title}
                 />
                 {
-                    isEvent ? <div>Event!</div> :
-                        <div className={styles.wysiwygContainer} dangerouslySetInnerHTML={{ __html: dataNoticiaPage[currentLanguage].content }} />
+                    type === "event" ?
+                        <div className={styles.wysiwygContainer}>
+                            {/* <img className={styles.image} src={image} alt={title} />
+                                <h3>{title}</h3> */}
+                            <p>{description}</p>
+                        </div> :
+                        <div className={styles.wysiwygContainer}>
+                            <div className={styles.wysiwygContainer} dangerouslySetInnerHTML={{ __html: htmlContent }} />
+                        </div>
                 }
 
-                <NoticiasRecientes title={dataNoticiaPage[currentLanguage].title} />
+
+                <NoticiasRecientes type={type} title={`${type === "event" ? "Eventos" : "Noticias"} recientes`} />
             </>
-        </Layout >
-    )
-}
+        </Layout>
+    );
+};
 
 export default InternalPage

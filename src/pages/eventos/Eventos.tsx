@@ -34,12 +34,13 @@ const Eventos: React.FC = () => {
                     currentPage={currentPage}
                     maxItemsPerPage={maxItemsPerPage}
                     ref={noticiaRef}
+                    type="event"
                 />
                 {totalPages > 1 ? (
                     <Pagination
                         currentPage={currentPage}
                         totalPages={totalPages}
-                        onPageChange={(page) => {
+                        onPageChange={(page: number) => {
                             setCurrentPage(page);
                             noticiaRef.current?.scrollIntoView({ behavior: 'smooth' });
                         }}

@@ -7,9 +7,10 @@ import React from 'react'
 
 interface NoticiasRecientesProps {
   title: string
+  type: "news" | "event"
 }
 
-export const NoticiasRecientes = ({ title }: NoticiasRecientesProps) => {
+export const NoticiasRecientes = ({ title, type }: NoticiasRecientesProps) => {
   const { currentLanguage } = useLanguage()
   const [currentPage] = useState(1)
   const maxItemsPerPage = 3
@@ -25,6 +26,7 @@ export const NoticiasRecientes = ({ title }: NoticiasRecientesProps) => {
           ref={noticiaRef}
           title={title}
           noPaddingTop
+          type={type}
         />
       </div>
     </div>

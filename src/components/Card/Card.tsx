@@ -18,23 +18,25 @@ interface CardProps {
     image: string
     href: string
     date?: CardDate
+    content?: string // Added content property
   }[]
   currentPage: number
   maxItemsPerPage: number
   title?: string
   noPaddingTop?: boolean
+  type: 'news' | 'event'; // Added type property
 }
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(
   (
-    { items, currentPage, maxItemsPerPage, title, noPaddingTop }: CardProps,
+    { items, currentPage, maxItemsPerPage, title, noPaddingTop, type }: CardProps,
     ref
   ) => {
-    const windowWidth = useWindowWidth()
-    const isDesktop = windowWidth >= 992
-    const startIndex = (currentPage - 1) * maxItemsPerPage
-    const endIndex = startIndex + maxItemsPerPage
-    const itemsToRender = items?.slice(startIndex, endIndex)
+    const windowWidth = useWindowWidth();
+    const isDesktop = windowWidth >= 992;
+    const startIndex = (currentPage - 1) * maxItemsPerPage;
+    const endIndex = startIndex + maxItemsPerPage;
+    const itemsToRender = items?.slice(startIndex, endIndex);
 
     return (
       <div
@@ -44,13 +46,14 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
         {title && <h2 className={styles.noticiasRecientesTitle}>{title}</h2>}
         <div className={styles.noticia__items}>
           {itemsToRender?.map((item, index) => {
-            const noticiaUrl = `/noticia/${slugify(item.title)}`;
+            const slug = slugify(item.title);
+            const url = type === 'news' ? `/noticia/${slug}` : `/evento/${slug}`;
             return (
               <div key={index} className={styles.noticia__item}>
                 <div
                   className={`${styles.noticia__imageContainer} ${item.date && item.date.month && item.date.day && styles.opacity}`}
                 >
-                  <a href={noticiaUrl}>
+                  <a href={url}>
                     <LazyLoadImage
                       src={item.image}
                       alt={item.title}
