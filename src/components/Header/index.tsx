@@ -19,7 +19,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.header__container}>
         <div className={styles.logo}>
-          <a href="/#/">
+          <a href="/">
             <img src={logo} alt="IFICS Logo" />
           </a>
           <div className={styles.divider} />

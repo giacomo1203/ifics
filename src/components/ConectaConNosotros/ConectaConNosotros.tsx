@@ -68,7 +68,7 @@ export const ConectaConNosotros = ({
                 />
                 <div className={styles.conectaConNosotros__date}>
                   <span className={styles.conectaConNosotros__date__day}>{item.date.day}</span>
-                  <span className={styles.conectaConNosotros__date__month}>{item.date.month}</span>
+                  <span className={styles.conectaConNosotros__date__month}>{item.date.month.slice(0, 3)}</span>
                 </div>
               </div>
               <div
