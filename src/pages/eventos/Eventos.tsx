@@ -7,6 +7,7 @@ import PageHeader from '../../components/PageHeader/PageHeader'
 import { Card } from '../../components/Card/Card';
 import Pagination from '../../components/Pagination/Pagination'
 import { useWindowWidth } from '../../utils'
+import styles from './Eventos.module.scss'
 
 const Eventos: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -29,13 +30,16 @@ const Eventos: React.FC = () => {
                     bg={eventosData[currentLanguage].pageHeader.bg}
                     text={eventosData[currentLanguage].pageHeader.text}
                 />
-                <Card
-                    items={eventosData[currentLanguage].items}
-                    currentPage={currentPage}
-                    maxItemsPerPage={maxItemsPerPage}
-                    ref={noticiaRef}
-                    type="event"
-                />
+                <div className={styles.container}>
+                    <Card
+                        items={eventosData[currentLanguage].items}
+                        currentPage={currentPage}
+                        maxItemsPerPage={maxItemsPerPage}
+                        ref={noticiaRef}
+                        type="event"
+                    />
+                </div>
+
                 {totalPages > 1 ? (
                     <Pagination
                         currentPage={currentPage}

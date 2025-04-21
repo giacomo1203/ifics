@@ -1,0 +1,8 @@
+@use '../../styles/variables.scss' as var;
+.container {
+    margin-inline: 16px;
+
+    @media screen and (min-width: var.$breakpoint-lg) {
+        margin-inline: 32px;
+    }
+}
