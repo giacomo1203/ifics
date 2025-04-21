@@ -7,7 +7,10 @@ import { dataNav } from './data'
 
 const basename = import.meta.env.MODE === 'production' ? '/ifics' : ''
 
+import { useNavigate } from 'react-router-dom';
+
 const Header = () => {
+  const navigate = useNavigate();
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const { currentLanguage, setLanguage } = useLanguage()
 
@@ -31,14 +34,24 @@ const Header = () => {
           <div className={styles.languageButtonContainer}>
             <button
               className={currentLanguage === 'ES' ? styles.activeLanguage : ''}
-              onClick={() => setLanguage('ES')}
+              onClick={() => {
+                setLanguage('ES');
+                if (window.location.pathname.includes('/noticia/') || window.location.pathname.includes('/evento/')) {
+                  navigate(-1);
+                }
+              }}
             >
               ESP
             </button>
             <span className={styles.separator}>|</span>
             <button
               className={currentLanguage === 'EN' ? styles.activeLanguage : ''}
-              onClick={() => setLanguage('EN')}
+              onClick={() => {
+                setLanguage('EN');
+                if (window.location.pathname.includes('/noticia/') || window.location.pathname.includes('/evento/')) {
+                  navigate(-1);
+                }
+              }}
             >
               ENG
             </button>
