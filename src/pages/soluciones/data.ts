@@ -94,6 +94,25 @@ export const dataSoluciones = {
           'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
       },
     ],
+    areasEstrategicas: {
+      title: 'Áreas Estratégicas de',
+      titleTwo: 'Impacto',
+      desc: 'Seleccionamos con precisión nuestras áreas de trabajo, enfocándonos en ventajas comparativas para generar un impacto significativo en el comercio internacional.',
+      items: [
+        {
+          title: 'Facilitación del comercio',
+        },
+        {
+          title: 'Optimización logística',
+        },
+        {
+          title: 'Regulación y normativas',
+        },
+        {
+          title: 'Innovación tecnológica',
+        }
+      ]
+    }
   },
   EN: {
     pageHeader: {
@@ -184,5 +203,24 @@ export const dataSoluciones = {
           'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__',
       },
     ],
+    areasEstrategicas: {
+      title: 'Áreas Estratégicas de',
+      titleTwo: 'Impacto',
+      desc: 'Seleccionamos con precisión nuestras áreas de trabajo, enfocándonos en ventajas comparativas para generar un impacto significativo en el comercio internacional.',
+      items: [
+        {
+          title: 'Facilitación del comercio',
+        },
+        {
+          title: 'Optimización logística',
+        },
+        {
+          title: 'Regulación y normativas',
+        },
+        {
+          title: 'Innovación tecnológica',
+        }
+      ]
+    }
   },
 }

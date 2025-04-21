@@ -1,0 +1,64 @@
+@use '../../styles/variables.scss' as var;
+
+.AreasEstrategicas__container {
+    @apply mx-4 py-6 min-h-auto;
+    @apply md:mx-8;
+    @apply 2xl:mx-auto lg:!py-24 lg:flex lg:flex-col lg:items-center lg:max-w-xl-content;
+}
+
+.title {
+    color: var.$main-blue;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    width: 100%;
+
+    @apply xl:text-4xl xl:text-center xl:px-[20%] xl:col-span-8 xl:mb-9 xl:max-w-xl-content;
+
+    span {
+        color: var.$main-orange;
+    }
+}
+
+.desc {
+    color: var.$main-gray;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: 100%;
+
+    @apply lg:mb-12;
+    @apply xl:text-center xl:px-[20%] xl:col-span-8 xl:max-w-xl-content;
+}
+
+.items {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 24px;
+    margin-top: 24px;
+
+    @media screen and (min-width: var.$breakpoint-lg) {
+        flex-direction: row;
+        margin-top: 0;
+    }
+}
+
+.item {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 8px;
+    color: var.$main-blue;
+    font-family: var.$font-family-base;
+    font-size: 18px;
+    line-height: 100%;
+    font-weight: 400;
+
+    @media screen and (min-width: var.$breakpoint-lg) {
+        flex-direction: column;
+        gap: 16px;
+    }
+}

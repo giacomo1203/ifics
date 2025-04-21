@@ -7,6 +7,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import InnovacionYEficiencia from '../../components/InnovacionYEficiencia/InnovacionYEficiencia'
 import { ServiciosDeExcelencia } from '../../components/ServiciosDeExcelencia/ServiciosDeExcelencia'
+import { AreasEstrategicas } from '../../components/AreasEstrategicas/AreasEstrategicas';
 
 const Soluciones: React.FC = () => {
     const { currentLanguage } = useLanguage()
@@ -31,6 +32,12 @@ const Soluciones: React.FC = () => {
                 <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
                     <TabsComponent tabs={dataSoluciones[currentLanguage].tabs} />
                 </div>
+                <AreasEstrategicas
+                    title={dataSoluciones[currentLanguage].areasEstrategicas.title}
+                    titleTwo={dataSoluciones[currentLanguage].areasEstrategicas.titleTwo}
+                    description={dataSoluciones[currentLanguage].areasEstrategicas.desc}
+                    items={dataSoluciones[currentLanguage].areasEstrategicas.items}
+                />
                 {
                     dataSoluciones[currentLanguage].innovacionEficiencia?.map((item, index) => (
                         <InnovacionYEficiencia

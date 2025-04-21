@@ -124,10 +124,16 @@ button:focus-visible {
 
 
 .nav-tabs .nav-link {
-  padding: 24px 32px;
+  padding: 16px;
   border-color: transparent !important;
   transition: opacity .5s, border .5s;
   margin-right: 24px;
+}
+
+@media screen and (min-width: 992px) {
+  .nav-tabs .nav-link {
+    padding: 24px 32px;
+  }
 }
 
 li.nav-item:last-child .nav-link {
@@ -139,11 +145,17 @@ li.nav-item:last-child .nav-link {
 }
 
 .nav-tabs .nav-link.active {
-  padding-bottom: 24px;
+  padding-bottom: 16px;
   color: #ff7a00;
   border-bottom: 1px solid #ff7a00 !important;
 
   span {
       color: #ff7a00
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .nav-tabs .nav-link.active {
+    padding-bottom: 24px;
   }
 }

@@ -114,9 +114,11 @@
 }
 
 .text {
-  line-height: 1.15;
+  line-height: 20px;
   letter-spacing: 0px;
   color: var.$main-gray;
+  font-family: var.$font-family-base;
+  font-size: 16px;
 
   p {
     margin-bottom: 1.5rem;

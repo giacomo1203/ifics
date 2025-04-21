@@ -17,7 +17,7 @@
 }
 
 .tabContentContainer {
-    @apply mx-4 pt-14 pb-6;
+    @apply pt-0 pb-6;
     @apply md:mx-8 md:py-22;
     @apply lg:flex lg:max-w-xl-content lg:gap-16 lg:py-20 2xl:mx-auto;
 }
@@ -43,6 +43,20 @@
     color: var.$main-blue;
     font-family: var.$font-family-title;
     font-weight: 700;
+    margin-bottom: 8px;
+
+    @media screen and (min-width: var.$breakpoint-lg) {
+        margin-bottom: 16px;
+    }
+}
+
+.tabContentDescription {
+    font-size: 16px;
+    line-height: 20px;
+
+    @media screen and (min-width: var.$breakpoint-lg) {
+        line-height: 32px;
+    }
 }
 
 .tabTitle {
