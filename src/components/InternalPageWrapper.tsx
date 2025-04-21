@@ -15,17 +15,17 @@ const InternalPageWrapper: React.FC<InternalPageWrapperProps> = ({ type }) => {
     const { slug } = useParams<{ slug: string }>();
     const { currentLanguage } = useLanguage();
 
-    let item;
     let data;
+    let item;
 
     if (type === 'news') {
-        data = dataNoticias[currentLanguage].items;
+        data = dataNoticias;
     } else {
-        data = eventosData[currentLanguage].items;
+        data = eventosData;
     }
 
     if (data) {
-        item = data.find((item) => slugify(item.title) === slug);
+        item = data['ES'].items.concat(data['EN'].items).find((item) => slugify(item.title) === slug);
     }
 
     if (!item) {

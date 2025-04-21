@@ -18,6 +18,17 @@ const Header = () => {
     setIsMenuOpen(!isMenuOpen)
   }
 
+  const handleLanguageChange = (language: "ES" | "EN") => {
+    setLanguage(language);
+    if (window.location.pathname.includes('/noticia/')) {
+      navigate('/noticias');
+    }
+
+    if (window.location.pathname.includes('/evento/')) {
+      navigate('/eventos');
+    }
+  }
+
   return (
     <header className={styles.header}>
       <div className={styles.header__container}>
@@ -34,24 +45,14 @@ const Header = () => {
           <div className={styles.languageButtonContainer}>
             <button
               className={currentLanguage === 'ES' ? styles.activeLanguage : ''}
-              onClick={() => {
-                setLanguage('ES');
-                if (window.location.pathname.includes('/noticia/') || window.location.pathname.includes('/evento/')) {
-                  navigate(-1);
-                }
-              }}
+              onClick={() => handleLanguageChange('ES')}
             >
               ESP
             </button>
             <span className={styles.separator}>|</span>
             <button
               className={currentLanguage === 'EN' ? styles.activeLanguage : ''}
-              onClick={() => {
-                setLanguage('EN');
-                if (window.location.pathname.includes('/noticia/') || window.location.pathname.includes('/evento/')) {
-                  navigate(-1);
-                }
-              }}
+              onClick={() => handleLanguageChange('EN')}
             >
               ENG
             </button>

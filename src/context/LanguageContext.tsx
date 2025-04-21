@@ -16,7 +16,10 @@ export const LanguageProvider: React.FC<{ children: ReactNode }> = ({ children }
 
   const contextValue: LanguageContextType = {
     currentLanguage,
-    setLanguage: setCurrentLanguage,
+    setLanguage: (lang: Language) => {
+      localStorage.setItem('language', lang);
+      setCurrentLanguage(lang);
+    },
   };
 
   React.useEffect(() => {

@@ -7,6 +7,7 @@ import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import { Card } from '../../components/Card/Card';
 import Pagination from '../../components/Pagination/Pagination'
+import styles from './Noticias.module.scss'
 
 const Noticias: React.FC = () => {
     const [currentPage, setCurrentPage] = useState(1);
@@ -27,13 +28,15 @@ const Noticias: React.FC = () => {
                     bg={dataNoticias[currentLanguage].pageHeader.bg}
                     text={dataNoticias[currentLanguage].pageHeader.text}
                 />
-                <Card
-                    items={dataNoticias[currentLanguage].items}
-                    currentPage={currentPage}
-                    maxItemsPerPage={maxItemsPerPage}
-                    ref={noticiaRef}
-                    type="news"
-                />
+                <div className={styles.container}>
+                    <Card
+                        items={dataNoticias[currentLanguage].items}
+                        currentPage={currentPage}
+                        maxItemsPerPage={maxItemsPerPage}
+                        ref={noticiaRef}
+                        type="news"
+                    />
+                </div>
                 {totalPages > 1 ? (
 
                     <Pagination
