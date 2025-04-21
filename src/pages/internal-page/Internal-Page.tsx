@@ -34,7 +34,7 @@ const InternalPage: React.FC<InternalPageProps> = ({ title, description, image, 
                     type === "event" ?
                         <div className={styles.wysiwygContainer}>
                             {/* <img className={styles.image} src={image} alt={title} />
-                                <h3>{title}</h3> */}
+                            <h3>{title}</h3> */}
                             <p>{description}</p>
                         </div> :
                         <div className={styles.wysiwygContainer}>
