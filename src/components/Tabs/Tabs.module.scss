@@ -4,16 +4,6 @@
     color: red;
 }
 
-// .tabContent {
-//     padding-top: 20px;
-//     background-color: var.$main-lightgray;
-//     background-image: url('../../assets/map.svg');
-//     background-size: auto 200%;
-//     background-repeat: repeat;
-//     background-position: 10% center;
-//     fill: rgba(204, 205, 215, 0.6);
-// }
-
 .tabContent {
     padding: 24px 16px 0;
     background-color: var.$main-lightgray;
@@ -68,13 +58,4 @@
     @media screen and (min-width: var.$breakpoint-lg) {
         font-size: 20px;
     }
-}
-
-
-.tabContentTitle {
-
-}
-
-.tabContentDescription {
-    
 }
