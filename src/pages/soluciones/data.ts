@@ -7,6 +7,37 @@ export const dataSoluciones = {
       bg: PageHeader,
       text: 'Soluciones',
     },
+    tabs: [
+      {
+        title: 'Consultoría',
+        description: [
+          'Evaluamos y damos soluciones para corregir las ineficiencias en las transacciones comerciales internacionales, agregando valor a las decisiones de los actores que intervienen en la cadena logística de suministro internacional: importadores, exportadores, instituciones bancarias y de seguros, operadores logísticos así como entidades públicas de control.',
+          'Nuestro enfoque se basa en la evidencia, con una aproximación multidisciplinaria de los problemas considerando el impacto de las tecnologías de la información aplicadas al comercio. Atendemos los nuevos desafíos en la regulación de la facilitación del comercio internacional en todas las materias contempladas en el Acuerdo de Facilitación del Comercio de la Organización Mundial del Comercio, así como acuerdos regionales preferenciales y recientes iniciativas como el Acuerdo de Asociación de Economías Digital (DEPA) evaluando el desempeño de operaciones empresariales, prácticas, medidas gubernamentales e instituciones.',
+          'Nuestros especialistas reúnen más de 20 años de experiencia en la disciplina del comercio internacional desempeñando roles clave en la práctica privada y el diseño de políticas públicas y de regulación. Nos apasiona el pensamiento crítico y estratégico, la rigurosidad en el análisis y la responsabilidad en la prestación de servicios a nuestros clientes.'
+        ],
+        image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
+      },
+      {
+        title: 'Tecnología y digitalización',
+        description: [
+          'Ofrecemos soluciones integrales de desarrollo tecnológico y digitalización, diseñadas para optimizar los procesos de ingreso y salida de mercancías, así como la logística del transporte internacional y los controles gubernamentales asociados. Nuestro objetivo es transformar y modernizar la cadena de suministro global de nuestros clientes, garantizando eficiencia, resiliencia, sostenibilidad, precisión y competitividad en un mercado en constante evolución. Aplicamos tecnologías avanzadas e inteligencia artificial.',
+          'Nos especializamos en el desarrollo de software personalizado e innovador, la implementación de soluciones tecnológicas y la digitalización de documentos. Además, nuestras soluciones de digitalización de documentos transforman archivos físicos en formatos digitales accesibles y organizados, mejorando la eficiencia en la gestión documental. Al combinar nuestra experiencia en desarrollo de software, digitalización y un enfoque en la interoperabilidad, ayudamos a las organizaciones de comercio internacional y logística a maximizar la eficiencia operativa y a adaptarse rápidamente a un entorno empresarial en constante cambio.'
+        ],
+        image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
+      },
+      {
+        title: 'Capacitación',
+        description: [
+          'IFICS diseña y ejecuta programas de capacitación y entrenamiento, a través de talleres, seminarios y cursos, en sus áreas de especialización, con contenidos y metodologías de vanguardia, buscando que los participantes refuercen habilidades y conocimientos específicos sobre el marco regulatorio de la facilitación del comercio y conceptos claves del entorno político, social y legal de los mercados externos'
+        ],
+        image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
+      }
+    ],
+    serviciosDeExcelencia: {
+      title: 'Servicios de excelencia para',
+      titleTwo: 'Empresas y Entidades Públicas',
+      desc: 'Ofrecemos soluciones diseñadas con altos estándares y metodologías basadas en las mejores prácticas internacionales, garantizando calidad e impacto.'
+    },
     innovacionEficiencia: [
       {
         color: 'blue',
@@ -68,6 +99,34 @@ export const dataSoluciones = {
     pageHeader: {
       bg: PageHeader,
       text: 'Solutions',
+    },
+    tabs: [
+      {
+        title: 'Consultoría',
+        description: [
+          ''
+        ],
+        image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
+      },
+      {
+        title: 'Tecnología y digitalización',
+        description: [
+          ''
+        ],
+        image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
+      },
+      {
+        title: 'Capacitación',
+        description: [
+          ''
+        ],
+        image: 'https://s3-alpha-sig.figma.com/img/f84e/f6d8/ed3f6c217e6c11c6259811d7bc87eae1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=C7ng6ABEKNqVfgVI96c~TvcGYzV9V9mzVXRQbsNc7~gGhQicHRKnL9BAV4weU9yFtgSxsnySSvvnQB22vIhtnmBK6iH1XUuBbzz3pOKJDZjCjB-Ynw0OlHiJOw5oUJh28egl6e25O1C59GWtSAfjnDMeDTn4VuzVKbOqRBtKl0DvwDEyWKOTKP4zF1aN6~9ZvtCAYkjYXd-PHzPlspOGvqIaA~T-DZcJS4idHHzpzEGHT0wAvCojue88fXzcTLzOXms6NwHCcsI3k9oRxya1qQUQrnWxglMfLj1uYGdM-JOMQZvMbz2T33djLCNkpHECrXU8zUdVJTH3SdbJVw~s9w__'
+      }
+    ],
+    serviciosDeExcelencia: {
+      title: 'Servicios de excelencia para',
+      titleTwo: 'Empresas y Entidades Públicas',
+      desc: 'Ofrecemos soluciones diseñadas con altos estándares y metodologías basadas en las mejores prácticas internacionales, garantizando calidad e impacto.'
     },
     innovacionEficiencia: [
       {

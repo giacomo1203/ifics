@@ -2,9 +2,11 @@ import React from 'react'
 import { content } from '../../config/content'
 import { dataSoluciones } from './data'
 import Layout from '../../components/Layout'
+import TabsComponent from '../../components/Tabs/Tabs';
 import { useLanguage } from '../../context/LanguageContext'
 import PageHeader from '../../components/PageHeader/PageHeader'
 import InnovacionYEficiencia from '../../components/InnovacionYEficiencia/InnovacionYEficiencia'
+import { ServiciosDeExcelencia } from '../../components/ServiciosDeExcelencia/ServiciosDeExcelencia'
 
 const Soluciones: React.FC = () => {
     const { currentLanguage } = useLanguage()
@@ -21,6 +23,14 @@ const Soluciones: React.FC = () => {
                     bg={dataSoluciones[currentLanguage].pageHeader.bg}
                     text={dataSoluciones[currentLanguage].pageHeader.text}
                 />
+                <ServiciosDeExcelencia
+                    title={dataSoluciones[currentLanguage].serviciosDeExcelencia.title}
+                    titleTwo={dataSoluciones[currentLanguage].serviciosDeExcelencia.titleTwo}
+                    description={dataSoluciones[currentLanguage].serviciosDeExcelencia.desc}
+                />
+                <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
+                    <TabsComponent tabs={dataSoluciones[currentLanguage].tabs} />
+                </div>
                 {
                     dataSoluciones[currentLanguage].innovacionEficiencia?.map((item, index) => (
                         <InnovacionYEficiencia
@@ -33,7 +43,6 @@ const Soluciones: React.FC = () => {
                         />
                     ))
                 }
-
             </>
         </Layout>
     )

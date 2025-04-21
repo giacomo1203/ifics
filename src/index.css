@@ -121,3 +121,29 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+
+.nav-tabs .nav-link {
+  padding: 24px 32px;
+  border-color: transparent !important;
+  transition: opacity .5s, border .5s;
+  margin-right: 24px;
+}
+
+li.nav-item:last-child .nav-link {
+  margin-right: 0;
+}
+
+.nav-tabs .nav-link:hover {
+  border-bottom: 1px solid #ff7a00 !important;
+}
+
+.nav-tabs .nav-link.active {
+  padding-bottom: 24px;
+  color: #ff7a00;
+  border-bottom: 1px solid #ff7a00 !important;
+
+  span {
+      color: #ff7a00
+  }
+}

@@ -1,0 +1,80 @@
+@use '../../styles/variables.scss' as var;
+
+.tab {
+    color: red;
+}
+
+// .tabContent {
+//     padding-top: 20px;
+//     background-color: var.$main-lightgray;
+//     background-image: url('../../assets/map.svg');
+//     background-size: auto 200%;
+//     background-repeat: repeat;
+//     background-position: 10% center;
+//     fill: rgba(204, 205, 215, 0.6);
+// }
+
+.tabContent {
+    padding: 24px 16px 0;
+    background-color: var.$main-lightgray;
+    background-image: url('../../assets/map.svg');
+    background-size: 60%;
+    background-repeat: repeat;
+    background-position: 10% center;
+    fill: rgba(204, 205, 215, 0.6);
+    color: var.$main-gray;
+    font-family: var.$font-family-base;
+}
+
+.tabContentContainer {
+    @apply mx-4 pt-14 pb-6;
+    @apply md:mx-8 md:py-22;
+    @apply lg:flex lg:max-w-xl-content lg:gap-16 lg:py-20 2xl:mx-auto;
+}
+
+.tabContentImage {
+    display: none;
+}
+
+@media screen and (min-width: var.$breakpoint-lg) {
+    .tabContentText, .tabContentImage {
+        width: 50%;
+    }
+
+    .tabContentImage {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+.tabContentTitle {
+    color: var.$main-blue;
+    font-family: var.$font-family-title;
+    font-weight: 700;
+}
+
+.tabTitle {
+    color: var.$main-gray;
+}
+
+.tabTitle, .tabTitleActive {
+    font-weight: 700;
+    font-family: var.$font-family-title;
+    font-size: 16px;
+    padding-bottom: 10px;
+
+    @media screen and (min-width: var.$breakpoint-lg) {
+        font-size: 20px;
+    }
+}
+
+
+.tabContentTitle {
+
+}
+
+.tabContentDescription {
+    
+}

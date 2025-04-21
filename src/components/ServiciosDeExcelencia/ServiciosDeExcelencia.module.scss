@@ -1,0 +1,35 @@
+@use '../../styles/variables.scss' as var;
+
+.serviciosDeExcelencia__container {
+    padding-top: 56px  !important;
+    padding-bottom: 26px !important;
+    @apply mx-4 py-22 min-h-auto;
+    @apply md:mx-8 lg:!pb-0;
+    @apply 2xl:mx-auto lg:!pt-24 lg:flex lg:flex-col lg:items-center pb-0;
+}
+
+.title {
+    color: var.$main-blue;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 8px;
+    width: 100%;
+
+    @apply xl:text-4xl xl:text-center xl:px-[20%] xl:col-span-8 xl:mb-9 xl:max-w-xl-content;
+
+    span {
+        color: var.$main-orange;
+    }
+}
+
+.desc {
+    color: var.$main-gray;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 20px;
+    margin-bottom: 0;
+    width: 100%;
+
+    @apply xl:text-center xl:px-[20%] xl:col-span-8 xl:mb-14 xl:max-w-xl-content;
+}
