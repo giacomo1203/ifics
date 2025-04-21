@@ -40,6 +40,8 @@
     a {
         font-weight: 400;
         transition: opacity .3s;
+        text-decoration: none;
+        color: inherit;
 
         &:hover {
             opacity: .5;

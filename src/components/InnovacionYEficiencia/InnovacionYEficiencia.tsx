@@ -44,8 +44,8 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
             <div className={styles.bgBox}>
               <img className={styles['bgBox--1']} src={image1} />
               <div
-                  className={`${styles[`bgBox--bg`]} ${styles[`bgBox--bg--${secondBg}`]}`}
-                ></div>
+                className={`${styles[`bgBox--bg`]} ${styles[`bgBox--bg--${secondBg}`]}`}
+              ></div>
             </div>
           ) : (
             <div className={styles.image}>
