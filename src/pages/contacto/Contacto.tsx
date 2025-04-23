@@ -7,7 +7,6 @@ import PageHeader from '../../components/PageHeader/PageHeader'
 import address from '../../assets/address.svg'
 import phone from '../../assets/phone.svg'
 import email from '../../assets/email.svg'
-import contacto from '../../assets/contacto.png'
 import styles from './Contacto.module.scss'
 
 const Contacto: React.FC = () => {
@@ -34,7 +33,7 @@ const Contacto: React.FC = () => {
 
             <div className={styles.itemsContainer}>
               <div className={styles.itemsContainer__1}>
-                <img src={contacto} alt="Contacto" />
+                <img src="https://eticare.com.pe/ifics/pictures/contacto.webp" alt="Contacto" />
               </div>
               <div className={styles.itemsContainer__2}>
                 <div className={styles.address}>

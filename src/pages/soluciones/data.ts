@@ -1,5 +1,5 @@
 const PageHeader =
-  'https://s3-alpha-sig.figma.com/img/a527/ddf8/d21b852e0737895094e188369cc02de3?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=U8qy-xkfGO6UkDG5A~oCU9sL5v7Vy9XT0d8Z2avXR6PIKh-jSuUw3UnG1Yrc95b648A3~UGeJP6~A3idOBjH3-PlBrU37-MTvHxGI1jq6DrGzTBBZ4bg5gdJi3fBj7b0awUhM6PZgf4wO~Kvgd~YAaLpLx6LtpHos6ESR4rPTIc~kNap16FQR3zQ3zUvGMmjBF7Cfmof7h~JWpl3I93fbhdrBGc7vSWKDkD37Bc5FFI4UJgkQ8tuyv03CIbANqQMzqbKRYSlQUL9ZGY6NuCfzJDie4xKC~w3pYknof3cRngzRcnI7dA7bVWytc20VotrBAi365MFpFsWZB1o3VRYsA__'
+  'https://eticare.com.pe/ifics/pictures/pageHeaderSoluciones.webp'
 
 export const dataSoluciones = {
   ES: {
