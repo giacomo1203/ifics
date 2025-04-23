@@ -1,5 +1,3 @@
-import areaEspecialidadImg from '../../assets/Home/areaEspecialidadImg.png'
-
 export const dataHome = {
   ES: {
     hero: {
@@ -29,19 +27,19 @@ export const dataHome = {
       items: [
         {
           description: 'Mejora de procedimientos y ventanilla única',
-          image: "https://s3-alpha-sig.figma.com/img/c9b6/0456/5e86a855dee974fbb59f88b8f0b8a9e1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oV1wIchm20fxA3DG-POilM72h2dx1YF4645Nq5wOROJ-bYFhrhkSulZbrswrVmWs~YbkWJDUdTEIi4ysQk6M4nj1K5BjlrX8NjkPitLWRAD5EsIXxS-BZN6~3qsKMpHLC1njYcFsrsvvc9G9mAGwBoBd62SVR8YeIb4F-eO~~7mi~0ahXuztuzv131HGAGX1Q9nVq3hV6zKibLScVJ0WppstM4-JC3ArkMPOraT9puWpRcjESrJRebbKr4iHcgvcnIpXmU6~1Q4hjLtd66cqstklliKbjDF0Ca5Tte3tqyuu5zsRjULxBTU1HRwrb8iYXe-F~gvt9tLMLXPtAReVJA__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad1.webp",
         },
         {
           description: 'Servicio aduanero y proceso logístico',
-          image: "https://s3-alpha-sig.figma.com/img/2358/f7dc/c986cf0d9bd27ec1ced68c2f3a203ff0?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NMjKaGl5jBKa2rUKUohnSjLo4zowCH60MNNWRq98FTXz~mWPsD~EhbJ~s8fwkseY9jZ1KURjYXvu~oHY3xJjlXPSezvsGzvCXG8aLpii5zRlimdWBn~W3s8VMftwCdTchd1GTMre1tqWu~GrkWayadBQgEZGqkB~M90FsrYbXCc9NxWOyg7zWWn4dQLjfXU3MQy3zsF8Wt6QfFplUgrj5w7-tOd63xShyAnnlLgX1VKrScrMDYgh2jKZZE57DaaIQ6E4ukMzmbKKBp9hb4SoLDcmjXhXk9xcL50Uc4-Zki1WUlj~J8zYmsxriPRBYxt06MbN23OXODQcjy-pvYDJxQ__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad2.webp",
         },
         {
           description: 'Barreras no arancelarias y sistema de la calidad',
-          image: "https://s3-alpha-sig.figma.com/img/f344/2c2c/be218a5150cc36ea5d7c53aeb9a34e4b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=V6R1PCQERgv-LSRWHmgBuhfixhkirF-3yG8~MemTzunGiAMTw8seba-NpP8E2I~wzaLFmiSSh6filTLfRXGSbYwE1h6tSxt23CjkXOWZi4pIvkjFTCchbaQJ25SNwTlV0PFD469H6SD6S3MwHaWjLNTBl5W6kPUHRdAYSOibiDQ6icuy3Gt-HelXW~MPNnU~FhMUAIa4tFypWZc9AdXO2JvTsmo0Kl~NtGv0fnPM5Gcpj1859Je12qGSMk2DP7ML95o2lxPogJbXl0lZByc7abDD9~HmOgsjbTW7lJShK1GYvNJ6wvqjorZNB9V0DkIz6AiF-1VUOtA8hSpztEL74A__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad3.webp",
         },
         {
           description: 'Zona económicas especiales',
-          image: "https://s3-alpha-sig.figma.com/img/8cb7/da3b/626214d23514e53be9a372411ab35f6c?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nQd88SSMz09dBvpkEN1A0Z9yTCizrFxq0Ur99P5FiLh3OhFIEd84f8slSfNQA44bltTi8ny~16ioBV3EBQT6F3A3EvXSIpysVfD5du2g9XRG28tL9XrYanm~4aE0yjFl7AjiXCZdDDoCDnhrY-F24FMlS1dXcgA~GnSAkBQ-pcXrrLbt7veC6oBWnAbiL~akUlGumtk9Doll4dxBR6RaBwRHKR7RfIAALFE7TnjEx9fEEAzMPXSL5fThJRYXWR0ja74iYDDmk4kjdXq8TA6avAPZdN~vEm~8mU6Efg~U6sMaV7Mxu3OAmZRmYiR0cNv4aXrrnvUnvMJnBX0GNv7a4A__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad4.webp",
         },
       ],
     },
@@ -360,19 +358,19 @@ export const dataHome = {
       items: [
         {
           description: 'Improvement of procedures and single window',
-          image: "https://s3-alpha-sig.figma.com/img/c9b6/0456/5e86a855dee974fbb59f88b8f0b8a9e1?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=oV1wIchm20fxA3DG-POilM72h2dx1YF4645Nq5wOROJ-bYFhrhkSulZbrswrVmWs~YbkWJDUdTEIi4ysQk6M4nj1K5BjlrX8NjkPitLWRAD5EsIXxS-BZN6~3qsKMpHLC1njYcFsrsvvc9G9mAGwBoBd62SVR8YeIb4F-eO~~7mi~0ahXuztuzv131HGAGX1Q9nVq3hV6zKibLScVJ0WppstM4-JC3ArkMPOraT9puWpRcjESrJRebbKr4iHcgvcnIpXmU6~1Q4hjLtd66cqstklliKbjDF0Ca5Tte3tqyuu5zsRjULxBTU1HRwrb8iYXe-F~gvt9tLMLXPtAReVJA__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad1.webp",
         },
         {
           description: 'Customs service and logistics process',
-          image: "https://s3-alpha-sig.figma.com/img/2358/f7dc/c986cf0d9bd27ec1ced68c2f3a203ff0?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=NMjKaGl5jBKa2rUKUohnSjLo4zowCH60MNNWRq98FTXz~mWPsD~EhbJ~s8fwkseY9jZ1KURjYXvu~oHY3xJjlXPSezvsGzvCXG8aLpii5zRlimdWBn~W3s8VMftwCdTchd1GTMre1tqWu~GrkWayadBQgEZGqkB~M90FsrYbXCc9NxWOyg7zWWn4dQLjfXU3MQy3zsF8Wt6QfFplUgrj5w7-tOd63xShyAnnlLgX1VKrScrMDYgh2jKZZE57DaaIQ6E4ukMzmbKKBp9hb4SoLDcmjXhXk9xcL50Uc4-Zki1WUlj~J8zYmsxriPRBYxt06MbN23OXODQcjy-pvYDJxQ__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad2.webp",
         },
         {
           description: 'Non-tariff barriers and quality system',
-          image: "https://s3-alpha-sig.figma.com/img/f344/2c2c/be218a5150cc36ea5d7c53aeb9a34e4b?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=V6R1PCQERgv-LSRWHmgBuhfixhkirF-3yG8~MemTzunGiAMTw8seba-NpP8E2I~wzaLFmiSSh6filTLfRXGSbYwE1h6tSxt23CjkXOWZi4pIvkjFTCchbaQJ25SNwTlV0PFD469H6SD6S3MwHaWjLNTBl5W6kPUHRdAYSOibiDQ6icuy3Gt-HelXW~MPNnU~FhMUAIa4tFypWZc9AdXO2JvTsmo0Kl~NtGv0fnPM5Gcpj1859Je12qGSMk2DP7ML95o2lxPogJbXl0lZByc7abDD9~HmOgsjbTW7lJShK1GYvNJ6wvqjorZNB9V0DkIz6AiF-1VUOtA8hSpztEL74A__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad3.webp",
         },
         {
           description: 'Special economic zones',
-          image: "https://s3-alpha-sig.figma.com/img/8cb7/da3b/626214d23514e53be9a372411ab35f6c?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=nQd88SSMz09dBvpkEN1A0Z9yTCizrFxq0Ur99P5FiLh3OhFIEd84f8slSfNQA44bltTi8ny~16ioBV3EBQT6F3A3EvXSIpysVfD5du2g9XRG28tL9XrYanm~4aE0yjFl7AjiXCZdDDoCDnhrY-F24FMlS1dXcgA~GnSAkBQ-pcXrrLbt7veC6oBWnAbiL~akUlGumtk9Doll4dxBR6RaBwRHKR7RfIAALFE7TnjEx9fEEAzMPXSL5fThJRYXWR0ja74iYDDmk4kjdXq8TA6avAPZdN~vEm~8mU6Efg~U6sMaV7Mxu3OAmZRmYiR0cNv4aXrrnvUnvMJnBX0GNv7a4A__",
+          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad4.webp",
         },
       ],
     },

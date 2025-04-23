@@ -5,6 +5,7 @@ import egarcia from '../../assets/Nosotros/team/egarcia.jpg'
 import apaza from '../../assets/Nosotros/team/apaza.jpg'
 import alindley from '../../assets/Nosotros/team/alindley.jpg'
 import ladrianzen from '../../assets/Nosotros/team/ladrianzen.jpg'
+import anasofia from '../../assets/Nosotros/team/anasofia.jpg'
 
 export const dataNosotros = {
   ES: {
@@ -27,9 +28,9 @@ export const dataNosotros = {
         'Fomentamos el comercio sin papeles y la aplicación de herramientas tecnológicas de vanguardia, entrenando al recurso humano del sector público el cual debe concentrarse en actividades con valor agregado, priorizando el control posterior y la gestión de riesgos como elementos necesarios para reducir tiempos de atención. Buscamos la adecuación a prácticas internacionales aceptadas, estandarizando procesos que permitan una integración comercial eficiente.',
       ],
       image1:
-        'https://s3-alpha-sig.figma.com/img/1f56/f94a/5f07755f38b05bacc78e494234272789?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GKc5zxOAiaB7f1WW5f~TcCUO3H4ZCbF8~M9SV3gaA~ISgGJCD0piHwXsheB-CVcF-RnlmRluBdeg0~91-V5mnjh28hRjdZ~7AFYfItSy1RNV28QB6AbLDUZXoOsFTEugsGSfOmA5I8zVoe3JnQubpTY1vYvU-gLPhZ8-4WJ8bvda0fVZJ6DxNF1R5IUC4OxYV5W4g6OimG8Z20rdQr7Jxt5OxVrXgT-ElmGpeGTbS37YV8bGvsARWKSKyNoNRbfXI4hKqDbWr1MQuMXYP-~xg5Ybkg8DOtTBWBxBugs8rI8C3yXgAXgtegMeGRCNhIPyNgyzfAqwhgk31DNsFS3PIQ__',
+        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia1.webp',
       image2:
-        'https://s3-alpha-sig.figma.com/img/a527/ddf8/d21b852e0737895094e188369cc02de3?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=U8qy-xkfGO6UkDG5A~oCU9sL5v7Vy9XT0d8Z2avXR6PIKh-jSuUw3UnG1Yrc95b648A3~UGeJP6~A3idOBjH3-PlBrU37-MTvHxGI1jq6DrGzTBBZ4bg5gdJi3fBj7b0awUhM6PZgf4wO~Kvgd~YAaLpLx6LtpHos6ESR4rPTIc~kNap16FQR3zQ3zUvGMmjBF7Cfmof7h~JWpl3I93fbhdrBGc7vSWKDkD37Bc5FFI4UJgkQ8tuyv03CIbANqQMzqbKRYSlQUL9ZGY6NuCfzJDie4xKC~w3pYknof3cRngzRcnI7dA7bVWytc20VotrBAi365MFpFsWZB1o3VRYsA__',
+        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia2.webp',
     },
     expertosEnFacilitacion: {
       title: 'Expertos en Facilitación',
@@ -75,10 +76,10 @@ export const dataNosotros = {
           desc: 'Abogado Pontificia Universidad Católica del Perú, y Máster en Derecho por la Katholieke Universiteit Leuven (Bélgica). Experto en análisis económico del derecho, políticas regulatorias, reestructuración empresarial, derecho de la competencia y propiedad intelectual. Ha sido Secretario Técnico de la Comisión de Procedimientos Concursales del Indecopi Sede Lima Norte, Coordinador Legal de la Gerencia de Estudios Económicos de la misma institución y asesor del Grupo Especial para la reforma legislativa gestado por Indecopi en 2008. En el sector privado ha trabajado en firmas de abogados y se ha desempeñado como Gerente Legal en Unión de Cervecerías Peruanas Backus y Johnston S.A.A. y Telefónica del Perú S.A.A. Becario de la Cooperación Técnica Belga y del Programa Alban de la Unión Europea. Ha sido docente del curso Análisis Económico del Derecho en diversas facultades y escuelas de post grado, y del curso de competencia del sector farmacéutico en la Universidad Cayetano Heredia.',
         },
         {
-          img: 'https://s3-alpha-sig.figma.com/img/ad5a/19c7/c8c563ad121e6a5fbace3b06cb4e161e?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hIUaGFLLrihp88x-BZpocYXEA29U3Ki6cxkhmiTNr4FfteT~P7xAqPhs7Iv5Y0s7kvgT~wy-BPN3wwBIakgraqut05m5OvtY7fwdoERno~PX7FX2hHeck-DyeYzRW~LK4dCCM9c6JGJ3xq4joE52NIu80Gm4bhDhpRQSHJbIrdkAXuZ9XDeWCS9kLMFfWCNPVKMM0C8BJLHuL-TE9MUnM6jmsBO87pmgfEXyT7BPORCn6xx-TC~EG6OaM7SlcsmQSo7424LDEVWPV8lfaTiMfZouXBg4d909lv6BidQ-TIR3hdm-WZYsJNC8D2IC4s1fb~tAdU3PiqyU5wkLjOr2ug__',
+          img: anasofia,
           name: 'Ana Sofía del Solar',
           role: 'Especialista facilitación del comercio',
-          desc: 'Abogado Pontificia Universidad Católica del Perú, y Máster en Derecho por la Katholieke Universiteit Leuven (Bélgica). Experto en análisis económico del derecho, políticas regulatorias, reestructuración empresarial, derecho de la competencia y propiedad intelectual. Ha sido Secretario Técnico de la Comisión de Procedimientos Concursales del Indecopi Sede Lima Norte, Coordinador Legal de la Gerencia de Estudios Económicos de la misma institución y asesor del Grupo Especial para la reforma legislativa gestado por Indecopi en 2008. En el sector privado ha trabajado en firmas de abogados y se ha desempeñado como Gerente Legal en Unión de Cervecerías Peruanas Backus y Johnston S.A.A. y Telefónica del Perú S.A.A. Becario de la Cooperación Técnica Belga y del Programa Alban de la Unión Europea. Ha sido docente del curso Análisis Económico del Derecho en diversas facultades y escuelas de post grado, y del curso de competencia del sector farmacéutico en la Universidad Cayetano Heredia.',
+          desc: 'Experta en Comercio Internacional y logística. Bachiller de la Facultad de Derecho por la Universidad de Lima. Parte del equipo legal de García-Godos, Lindley-Russo & Adrianzén Abogados. Asesora a empresas nacionales y extranjeras, así como a organismos internacionales, en las áreas de Comercio Internacional & Facilitación del Comercio, Derecho a la Salud y Alimentos, y Arbitraje Comercial. Ha participado en consultorías con organismos multilaterales como APEC, CAF y el BID. Ha realizado sus prácticas profesionales en el Área de Medio Ambiente del Estudio Kahatt Abogados. Ha sido Directora de la Comisión de Publicidad e integrante de la Comisión de Investigación y Redacción del Portal Jurídico Interuniversitario IUSTITIA.',
         },
       ],
     },
@@ -103,9 +104,9 @@ export const dataNosotros = {
         'We promote paperless trade and the use of cutting-edge technological tools, training human resources in the public sector who should focus on value-added activities, prioritizing post-clearance audits and risk management as essential elements to reduce processing times. We strive to align with accepted international practices, standardizing processes that allow for efficient trade integration.',
       ],
       image1:
-        'https://s3-alpha-sig.figma.com/img/1f56/f94a/5f07755f38b05bacc78e494234272789?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=GKc5zxOAiaB7f1WW5f~TcCUO3H4ZCbF8~M9SV3gaA~ISgGJCD0piHwXsheB-CVcF-RnlmRluBdeg0~91-V5mnjh28hRjdZ~7AFYfItSy1RNV28QB6AbLDUZXoOsFTEugsGSfOmA5I8zVoe3JnQubpTY1vYvU-gLPhZ8-4WJ8bvda0fVZJ6DxNF1R5IUC4OxYV5W4g6OimG8Z20rdQr7Jxt5OxVrXgT-ElmGpeGTbS37YV8bGvsARWKSKyNoNRbfXI4hKqDbWr1MQuMXYP-~xg5Ybkg8DOtTBWBxBugs8rI8C3yXgAXgtegMeGRCNhIPyNgyzfAqwhgk31DNsFS3PIQ__',
+        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia1.webp',
       image2:
-        'https://s3-alpha-sig.figma.com/img/a527/ddf8/d21b852e0737895094e188369cc02de3?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=U8qy-xkfGO6UkDG5A~oCU9sL5v7Vy9XT0d8Z2avXR6PIKh-jSuUw3UnG1Yrc95b648A3~UGeJP6~A3idOBjH3-PlBrU37-MTvHxGI1jq6DrGzTBBZ4bg5gdJi3fBj7b0awUhM6PZgf4wO~Kvgd~YAaLpLx6LtpHos6ESR4rPTIc~kNap16FQR3zQ3zUvGMmjBF7Cfmof7h~JWpl3I93fbhdrBGc7vSWKDkD37Bc5FFI4UJgkQ8tuyv03CIbANqQMzqbKRYSlQUL9ZGY6NuCfzJDie4xKC~w3pYknof3cRngzRcnI7dA7bVWytc20VotrBAi365MFpFsWZB1o3VRYsA__',
+        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia2.webp',
     },
     expertosEnFacilitacion: {
       title: 'Experts in Facilitation',
@@ -151,10 +152,10 @@ export const dataNosotros = {
           desc: 'Lawyer from Pontificia Universidad Católica del Perú, and Master in Law from Katholieke Universiteit Leuven (Belgium). Expert in law and economics, regulatory policies, corporate restructuring, competition law, and intellectual property. He has served as Technical Secretary of the Bankruptcy Procedures Commission of Indecopi Lima Norte, Legal Coordinator of the Economic Studies Management of the same institution, and advisor to the Special Group for legislative reform created by Indecopi in 2008. In the private sector, he has worked in law firms and served as Legal Manager at Unión de Cervecerías Peruanas Backus y Johnston S.A.A. and Telefónica del Perú S.A.A. He was a scholarship holder of the Belgian Technical Cooperation and the Alban Program of the European Union. He has taught the Law and Economics course at various faculties and postgraduate schools, and the pharmaceutical sector competition course at Universidad Cayetano Heredia.',
         },
         {
-          img: 'https://s3-alpha-sig.figma.com/img/ad5a/19c7/c8c563ad121e6a5fbace3b06cb4e161e?Expires=1745798400&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=hIUaGFLLrihp88x-BZpocYXEA29U3Ki6cxkhmiTNr4FfteT~P7xAqPhs7Iv5Y0s7kvgT~wy-BPN3wwBIakgraqut05m5OvtY7fwdoERno~PX7FX2hHeck-DyeYzRW~LK4dCCM9c6JGJ3xq4joE52NIu80Gm4bhDhpRQSHJbIrdkAXuZ9XDeWCS9kLMFfWCNPVKMM0C8BJLHuL-TE9MUnM6jmsBO87pmgfEXyT7BPORCn6xx-TC~EG6OaM7SlcsmQSo7424LDEVWPV8lfaTiMfZouXBg4d909lv6BidQ-TIR3hdm-WZYsJNC8D2IC4s1fb~tAdU3PiqyU5wkLjOr2ug__',
+          img: anasofia,
           name: 'Ana Sofía del Solar',
           role: 'Trade Facilitation Specialist',
-          desc: 'Lawyer from Pontificia Universidad Católica del Perú, and Master in Law from Katholieke Universiteit Leuven (Belgium). Expert in law and economics, regulatory policies, corporate restructuring, competition law, and intellectual property. She has served as Technical Secretary of the Bankruptcy Procedures Commission of Indecopi Lima Norte, Legal Coordinator of the Economic Studies Management of the same institution, and advisor to the Special Group for legislative reform created by Indecopi in 2008. In the private sector, she has worked in law firms and served as Legal Manager at Unión de Cervecerías Peruanas Backus y Johnston S.A.A. and Telefónica del Perú S.A.A. She was a scholarship holder of the Belgian Technical Cooperation and the Alban Program of the European Union. She has taught the Law and Economics course at various faculties and postgraduate schools, and the pharmaceutical sector competition course at Universidad Cayetano Heredia.',
+          desc: 'Expert in International Trade and Logistics. Law graduate from the University of Lima. Currently part of the legal team at García-Godos, Lindley-Russo & Adrianzen Abogados. She advises domestic and international companies, as well as international organizations, in the areas of international trade & trade facilitation, health & food law, and commercial arbitration. She has contributed to consultancy projects for multilateral organizations such as APEC, CAF, and IDB. She completed her legal internship in the Environmental Law Department at Kahatt Abogados. Additionally, she served as Director of the Advertising Committee and was a member of the Research and Editorial Committee of the Interuniversity Legal Portal IUSTITIA.',
         },
       ],
     },

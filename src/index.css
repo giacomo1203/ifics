@@ -131,7 +131,7 @@ button:focus-visible {
 
 @media screen and (min-width: 992px) {
   .nav-tabs .nav-link {
-    padding: 24px 32px;
+    padding: 26px 32px;
   }
   .nav-tabs .nav-link {
     margin-right: 24px;

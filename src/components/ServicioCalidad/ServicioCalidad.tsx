@@ -1,8 +1,5 @@
 import styles from './ServicioCalidad.module.scss'
-
 import listCheck from '../../assets/Home/listCheckNoBg.svg'
-import serviciosCalidad1 from '../../assets/serviciosCalidad1.png'
-import serviciosCalidad2 from '../../assets/serviciosCalidad2.png'
 
 interface ServicioCalidadProps {
   title: string
@@ -36,11 +33,11 @@ export const ServicioCalidad = ({
         </div>
         <div className={styles['servicio-calidad__image-container']}>
           <img
-            src={serviciosCalidad2}
+            src="https://eticare.com.pe/ifics/pictures/servicioCalidad1.webp"
             className={styles['servicio-calidad__image-1']}
           />
           <img
-            src={serviciosCalidad1}
+            src="https://eticare.com.pe/ifics/pictures/servicioCalidad2.webp"
             className={styles['servicio-calidad__image-2']}
           />
         </div>

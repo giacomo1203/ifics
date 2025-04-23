@@ -9,7 +9,7 @@
     position: relative;
     background-image:
       linear-gradient(180deg, rgba(9, 18, 66, 0) 0%, #091242 100%),
-      url(../../assets/Home/servicioCalidadBg.jpg);
+      url(https://eticare.com.pe/ifics/pictures/servicioCalidadBg.webp);
 
     background-size: cover;
     background-position: bottom;
@@ -97,6 +97,7 @@
   }
 
   &__image-1 {
+    object-fit: cover;
     background-color: var.$main-gray;
     aspect-ratio: 1/1;
     @apply col-span-3 md:aspect-3/2;
@@ -105,6 +106,7 @@
   }
 
   &__image-2 {
+    object-fit: cover;
     background-color: var.$main-gray;
     aspect-ratio: 211/212;
     min-width: 212px;

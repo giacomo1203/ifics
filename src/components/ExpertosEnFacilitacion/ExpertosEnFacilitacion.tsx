@@ -1,7 +1,4 @@
 import styles from './ExpertosEnFacilitacion.module.scss'
-import expertosMobile from '../../assets/expertos-mobile.png'
-import expertosTablet from '../../assets/expertos-tablet.png'
-import expertosDesktop from '../../assets/expertos-desktop.png'
 import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 
@@ -32,15 +29,15 @@ export const ExpertosEnFacilitacion = ({
                     </p>
                 </div>
                 <div className={styles.ExpertosEnFacilitacion__image}>
-                    <picture>
-                        <source media="(min-width: 992px)" srcSet={expertosDesktop} />
-                        <source media="(min-width: 768px)" srcSet={expertosTablet} />
-                        <LazyLoadImage
-                            className="top-4 right-4 text-gray-500"
-                            src={expertosMobile}
-                            alt="Expertos en Facilitación"
-                        />
-                    </picture>
+                    {/* <picture>
+                        <source media="(min-width: 992px)" srcSet="https://eticare.com.pe/ifics/pictures/expertos.webp" />
+                        <source media="(min-width: 768px)" srcSet="https://eticare.com.pe/ifics/pictures/expertos.webp" /> */}
+                    <LazyLoadImage
+                        className="top-4 right-4 text-gray-500 w-full"
+                        src="https://eticare.com.pe/ifics/pictures/expertos.webp"
+                        alt="Expertos en Facilitación"
+                    />
+                    {/* </picture> */}
                 </div>
 
             </div>
