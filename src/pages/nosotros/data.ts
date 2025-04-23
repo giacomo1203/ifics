@@ -1,5 +1,5 @@
 const PageHeader =
-  'https://eticare.com.pe/ifics/pictures/pageHeaderQuienesSomos.webp'
+  'https://ifics.com.pe/pictures/pageHeaderQuienesSomos.webp'
 
 import egarcia from '../../assets/Nosotros/team/egarcia.jpg'
 import apaza from '../../assets/Nosotros/team/apaza.jpg'
@@ -28,9 +28,9 @@ export const dataNosotros = {
         'Fomentamos el comercio sin papeles y la aplicación de herramientas tecnológicas de vanguardia, entrenando al recurso humano del sector público el cual debe concentrarse en actividades con valor agregado, priorizando el control posterior y la gestión de riesgos como elementos necesarios para reducir tiempos de atención. Buscamos la adecuación a prácticas internacionales aceptadas, estandarizando procesos que permitan una integración comercial eficiente.',
       ],
       image1:
-        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia1.webp',
+        'https://ifics.com.pe/pictures/innovacionEficiencia1.webp',
       image2:
-        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia2.webp',
+        'https://ifics.com.pe/pictures/innovacionEficiencia2.webp',
     },
     expertosEnFacilitacion: {
       title: 'Expertos en Facilitación',
@@ -104,9 +104,9 @@ export const dataNosotros = {
         'We promote paperless trade and the use of cutting-edge technological tools, training human resources in the public sector who should focus on value-added activities, prioritizing post-clearance audits and risk management as essential elements to reduce processing times. We strive to align with accepted international practices, standardizing processes that allow for efficient trade integration.',
       ],
       image1:
-        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia1.webp',
+        'https://ifics.com.pe/pictures/innovacionEficiencia1.webp',
       image2:
-        'https://eticare.com.pe/ifics/pictures/innovacionEficiencia2.webp',
+        'https://ifics.com.pe/pictures/innovacionEficiencia2.webp',
     },
     expertosEnFacilitacion: {
       title: 'Experts in Facilitation',

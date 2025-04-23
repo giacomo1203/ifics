@@ -9,6 +9,7 @@ interface InternalPageProps {
     title: string;
     description: string;
     image: string;
+    thumbnail: string;
     date?: {
         day: string;
         month: string;
@@ -17,7 +18,7 @@ interface InternalPageProps {
     htmlContent?: any;
 }
 
-const InternalPage: React.FC<InternalPageProps> = ({ title, description, image, date, type, htmlContent }) => {
+const InternalPage: React.FC<InternalPageProps> = ({ title, description, image, date, type, htmlContent, thumbnail }) => {
     return (
         <Layout
             title={content.meta.title}

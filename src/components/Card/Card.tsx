@@ -15,16 +15,16 @@ interface CardProps {
   items: {
     title: string
     description: string
-    image: string
-    href: string
+    image?: string
+    thumbnail?: string
     date?: CardDate
-    content?: string // Added content property
+    content?: string
   }[]
   currentPage: number
   maxItemsPerPage: number
   title?: string
   noPaddingTop?: boolean
-  type: 'news' | 'event'; // Added type property
+  type: 'news' | 'event';
 }
 
 export const Card = forwardRef<HTMLDivElement, CardProps>(
@@ -55,7 +55,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
                 >
                   <a href={url}>
                     <LazyLoadImage
-                      src={item.image}
+                      src={item.thumbnail}
                       alt={item.title}
                       className={styles.noticia__image}
                       wrapperClassName="w-full block"

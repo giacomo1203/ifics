@@ -9,6 +9,16 @@ import Layout from './Layout';
 
 interface InternalPageWrapperProps {
     type: 'news' | 'event';
+    thumbnail?: string;
+}
+
+interface InternalPageItem {
+    title: string;
+    description: string;
+    image: string;
+    thumbnail: string;
+    content?: string;
+    date?: { day: string; month: string; };
 }
 
 const InternalPageWrapper: React.FC<InternalPageWrapperProps> = ({ type }) => {
@@ -24,8 +34,23 @@ const InternalPageWrapper: React.FC<InternalPageWrapperProps> = ({ type }) => {
         data = eventosData;
     }
 
-    if (data) {
-        item = data['ES'].items.concat(data['EN'].items).find((item) => slugify(item.title) === slug);
+    if (data && data['ES'] && data['EN']) {
+        item = (data['ES'].items as any[]).map<InternalPageItem>(item => ({
+            title: item.title,
+            description: item.description,
+            image: item.image,
+            thumbnail: item.thumbnail || '',
+            content: item.content,
+        }))
+            .concat((data['EN'].items as any[]).map<InternalPageItem>(item => ({
+                title: item.title,
+                description: item.description,
+                image: item.image,
+                thumbnail: item.thumbnail || '',
+                content: item.content,
+                date: item.date
+            })))
+            .find((item) => slugify(item.title) === slug);
     }
 
     if (!item) {
@@ -43,8 +68,9 @@ const InternalPageWrapper: React.FC<InternalPageWrapperProps> = ({ type }) => {
             description={item.description}
             image={item.image}
             type={type}
-            date={type === 'event' && 'date' in item ? item.date : undefined}
-            htmlContent={type === 'news' && 'content' in item ? item.content : undefined}
+            date={type === 'event' && item?.date ? item.date : undefined}
+            htmlContent={type === 'news' && item?.content ? item.content : undefined}
+            thumbnail={item.thumbnail}
         />
     );
 };

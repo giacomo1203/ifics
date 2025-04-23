@@ -30,11 +30,11 @@ export const ExpertosEnFacilitacion = ({
                 </div>
                 <div className={styles.ExpertosEnFacilitacion__image}>
                     {/* <picture>
-                        <source media="(min-width: 992px)" srcSet="https://eticare.com.pe/ifics/pictures/expertos.webp" />
-                        <source media="(min-width: 768px)" srcSet="https://eticare.com.pe/ifics/pictures/expertos.webp" /> */}
+                        <source media="(min-width: 992px)" srcSet="https://ifics.com.pe/pictures/expertos.webp" />
+                        <source media="(min-width: 768px)" srcSet="https://ifics.com.pe/pictures/expertos.webp" /> */}
                     <LazyLoadImage
                         className="top-4 right-4 text-gray-500 w-full"
-                        src="https://eticare.com.pe/ifics/pictures/expertos.webp"
+                        src="https://ifics.com.pe/pictures/expertos.webp"
                         alt="Expertos en Facilitación"
                     />
                     {/* </picture> */}

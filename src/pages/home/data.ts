@@ -27,19 +27,19 @@ export const dataHome = {
       items: [
         {
           description: 'Mejora de procedimientos y ventanilla única',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad1.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad1.webp",
         },
         {
           description: 'Servicio aduanero y proceso logístico',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad2.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad2.webp",
         },
         {
           description: 'Barreras no arancelarias y sistema de la calidad',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad3.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad3.webp",
         },
         {
           description: 'Zona económicas especiales',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad4.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad4.webp",
         },
       ],
     },
@@ -358,19 +358,19 @@ export const dataHome = {
       items: [
         {
           description: 'Improvement of procedures and single window',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad1.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad1.webp",
         },
         {
           description: 'Customs service and logistics process',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad2.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad2.webp",
         },
         {
           description: 'Non-tariff barriers and quality system',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad3.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad3.webp",
         },
         {
           description: 'Special economic zones',
-          image: "https://eticare.com.pe/ifics/pictures/areaEspecialidad4.webp",
+          image: "https://ifics.com.pe/pictures/areaEspecialidad4.webp",
         },
       ],
     },

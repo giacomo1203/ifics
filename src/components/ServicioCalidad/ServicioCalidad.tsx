@@ -33,11 +33,11 @@ export const ServicioCalidad = ({
         </div>
         <div className={styles['servicio-calidad__image-container']}>
           <img
-            src="https://eticare.com.pe/ifics/pictures/servicioCalidad1.webp"
+            src="https://ifics.com.pe/pictures/servicioCalidad1.webp"
             className={styles['servicio-calidad__image-1']}
           />
           <img
-            src="https://eticare.com.pe/ifics/pictures/servicioCalidad2.webp"
+            src="https://ifics.com.pe/pictures/servicioCalidad2.webp"
             className={styles['servicio-calidad__image-2']}
           />
         </div>

@@ -1,7 +1,7 @@
 @use '../../styles/variables.scss' as var;
 
 .hero {
-  background-image: url('https://eticare.com.pe/ifics/pictures/heroDesktop.webp');
+  background-image: url('https://ifics.com.pe/pictures/heroDesktop.webp');
   background-color: rgba(9, 18, 66, 0.8);
   background-size: cover;
   background-position: center;
@@ -17,13 +17,14 @@
 
   @apply lg:min-h-[800px] lg:gap-6 lg:mt-0 xl:mt-35;
 
-  @media (min-width: var.$breakpoint-sm) {
-    background-image: url('https://eticare.com.pe/ifics/pictures/heroDesktop.webp');
-  }
+  // In case needed
+  // @media (min-width: var.$breakpoint-sm) {
+  //   background-image: url('https://ifics.com.pe/pictures/heroTablet.webp');
+  // }
 
-  @media (min-width: var.$breakpoint-lg) {
-    background-image: url('https://eticare.com.pe/ifics/pictures/heroDesktop.webp');
-  }
+  // @media (min-width: var.$breakpoint-lg) {
+  //   background-image: url('https://ifics.com.pe/pictures/heroMobile.webp');
+  // }
 }
 
 .hero__content {

@@ -7,6 +7,21 @@ export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), '')
   return {
     base: '/',
+    build: {
+      minify: 'terser',
+      terserOptions: {
+        compress: {
+          drop_console: true,
+        },
+      },
+      rollupOptions: {
+        output: {
+          entryFileNames: `[name].[hash].js`,
+          chunkFileNames: `[name].[hash].js`,
+          assetFileNames: `[name].[hash].[ext]`
+        }
+      }
+    },
     define: {
       __APP_ENV__: JSON.stringify(env.VITE_INITIAL_LANGUAGE),
       'process.env.NODE_ENV': JSON.stringify(mode),

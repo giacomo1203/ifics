@@ -1,14 +1,14 @@
 import React from 'react';
 import { Routes, Route, BrowserRouter, useParams } from 'react-router-dom';
-import Home from './pages/home/Home';
-import Nosotros from './pages/nosotros/Nosotros';
-import { useEffect } from 'react';
-import NotFound from './pages/NotFound';
+import { Suspense, lazy, useEffect } from 'react';
+const Home = lazy(() => import('./pages/home/Home'));
+const Nosotros = lazy(() => import('./pages/nosotros/Nosotros'));
+const Noticias = lazy(() => import('./pages/noticias/Noticias'));
+const Eventos = lazy(() => import('./pages/eventos/Eventos'));
+const Contacto = lazy(() => import('./pages/contacto/Contacto'));
+const Soluciones = lazy(() => import('./pages/soluciones/Soluciones'));
+const NotFound = lazy(() => import('./pages/NotFound'));
 import { LanguageProvider, useLanguage } from './context/LanguageContext';
-import Noticias from './pages/noticias/Noticias';
-import Eventos from './pages/eventos/Eventos';
-import Contacto from './pages/contacto/Contacto';
-import Soluciones from './pages/soluciones/Soluciones';
 import InternalPageWrapper from './components/InternalPageWrapper';
 import { slugify } from './utils';
 
@@ -66,17 +66,19 @@ const App: React.FC = () => {
   return (
     <LanguageProvider>
       <BrowserRouter>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/nosotros" element={<Nosotros />} />
-          <Route path="/eventos" element={<Eventos />} />
-          <Route path="/noticias" element={<Noticias />} />
-          <Route path="/contacto" element={<Contacto />} />
-          <Route path="/noticia/:slug" element={<NewsRoute />} />
-          <Route path="/evento/:slug" element={<EventRoute />} />
-          <Route path="/soluciones" element={<Soluciones />} />
-          <Route path="*" element={<NotFound />} />
-        </Routes>
+        <Suspense fallback={<div className="loader"></div>}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/nosotros" element={<Nosotros />} />
+            <Route path="/eventos" element={<Eventos />} />
+            <Route path="/noticias" element={<Noticias />} />
+            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/noticia/:slug" element={<NewsRoute />} />
+            <Route path="/evento/:slug" element={<EventRoute />} />
+            <Route path="/soluciones" element={<Soluciones />} />
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </Suspense>
       </BrowserRouter>
     </LanguageProvider>
   );
