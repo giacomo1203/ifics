@@ -495,7 +495,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
             >
               <div
                 className="px-3 h-full cursor-pointer"
-                onClick={() => handleItemClick(item)} // Llamar a handleItemClick
+                onClick={() => handleItemClick(item)}
               >
                 <LazyLoadImage
                   src={item.img}
@@ -506,7 +506,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
                   draggable="false"
                 />
                 <div className="!p-4 bg-main-blue text-white text-center flex flex-col justify-center translate-y-[-6px] min-h-[164px]">
-                  <p className="!font-[500] !leading-tight">{item.name}</p>
+                  <p className="!font-[500] lg:!font-[700] !leading-tight">{item.name}</p>
                   <p className="!italic text-sm !leading-tight">{item.role}</p>
                 </div>
               </div>

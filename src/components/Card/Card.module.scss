@@ -180,10 +180,10 @@
 
   &__itemTitle {
     font-family: var.$font-family-base;
-    font-weight: 400;
+    font-weight: 700;
     font-size: 16px;
     line-height: 26px;
-    color: var.$main-blue;
+    color: var.$secondary-blue;
     margin: 0 0 16px;
     width: 100%;
 
@@ -194,6 +194,8 @@
     display: -webkit-box;
     -webkit-line-clamp: 2;
     -webkit-box-orient: vertical;
+
+    @apply lg:font-normal;
   }
 
   &__itemDescription {
