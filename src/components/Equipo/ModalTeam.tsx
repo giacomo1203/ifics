@@ -48,7 +48,7 @@ const Modal: React.FC<{
           onClick={onClose}
           className="absolute top-4 right-4 w-7 h-7 flex items-center justify-center cursor-pointer"
         >
-          <img src={cancel} alt="Cerrar" className="w-8 h-8" />
+          <img src={cancel} alt="Cerrar" className="min-w-8 min-h-8" />
         </div>
         <div className="!pt-12 !px-6 !py-6 sm:!p-12 gap-3 flex flex-col lg:flex-row lg:gap-6 !z-9999999999">
           <div className="!mx-auto aspect-[3/4] md:min-w-[285px] overflow-hidden">
