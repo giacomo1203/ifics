@@ -2,9 +2,9 @@
 
 .ExpertosEnFacilitacion {
   background-color: var.$main-blue;
-  @media screen and (min-width: var.$breakpoint-lg) {
-    margin-bottom: 86px;
-  }
+  // @media screen and (min-width: var.$breakpoint-lg) {
+  //   margin-bottom: 86px;
+  // }
 
   &__container {
     position: relative;
