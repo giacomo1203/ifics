@@ -5,7 +5,7 @@ import logo from '@/assets/Global/logo.svg'
 import { useLanguage } from '../../context/LanguageContext'
 import { dataNav } from './data'
 
-const basename = import.meta.env.MODE === 'production' ? '/ifics' : ''
+const basename = import.meta.env.MODE === 'production' ? '' : ''
 
 import { useNavigate } from 'react-router-dom';
 
@@ -99,3 +99,4 @@ const Header = () => {
 }
 
 export default Header
+

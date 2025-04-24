@@ -1,15 +1,21 @@
 @use '../../styles/variables.scss' as var;
 
 .quote {
+  color: #fff;
+  background-color: #0000;
+  background-image: linear-gradient(#09124266, #091242 89.5%), url(https://ifics.com.pe/pictures/quote.webp);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: scroll, scroll;
+  background-origin: padding-box, padding-box;
+  background-clip: border-box, border-box;
   min-height: 500px;
-  background:
-    linear-gradient(180deg, rgba(9, 18, 66, 0.4) 0%, #091242 89.5%),
-    url("https://ifics.com.pe/pictures/quote.webp");
-  background-position: 45% 30%;
-  background-size: 450%;
-
   padding: 87px 16px;
-  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   @media (min-width: 769px) {
     padding: 170px 16px 210px;
