@@ -30,7 +30,7 @@ export const dataSoluciones = {
         description: [
           'IFICS diseña y ejecuta programas de capacitación y entrenamiento, a través de talleres, seminarios y cursos, en sus áreas de especialización, con contenidos y metodologías de vanguardia, buscando que los participantes refuercen habilidades y conocimientos específicos sobre el marco regulatorio de la facilitación del comercio y conceptos claves del entorno político, social y legal de los mercados externos'
         ],
-        image: 'https://ifics.com.pe/pictures/solucionesEconomicasEspeciales.webp'
+        image: 'https://ifics.com.pe/pictures/solucionesCapacitacion.webp'
       }
     ],
     serviciosDeExcelencia: {
