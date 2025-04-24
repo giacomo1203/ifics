@@ -18,7 +18,7 @@ interface InternalPageProps {
     htmlContent?: any;
 }
 
-const InternalPage: React.FC<InternalPageProps> = ({ title, description, image, date, type, htmlContent, thumbnail }) => {
+const InternalPage: React.FC<InternalPageProps> = ({ title, description, image, type, htmlContent }) => {
     return (
         <Layout
             title={content.meta.title}
