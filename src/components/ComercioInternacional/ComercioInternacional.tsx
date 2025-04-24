@@ -1,6 +1,5 @@
 import styles from './ComercioInternacional.module.scss'
 import listCheck from '../../assets/Home/listCheck.svg'
-import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 interface ComercioInternacionalProps {
   title: string
