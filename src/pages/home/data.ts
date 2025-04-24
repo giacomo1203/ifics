@@ -336,7 +336,7 @@ export const dataHome = {
       description:
         'Thats why, we select with rigor the areas of work in which we have a comparative advantage to achieve the expected impact.',
       callToAction: 'Learn more about us',
-      callToActionHref: '/about',
+      callToActionHref: '/nosotros',
     },
     comercioInternacional: {
       title: 'We facilitate',

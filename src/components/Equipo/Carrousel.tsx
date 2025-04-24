@@ -486,7 +486,7 @@ const CustomCarousel: React.FC<CustomCarouselProps> = ({ team }) => {
           {extendedTeam.map((item, index) => (
             <div
               key={index}
-              className="flex-shrink-0 box-border select-none !px-3"
+              className="flex-shrink-0 box-border select-none"
               style={{
                 width: isFixedWidthMode
                   ? `${MOBILE_FIXED_WIDTH_PX}px`

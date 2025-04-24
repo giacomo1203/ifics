@@ -47,7 +47,7 @@
     }
   }
   &__heading {
-    @apply lg:flex-1/2 pb-14 md:py-22 lg:py-44 order-1;
+    @apply lg:flex-1/2 pb-14 md:pb-22 lg:py-44 order-1;
     @apply lg:order-2 lg:mx-16;
     @media (min-width: #{var.$breakpoint-lg}) {
       width: 50%;
