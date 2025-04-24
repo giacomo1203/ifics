@@ -57,6 +57,11 @@
   @apply lg:grid-cols-3;
   @apply md:mx-8;
   @apply 2xl:mx-0;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
 }
 
 .conectaConNosotros__itemSection {
