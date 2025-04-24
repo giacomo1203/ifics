@@ -186,3 +186,33 @@
 .blue {
   color: var.$secondary-blue;
 }
+
+
+.hover {
+  position: relative;
+
+  &::after {
+    opacity: 0;
+    transition: opacity .3s;
+    position: absolute;
+    content: 'Conoce más';
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    width: 80%;
+    height: 80%;
+    background-color: #1c1f35e8;
+  }
+
+  &:hover 
+  {
+    &::after {
+     
+      opacity: 1;
+    }
+  }
+}

@@ -50,7 +50,7 @@ export const ConectaConNosotros = ({
 
       <div className={styles.conectaConNosotros__items}>
         {items.slice(0, visibleItems).map((item, index) => (
-          <a href={`evento/${slugify(item.title)}`} key={index}>
+          <a className={styles.hover} href={`evento/${slugify(item.title)}`} key={index}>
             <div className={styles.conectaConNosotros__item}>
               <div className={styles.conectaConNosotros__imageContainer}>
                 <LazyLoadImage
