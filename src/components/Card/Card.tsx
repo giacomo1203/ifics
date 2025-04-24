@@ -5,6 +5,7 @@ import calendarWhite from '../../assets/calendar.svg'
 import calendarBlack from '../../assets/Home/calendar.svg'
 import { forwardRef } from 'react'
 import { useWindowWidth, slugify } from '../../utils'
+import { useLanguage } from '../../context/LanguageContext'
 
 interface CardDate {
   day: string
@@ -37,6 +38,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
     const startIndex = (currentPage - 1) * maxItemsPerPage;
     const endIndex = startIndex + maxItemsPerPage;
     const itemsToRender = items?.slice(startIndex, endIndex);
+    const { currentLanguage } = useLanguage()
 
     return (
       <div
@@ -51,7 +53,7 @@ export const Card = forwardRef<HTMLDivElement, CardProps>(
             return (
               <div key={index} className={styles.noticia__item}>
                 <div
-                  className={`${styles.noticia__imageContainer} ${item.date && item.date.month && item.date.day && styles.opacity}`}
+                  className={`${currentLanguage === "ES" ? styles.noticia__imageContainer : styles.noticia__imageContainerEn} ${item.date && item.date.month && item.date.day && styles.opacity}`}
                 >
                   <a href={url}>
                     <LazyLoadImage
