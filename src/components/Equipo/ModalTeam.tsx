@@ -46,7 +46,7 @@ const Modal: React.FC<{
       >
         <div
           onClick={onClose}
-          className="absolute top-4 right-4 w-7 h-7 flex items-center justify-center cursor-pointer"
+          className="absolute top-4 right-4 w-8 h-8 flex items-center justify-center cursor-pointer"
         >
           <img src={cancel} alt="Cerrar" className="min-w-8 min-h-8" />
         </div>
