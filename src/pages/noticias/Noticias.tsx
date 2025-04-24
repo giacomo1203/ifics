@@ -28,7 +28,7 @@ const Noticias: React.FC = () => {
                     bg={dataNoticias[currentLanguage].pageHeader.bg}
                     text={dataNoticias[currentLanguage].pageHeader.text}
                 />
-                <div className={styles.container}>
+                <section className={styles.container}>
                     <Card
                         items={dataNoticias[currentLanguage].items}
                         currentPage={currentPage}
@@ -36,7 +36,7 @@ const Noticias: React.FC = () => {
                         ref={noticiaRef}
                         type="news"
                     />
-                </div>
+                </section>
                 {totalPages > 1 ? (
 
                     <Pagination

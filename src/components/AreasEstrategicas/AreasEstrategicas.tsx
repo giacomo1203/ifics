@@ -39,7 +39,7 @@ export const AreasEstrategicas = ({
     items
 }: AreasEstrategicasProps) => {
     return (
-        <div className={styles.AreasEstrategicas}>
+        <section className={styles.AreasEstrategicas}>
             <div className={styles.AreasEstrategicas__container}>
                 <h2 className={styles.title}>
                     {title}
@@ -62,6 +62,6 @@ export const AreasEstrategicas = ({
                     }
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

@@ -24,7 +24,7 @@ const Contacto: React.FC = () => {
           bg={dataContacto[currentLanguage].pageHeader.bg}
           text={dataContacto[currentLanguage].pageHeader.text}
         />
-        <div className={styles.contacto}>
+        <section className={styles.contacto}>
           <div className={styles.contacto__container}>
             <h2 className={styles.title}>
               {dataContacto[currentLanguage].title}
@@ -61,7 +61,7 @@ const Contacto: React.FC = () => {
               </div>
             </div>
           </div>
-        </div>
+        </section>
       </>
     </Layout>
   )

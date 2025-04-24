@@ -12,7 +12,7 @@ export const ServiciosDeExcelencia = ({
     description,
 }: ServiciosDeExcelenciaProps) => {
     return (
-        <div className={styles.serviciosDeExcelencia}>
+        <section className={styles.serviciosDeExcelencia}>
             <div className={styles.serviciosDeExcelencia__container}>
                 <h2 className={styles.title}>
                     {title}
@@ -20,6 +20,6 @@ export const ServiciosDeExcelencia = ({
                 </h2>
                 <p className={styles.desc}>{description}</p>
             </div>
-        </div>
+        </section>
     )
 }

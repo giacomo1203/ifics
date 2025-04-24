@@ -17,7 +17,7 @@ export interface EquipoProps {
 
 const Equipo: React.FC<EquipoProps> = ({ titleOne, titleTwo, sub, team }) => {
   return (
-    <div className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.section__container}>
         <h1 className={styles.title}>
           <span className={styles['title--accent']}>{titleOne}</span> {titleTwo}
@@ -29,7 +29,7 @@ const Equipo: React.FC<EquipoProps> = ({ titleOne, titleTwo, sub, team }) => {
       <div className={styles.slider}>
         <Carousel team={team} />
       </div>
-    </div>
+    </section>
   )
 }
 

@@ -16,7 +16,7 @@ export const ComercioInternacional = ({
   items,
 }: ComercioInternacionalProps) => {
   return (
-    <div className={styles.comercioInternacional}>
+    <section className={styles.comercioInternacional}>
       <div className={styles.comercioInternacional__container}>
         <div className={styles.comercioInternacional__heading}>
           <h2 className={styles.comercioInternacional__title}>{title}</h2>
@@ -30,7 +30,7 @@ export const ComercioInternacional = ({
             <li key={index} className={styles.comercioInternacional__item}>
               <LazyLoadImage
                 src={listCheck}
-                alt={title}
+                alt={title + " " + titleTwo}
                 className={styles.image}
                 effect="blur"
               />
@@ -39,6 +39,6 @@ export const ComercioInternacional = ({
           ))}
         </ul>
       </div>
-    </div>
+    </section>
   )
 }

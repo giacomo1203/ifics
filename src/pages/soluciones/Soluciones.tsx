@@ -29,9 +29,7 @@ const Soluciones: React.FC = () => {
                     titleTwo={dataSoluciones[currentLanguage].serviciosDeExcelencia.titleTwo}
                     description={dataSoluciones[currentLanguage].serviciosDeExcelencia.desc}
                 />
-                <div style={{ overflowX: 'auto', WebkitOverflowScrolling: 'touch' }}>
-                    <TabsComponent tabs={dataSoluciones[currentLanguage].tabs} />
-                </div>
+                <TabsComponent tabs={dataSoluciones[currentLanguage].tabs} />
                 <AreasEstrategicas
                     title={dataSoluciones[currentLanguage].areasEstrategicas.title}
                     titleTwo={dataSoluciones[currentLanguage].areasEstrategicas.titleTwo}

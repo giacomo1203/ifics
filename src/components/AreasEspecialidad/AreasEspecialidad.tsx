@@ -18,7 +18,7 @@ export const AreasEspecialidad = ({
   items,
 }: AreasEspecialidadProps) => {
   return (
-    <div className={styles.areasEspecialidad}>
+    <section className={styles.areasEspecialidad}>
       <div className={styles.container}>
         <h2 className={styles.title}>
           {title} <span className={styles['title--accent']}>{titleTwo}</span>
@@ -33,6 +33,6 @@ export const AreasEspecialidad = ({
           </div>
         ))}
       </div>
-    </div>
+    </section>
   )
 }

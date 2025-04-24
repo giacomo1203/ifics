@@ -13,7 +13,7 @@ export const ServicioCalidad = ({
   items,
 }: ServicioCalidadProps) => {
   return (
-    <div className={styles['servicio-calidad']}>
+    <section className={styles['servicio-calidad']}>
       <div className={styles['servicio-calidad__container']}>
         <div className="lg:flex-1 lg:flex lg:flex-col lg:justify-center">
           <div className={styles['servicio-calidad__title_container']}>
@@ -25,7 +25,7 @@ export const ServicioCalidad = ({
           <ul className={styles['servicio-calidad__items']}>
             {items.map((item, index) => (
               <li key={index} className={styles['servicio-calidad__item']}>
-                <img src={listCheck} />
+                <img src={listCheck} alt={item} />
                 {item}
               </li>
             ))}
@@ -35,13 +35,17 @@ export const ServicioCalidad = ({
           <img
             src="https://ifics.com.pe/pictures/servicioCalidad1.webp"
             className={styles['servicio-calidad__image-1']}
+            height="100%"
+            width="100%"
+            alt="Servicio de Calidad para Empresas y Entidades Públicas"
           />
           <img
             src="https://ifics.com.pe/pictures/servicioCalidad2.webp"
             className={styles['servicio-calidad__image-2']}
+            alt="Servicio de Calidad para Empresas y Entidades Públicas"
           />
         </div>
       </div>
-    </div>
+    </section>
   )
 }

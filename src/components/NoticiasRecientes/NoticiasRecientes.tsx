@@ -18,7 +18,7 @@ export const NoticiasRecientes = ({ title, type }: NoticiasRecientesProps) => {
   const noticiaRef = React.useRef<HTMLDivElement>(null)
 
   return (
-    <div className={styles.noticiasRecientes}>
+    <section className={styles.noticiasRecientes}>
       <div className={styles.noticiasRecientesContainer}>
         <Card
           items={type === 'news' ? dataNoticias[currentLanguage].items : eventosData[currentLanguage].items}
@@ -30,6 +30,6 @@ export const NoticiasRecientes = ({ title, type }: NoticiasRecientesProps) => {
           type={type}
         />
       </div>
-    </div>
+    </section>
   )
 }

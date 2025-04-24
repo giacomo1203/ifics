@@ -15,7 +15,7 @@ export const Hero: React.FC<HeroProps> = ({
   callToActionHref,
 }) => {
   return (
-    <div className={styles.hero}>
+    <section className={styles.hero}>
       <div className={`${styles.hero__content}`}>
         <h3 className={styles.hero__title}>{title}</h3>
         <p className={styles.hero__description}>{description}</p>
@@ -23,6 +23,6 @@ export const Hero: React.FC<HeroProps> = ({
       <a href={callToActionHref} className={styles.hero__callToAction}>
         {callToAction}
       </a>
-    </div>
+    </section>
   )
 }

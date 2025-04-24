@@ -7,7 +7,7 @@ interface QuoteProps {
 
 export const Quote = ({ text, sub }: QuoteProps) => {
   return (
-    <div className={styles.quote}>
+    <section className={styles.quote}>
       {/* <div className="absolute inset-0 bg-[#000639]/30"></div> */}
 
       {
@@ -18,6 +18,6 @@ export const Quote = ({ text, sub }: QuoteProps) => {
         sub &&
         <div className={styles.quote__sub}>{sub}</div>
       }
-    </div>
+    </section>
   )
 }

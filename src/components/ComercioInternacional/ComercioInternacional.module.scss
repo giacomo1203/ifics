@@ -63,6 +63,7 @@
     gap: 32px;
     @apply lg:flex-1/2;
     @apply lg:text-[18px];
+    padding-left: 0;
   }
   &__item {
     display: flex;

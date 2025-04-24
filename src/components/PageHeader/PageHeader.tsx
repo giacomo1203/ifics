@@ -8,7 +8,7 @@ export interface PageHeaderProps {
 
 const PageHeader: React.FC<PageHeaderProps> = ({ bg, text, noOverlay }) => {
   return (
-    <div
+    <section
       className="h-[180px] lg:h-[350px] relative bg-cover bg-center lg:!py-18 !mt-16 xl:!mt-35"
       style={{ backgroundImage: `url(${bg})` }}
     >
@@ -21,8 +21,7 @@ const PageHeader: React.FC<PageHeaderProps> = ({ bg, text, noOverlay }) => {
           </h1>
         </div>
       }
-
-    </div>
+    </section>
   )
 }
 

@@ -16,7 +16,7 @@ export const ExpertosEnFacilitacion = ({
     descriptionTwo
 }: ExpertosEnFacilitacionProps) => {
     return (
-        <div className={styles.ExpertosEnFacilitacion}>
+        <section className={styles.ExpertosEnFacilitacion}>
             <div className={styles.ExpertosEnFacilitacion__container}>
                 <div className={styles.ExpertosEnFacilitacion__heading}>
                     <h2 className={styles.ExpertosEnFacilitacion__title}>{title}</h2>
@@ -41,6 +41,6 @@ export const ExpertosEnFacilitacion = ({
                 </div>
 
             </div>
-        </div>
+        </section>
     )
 }

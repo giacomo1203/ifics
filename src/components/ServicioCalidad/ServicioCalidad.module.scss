@@ -37,8 +37,7 @@
     flex-direction: column;
     gap: 8px;
     @apply mx-4 pb-8;
-    @apply md:mx-8;
-    @apply lg:mx-0;
+    @apply md:mx-0;
   }
 
   &__title {
@@ -56,6 +55,7 @@
     font-size: 16px;
     line-height: 20px;
     color: var.$main-gray;
+    margin-bottom: 0;
     @apply lg:text-xl;
   }
 
@@ -64,8 +64,8 @@
     gap: 16px;
     display: flex;
     flex-direction: column;
-    @apply md:mx-8;
-    @apply lg:mx-0;
+    padding-left: 0;
+    @apply md:mx-0;
   }
 
   &__item {

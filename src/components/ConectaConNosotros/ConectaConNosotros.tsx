@@ -34,7 +34,7 @@ export const ConectaConNosotros = ({
   const hasMore = visibleItems < items.length;
 
   return (
-    <div className={styles.conectaConNosotros}>
+    <section className={styles.conectaConNosotros}>
       <div className={styles.conectaConNosotros__container}>
         <h2 className={styles.conectaConNosotros__title}>
           {title.split(' ').map((word, index) => {
@@ -50,8 +50,8 @@ export const ConectaConNosotros = ({
 
       <div className={styles.conectaConNosotros__items}>
         {items.slice(0, visibleItems).map((item, index) => (
-          <a href={`evento/${slugify(item.title)}`}>
-            <div key={index} className={styles.conectaConNosotros__item}>
+          <a href={`evento/${slugify(item.title)}`} key={index}>
+            <div className={styles.conectaConNosotros__item}>
               <div className={styles.conectaConNosotros__imageContainer}>
                 <LazyLoadImage
                   src={item.image}
@@ -96,6 +96,6 @@ export const ConectaConNosotros = ({
           {currentLanguage === "ES" ? "Ver más eventos" : "Load more"}
         </button>
       )}
-    </div>
+    </section>
   );
 }

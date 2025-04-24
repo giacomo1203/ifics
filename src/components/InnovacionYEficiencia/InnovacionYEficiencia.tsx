@@ -19,7 +19,7 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
   secondBg,
 }) => {
   return (
-    <div
+    <section
       className={`${styles.section} ${secondBg ? styles[`section--${secondBg}`] : ''}`}
     >
       <div
@@ -55,7 +55,7 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
           )
         }
       </div>
-    </div>
+    </section>
   )
 }
 
