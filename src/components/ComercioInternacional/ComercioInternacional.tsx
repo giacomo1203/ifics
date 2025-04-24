@@ -28,11 +28,10 @@ export const ComercioInternacional = ({
         <ul className={styles.comercioInternacional__items}>
           {items.map((item, index) => (
             <li key={index} className={styles.comercioInternacional__item}>
-              <LazyLoadImage
+              <img
                 src={listCheck}
                 alt={title + " " + titleTwo}
                 className={styles.image}
-                effect="blur"
               />
               {item}
             </li>
