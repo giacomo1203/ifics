@@ -64,7 +64,9 @@ const Header = () => {
                 key={index}
                 href={basename + item.url}
                 className={
-                  window.location.pathname === item.url ? styles.active : ''
+                  window.location.pathname.replace(/\/$/, '') === item.url.replace(/\/$/, '')
+                    ? styles.active
+                    : ''
                 }
               >
                 {item.name}
