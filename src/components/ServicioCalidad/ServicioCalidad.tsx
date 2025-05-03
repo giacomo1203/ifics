@@ -1,5 +1,6 @@
 import styles from './ServicioCalidad.module.scss'
 import listCheck from '../../assets/Home/listCheckNoBg.svg'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 interface ServicioCalidadProps {
   title: string
@@ -32,17 +33,21 @@ export const ServicioCalidad = ({
           </ul>
         </div>
         <div className={styles['servicio-calidad__image-container']}>
-          <img
+          <LazyLoadImage
             src="https://ifics.com.pe/pictures/servicioCalidad1.webp"
-            className={styles['servicio-calidad__image-1']}
+            className={styles['servicio-calidad__image']}
             height="100%"
             width="100%"
             alt="Servicio de Calidad para Empresas y Entidades Públicas"
+            effect="blur"
+            wrapperClassName={`${styles['servicio-calidad__image-1']} h-auto w-full`}
           />
-          <img
+          <LazyLoadImage
             src="https://ifics.com.pe/pictures/servicioCalidad2.webp"
-            className={styles['servicio-calidad__image-2']}
+            className={styles['servicio-calidad__image']}
             alt="Servicio de Calidad para Empresas y Entidades Públicas"
+            effect="blur"
+            wrapperClassName={`${styles['servicio-calidad__image-2']} h-auto w-full`}
           />
         </div>
       </div>
