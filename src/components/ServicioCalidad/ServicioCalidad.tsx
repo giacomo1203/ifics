@@ -25,7 +25,7 @@ export const ServicioCalidad = ({
           <ul className={styles['servicio-calidad__items']}>
             {items.map((item, index) => (
               <li key={index} className={styles['servicio-calidad__item']}>
-                <img src={listCheck} alt={item} />
+                <img src={listCheck} alt={index+'.-'} />
                 {item}
               </li>
             ))}
