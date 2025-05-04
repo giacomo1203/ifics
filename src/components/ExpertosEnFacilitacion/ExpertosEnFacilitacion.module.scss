@@ -70,4 +70,21 @@
       object-fit: cover;
     }
   }
+
+  &__imageWrapper {
+    @apply w-full h-full relative;
+  
+    &.lazy-load-image-background {
+      @apply w-full h-full;
+  
+      img {
+        @apply absolute w-full h-full object-cover;
+        transform: translateY(-16px);
+      }
+    }
+  }
+  
+  &__imageTag {
+    @apply w-full h-full object-cover;
+  }
 }

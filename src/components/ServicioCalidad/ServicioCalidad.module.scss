@@ -105,7 +105,7 @@
     object-fit: cover;
     background-color: var.$main-gray;
     aspect-ratio: 1/1;
-    @apply col-span-3 md:aspect-3/2;
+    @apply col-span-3;
     @apply lg:aspect-1/1 lg:w-[100%];
     @apply xl:w-[92%];
   }
@@ -117,7 +117,6 @@
     min-width: 212px;
     width: 60%;
     @apply col-span-2 absolute right-0 -bottom-10;
-    @apply md:bottom-0 md:w-[67%] md:aspect-3/2;
     @apply lg:aspect-1/1 lg:-bottom-0 lg:w-[70%];
     @apply xl:w-[62.5%];
   }

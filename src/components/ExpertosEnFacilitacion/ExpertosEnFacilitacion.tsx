@@ -29,15 +29,13 @@ export const ExpertosEnFacilitacion = ({
                     </p>
                 </div>
                 <div className={styles.ExpertosEnFacilitacion__image}>
-                    {/* <picture>
-                        <source media="(min-width: 992px)" srcSet="https://ifics.com.pe/pictures/expertos.webp" />
-                        <source media="(min-width: 768px)" srcSet="https://ifics.com.pe/pictures/expertos.webp" /> */}
                     <LazyLoadImage
                         className="top-4 right-4 text-gray-500 w-full"
                         src="https://ifics.com.pe/pictures/expertos.webp"
-                        alt="Expertos en Facilitación"
+                        alt={title}
+                        wrapperClassName={styles.ExpertosEnFacilitacion__imageWrapper}
+                        effect="blur"
                     />
-                    {/* </picture> */}
                 </div>
 
             </div>

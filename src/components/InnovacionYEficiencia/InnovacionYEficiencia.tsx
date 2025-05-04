@@ -1,5 +1,6 @@
 import React from 'react'
 import styles from './InnovacionYEficiencia.module.scss'
+import { LazyLoadImage } from 'react-lazy-load-image-component'
 
 export interface InnovacionYEficienciaProps {
   titleOne: string
@@ -42,15 +43,31 @@ const InnovacionYEficiencia: React.FC<InnovacionYEficienciaProps> = ({
         {
           secondBg ? (
             <div className={styles.bgBox}>
-              <img className={styles['bgBox--1']} src={image1} />
-              <div
-                className={`${styles[`bgBox--bg`]} ${styles[`bgBox--bg--${secondBg}`]}`}
-              ></div>
+              <LazyLoadImage
+                className={styles['bgBox--1']}
+                src={image1}
+                effect="blur"
+                wrapperClassName='z-1'
+                alt={`${titleOne} ${titleTwo}`}
+              />
+              <div className={`${styles[`bgBox--bg`]} ${styles[`bgBox--bg--${secondBg}`]}`}></div>
             </div>
           ) : (
-            <div className={styles.image}>
-              <img className={styles['image--1']} src={image1} />
-              <img className={styles['image--2']} src={image2} />
+            <div className={`${styles.image}`}>
+              <LazyLoadImage
+                src={image1}
+                effect="blur"
+                className={styles['image--1']}
+                alt={`${titleOne} ${titleTwo}`}
+              />
+              {image2 && (
+                <LazyLoadImage
+                  src={image2}
+                  effect="blur"
+                  className={styles['image--2']}
+                  alt={`${titleOne} ${titleTwo}`}
+                />
+              )}
             </div>
           )
         }
