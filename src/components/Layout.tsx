@@ -15,6 +15,7 @@ interface LayoutProps {
   keywords?: string
   image?: string
   children: React.ReactNode
+  quote?: boolean
 }
 
 /**
@@ -28,6 +29,7 @@ const Layout: React.FC<LayoutProps> = ({
   description,
   keywords,
   image,
+  quote,
   children,
 }) => {
   const { currentLanguage } = useLanguage()
@@ -42,10 +44,14 @@ const Layout: React.FC<LayoutProps> = ({
       />
       <Header />
       <main>{children}</main>
-      <Quote
-        text={dataHome[currentLanguage].quote.text}
-        sub={dataHome[currentLanguage].quote.sub}
-      />
+      {
+        quote === undefined || quote === true ?
+          <Quote
+            text={dataHome[currentLanguage].quote.text}
+            sub={dataHome[currentLanguage].quote.sub}
+          /> :
+          null
+      }
       <Footer />
     </>
   )
