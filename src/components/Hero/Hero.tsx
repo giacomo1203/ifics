@@ -16,6 +16,10 @@ export const Hero: React.FC<HeroProps> = ({
 }) => {
   return (
     <section className={styles.hero}>
+      <video className={styles.hero__video} autoPlay muted loop playsInline>
+        <source src="https://ifics.com.pe/pictures/videos/hero_video.mp4" type="video/mp4" media="(min-width: 768px)" />
+        <source src="https://ifics.com.pe/pictures/videos/hero_video_mobil.mp4" type="video/mp4" media="(max-width: 767px)" />
+      </video>
       <div className={`${styles.hero__content}`}>
         <h3 className={styles.hero__title}>{title}</h3>
         <p className={styles.hero__description}>{description}</p>

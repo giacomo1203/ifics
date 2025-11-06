@@ -1,7 +1,7 @@
 @use '../../styles/variables.scss' as var;
 
 .hero {
-  background-image: url('https://ifics.com.pe/pictures/heroDesktop.webp');
+  background-image: url('https://ifics.com.pe/pictures/videos/video_fallback.jpg');
   background-color: rgba(9, 18, 66, 0.8);
   background-size: cover;
   background-position: center;
@@ -14,6 +14,7 @@
   gap: 8px;
   padding: 61px 0;
   margin-top: 64px;
+  position: relative;
 
   @apply lg:min-h-[800px] lg:gap-6 lg:mt-0 xl:mt-35;
 
@@ -34,8 +35,20 @@
   padding: 16px 8px;
   text-align: center;
   margin: 0 24px;
+  z-index: 1;
   @apply lg:p-8;
   @apply lg:w-[960px];
+}
+
+.hero__video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     /* ✅ Clave: hace que se vea como background */
+  object-position: center;
+  z-index: 0;
 }
 
 .hero__title {
@@ -71,6 +84,7 @@
   font-size: 16px;
   line-height: 20px;
   letter-spacing: 0px;
+  z-index: 1;
   @apply lg:text-[16px];
   transition: opacity .5s, border-radius .5s;
 
