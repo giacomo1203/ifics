@@ -1,5 +1,5 @@
 const PageHeader =
-  'https://ifics.com.pe/pictures/pageHeaderNoticiasEventosContacto.webp'
+  '/pictures/pageHeaderNoticiasEventosContacto.webp'
 
 export const dataContacto = {
   ES: {

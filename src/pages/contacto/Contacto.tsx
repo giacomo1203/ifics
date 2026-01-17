@@ -33,7 +33,7 @@ const Contacto: React.FC = () => {
 
             <div className={styles.itemsContainer}>
               <div className={styles.itemsContainer__1}>
-                <img src="https://ifics.com.pe/pictures/contacto.webp" alt="Contacto" />
+                <img src="/pictures/contacto.webp" alt="Contacto" />
               </div>
               <div className={styles.itemsContainer__2}>
                 <div className={styles.address}>

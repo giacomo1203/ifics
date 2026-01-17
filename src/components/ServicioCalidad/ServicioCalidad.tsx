@@ -34,7 +34,7 @@ export const ServicioCalidad = ({
         </div>
         <div className={styles['servicio-calidad__image-container']}>
           <LazyLoadImage
-            src="https://ifics.com.pe/pictures/servicioCalidad1.webp"
+            src="/pictures/servicioCalidad1.webp"
             className={styles['servicio-calidad__image']}
             height="100%"
             width="100%"
@@ -43,7 +43,7 @@ export const ServicioCalidad = ({
             wrapperClassName={`${styles['servicio-calidad__image-1']} h-auto w-full`}
           />
           <LazyLoadImage
-            src="https://ifics.com.pe/pictures/servicioCalidad2.webp"
+            src="/pictures/servicioCalidad2.webp"
             className={styles['servicio-calidad__image']}
             alt="Servicio de Calidad para Empresas y Entidades Públicas"
             effect="blur"

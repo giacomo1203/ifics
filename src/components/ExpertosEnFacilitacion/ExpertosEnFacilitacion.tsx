@@ -31,7 +31,7 @@ export const ExpertosEnFacilitacion = ({
                 <div className={styles.ExpertosEnFacilitacion__image}>
                     <LazyLoadImage
                         className="top-4 right-4 text-gray-500 w-full"
-                        src="https://ifics.com.pe/pictures/expertos.webp"
+                        src="/pictures/expertos.webp"
                         alt={title}
                         wrapperClassName={styles.ExpertosEnFacilitacion__imageWrapper}
                         effect="blur"

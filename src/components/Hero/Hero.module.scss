@@ -1,7 +1,7 @@
 @use '../../styles/variables.scss' as var;
 
 .hero {
-  background-image: url('https://ifics.com.pe/pictures/videos/video_fallback.jpg');
+  background-image: url('/pictures/videos/video_fallback.jpg');
   background-color: rgba(9, 18, 66, 0.8);
   background-size: cover;
   background-position: center;
@@ -20,11 +20,11 @@
 
   // In case needed
   // @media (min-width: var.$breakpoint-sm) {
-  //   background-image: url('https://ifics.com.pe/pictures/heroTablet.webp');
+  //   background-image: url('/pictures/heroTablet.webp');
   // }
 
   // @media (min-width: var.$breakpoint-lg) {
-  //   background-image: url('https://ifics.com.pe/pictures/heroMobile.webp');
+  //   background-image: url('/pictures/heroMobile.webp');
   // }
 }
 
