@@ -1,100 +1,101 @@
-import { useState } from 'react'
-import styles from './Header.module.scss'
-import logo from '@/assets/Global/logo.svg'
-
-import { useLanguage } from '../../context/LanguageContext'
-import { dataNav } from './data'
-
-const basename = import.meta.env.MODE === 'production' ? '' : ''
-
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useRef, useState } from 'react';
 
 const Header = () => {
-  const navigate = useNavigate();
-  const [isMenuOpen, setIsMenuOpen] = useState(false)
-  const { currentLanguage, setLanguage } = useLanguage()
 
-  const toggleMenu = () => {
-    setIsMenuOpen(!isMenuOpen)
+  const [menuOpen, setMenuOpen] = useState(false);
+  const menuRef = useRef<HTMLUListElement>(null);
+  const toggleRef = useRef<HTMLButtonElement>(null);
+  useEffect(() => {
+    const handleClickOutside = (event: globalThis.MouseEvent) => {
+      if (
+        menuRef.current &&
+        toggleRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        !toggleRef.current.contains(event.target as Node)
+      ) {
+        setMenuOpen(false);
+      }
+    };
+  
+    document.addEventListener('click', handleClickOutside);
+  
+    return () => {
+      document.removeEventListener('click', handleClickOutside);
+    };
+  }, []);
+
+  interface AnchorClickEvent extends React.MouseEvent<HTMLAnchorElement> {
+    currentTarget: HTMLAnchorElement;
   }
 
-  const handleLanguageChange = (language: "ES" | "EN") => {
-    setLanguage(language);
-    if (window.location.pathname.includes('/noticia/')) {
-      navigate('/noticias');
-    }
+  const handleAnchorClick = (event: AnchorClickEvent): void => {
+    const href = event.currentTarget.getAttribute('href');
 
-    if (window.location.pathname.includes('/evento/')) {
-      navigate('/eventos');
-    }
-  }
+    if (!href?.startsWith('#')) return;
+
+    const target = document.querySelector(href) as HTMLElement | null;
+
+    if (!target) return;
+
+    event.preventDefault();
+
+    setMenuOpen(false);
+
+    const offset = parseFloat(
+      getComputedStyle(target).paddingTop,
+    ) || 0;
+
+    window.scrollTo({
+      top: target.getBoundingClientRect().top + window.scrollY - offset,
+      behavior: 'smooth',
+    });
+
+    window.history.pushState(null, '', href);
+  };
 
   return (
-    <header className={styles.header}>
-      <div className={styles.header__container}>
-        <div className={styles.logo}>
-          <a href="/">
-            <img src={logo} alt="IFICS Logo" />
-          </a>
-          <div className={styles.divider} />
-          <span className={styles.span}>
-            Instituto de Facilitación del Comercio Sostenible
-          </span>
+    <header>
+      <div className="nav wrap">
+        <div className="logo">
+          <svg className="logo-badge" viewBox="0 0 160 73" xmlns="http://www.w3.org/2000/svg">
+            <path d="M159.853 0.841797L14.8624 72.8418L0 18.1842L159.853 0.841797Z" fill="var(--navy-light)"/>
+            <text x="82" y="50" fontFamily="'Roboto Slab',serif" fontWeight="700" fontSize="32" fill="#FFF" textAnchor="middle">IFCOM</text>
+          </svg>
+          <div className="sub">Instituto de Facilitación del Comercio Sostenible</div>
         </div>
-        <div className={styles.rightSection}>
-          <div className={styles.languageButtonContainer}>
-            <button
-              className={currentLanguage === 'ES' ? styles.activeLanguage : ''}
-              onClick={() => handleLanguageChange('ES')}
-            >
-              ESP
-            </button>
-            <span className={styles.separator}>|</span>
-            <button
-              className={currentLanguage === 'EN' ? styles.activeLanguage : ''}
-              onClick={() => handleLanguageChange('EN')}
-            >
-              ENG
-            </button>
-          </div>
-
-          <nav className={`${styles.nav} ${isMenuOpen ? styles.active : ''}`}>
-            {dataNav[currentLanguage].nav.map((item, index) => (
-              <a
-                key={index}
-                href={basename + item.url}
-                className={
-                  window.location.pathname.replace(/\/$/, '') === item.url.replace(/\/$/, '')
-                    ? styles.active
-                    : ''
-                }
-              >
-                {item.name}
-              </a>
-            ))}
-          </nav>
-
-          <button
-            className={styles.menuButton}
-            onClick={toggleMenu}
-            aria-label="Toggle navigation menu"
-          >
-            <svg
-              width="24"
-              height="24"
-              viewBox="0 0 24 24"
-              fill="none"
-              stroke="currentColor"
-              strokeWidth="2"
-              strokeLinecap="round"
-              strokeLinejoin="round"
-            >
-              <line x1="3" y1="12" x2="21" y2="12" />
-              <line x1="3" y1="6" x2="21" y2="6" />
-              <line x1="3" y1="18" x2="21" y2="18" />
-            </svg>
-          </button>
+        <nav>
+          <ul ref={menuRef} className={menuOpen ? 'is-open' : ''}>
+            <li><a href="#nosotros" onClick={handleAnchorClick}>Nosotros</a></li>
+            <li><a href="#areas" onClick={handleAnchorClick}>Áreas de Trabajo</a></li>
+            <li><a href="#soluciones" onClick={handleAnchorClick}>Soluciones</a></li>
+            <li><a href="#alianzas" onClick={handleAnchorClick}>Alianzas</a></li>
+            <li><a href="#equipo" onClick={handleAnchorClick}>Equipo</a></li>
+            <li><a href="#contacto" onClick={handleAnchorClick}>Contacto</a></li>
+            <li>
+              <div className="language-switcher" aria-label="Selector de idioma">
+                <a href="/es/" className="is-active" lang="es">ES</a>
+                <span aria-hidden="true">|</span>
+                <a href="/en/" lang="en">EN</a>
+              </div>
+            </li>
+          </ul>
+        </nav>
+        <div className="language-switcher" aria-label="Selector de idioma">
+          <a href="/es/" className="is-active" lang="es">ES</a>
+          <span aria-hidden="true">|</span>
+          <a href="/en/" lang="en">EN</a>
         </div>
+       
+        <button
+          ref={toggleRef}
+          type="button"
+          className="menu-toggle"
+          onClick={() => setMenuOpen((open) => !open)}
+          aria-expanded={menuOpen}
+          aria-label="Abrir menú"
+        >
+          ☰
+        </button>
       </div>
     </header>
   )

@@ -1,32 +1,27 @@
 import React from 'react'
-import styles from './Hero.module.scss'
 
-interface HeroProps {
-  title: string
-  description: string
-  callToAction: string
-  callToActionHref: string
-}
+interface HeroProps {}
 
-export const Hero: React.FC<HeroProps> = ({
-  title,
-  description,
-  callToAction,
-  callToActionHref,
-}) => {
+const Hero: React.FC<HeroProps> = () => {
   return (
-    <section className={styles.hero}>
-      <video className={styles.hero__video} autoPlay muted loop playsInline>
-        <source src="/pictures/videos/hero_video.mp4" type="video/mp4" media="(min-width: 768px)" />
-        <source src="/pictures/videos/hero_video_mobil.mp4" type="video/mp4" media="(max-width: 767px)" />
-      </video>
-      <div className={`${styles.hero__content}`}>
-        <h3 className={styles.hero__title}>{title}</h3>
-        <p className={styles.hero__description}>{description}</p>
+    <section className="hero">
+      <div className="wrap hero-flex">
+        <div className="hero-inner">
+          <h1>Comercio que fluye.<br /><em>Instituciones que confían.</em></h1>
+          <p>Desde 2013 brindamos soluciones de consultoría e investigación en facilitación del comercio y logística del transporte internacional, promoviendo procesos de comercio exterior eficientes que reducen los costos de internacionalización de las empresas.</p>
+          <div className="btn-row">
+            <a className="btn btn-primary" href="#soluciones">Conoce nuestras soluciones</a>
+            <a className="btn btn-ghost" href="#contacto">Hablemos</a>
+          </div>
+        </div>
+        <span className="signal-ping" style={{ left: '76%', top: '16%', animationDelay: '0s' }}></span>
+        <span className="signal-ping" style={{ left: '86%', top: '20%', animationDelay: '.5s' }}></span>
+        <span className="signal-ping" style={{ left: '101%', top: '44%', animationDelay: '1s' }}></span>
+        <span className="signal-ping" style={{ left: '84%', top: '27%', animationDelay: '1.5s' }}></span>
+        <span className="signal-ping" style={{ left: '92%', top: '24%', animationDelay: '.85s' }}></span>
       </div>
-      <a href={callToActionHref} className={styles.hero__callToAction}>
-        {callToAction}
-      </a>
     </section>
   )
 }
+
+export default Hero;
