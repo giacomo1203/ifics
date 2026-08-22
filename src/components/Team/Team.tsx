@@ -15,8 +15,8 @@ const Team: React.FC<TeamProps> = () => {
         </div>
         <div className="team-grid">
           
-          {t.team.items.map((item) => (
-            <div className="team-card">
+          {t.team.items.map((item, index) => (
+            <div key={index} className="team-card">
               <div className={`team-photo ${item.pic}`}></div>
               <div className="team-body">
                 <h4>{item.name}</h4>

@@ -30,8 +30,8 @@ const Alliances: React.FC<AlliancesProps> = () => {
           <div className="logo-chip">UN/CEFACT</div>
         </div>
 
-        {t.alliances.projects.map((item) => (
-          <div className="partner-highlight">
+        {t.alliances.projects.map((item, index) => (
+          <div key={index} className="partner-highlight">
             <h4>{item.title}</h4>
             <p>{item.description}</p>
           </div>)

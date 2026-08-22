@@ -188,6 +188,7 @@ export const en = {
       messageError: 'Message is required.',
   
       send: 'Send message',
+      sending: 'Sending...',
       successMessage: 'Message sent successfully!',
     },
   },

@@ -15,8 +15,8 @@ const Solution: React.FC<SolutionProps> = () => {
           <p>{t.solutions.description}</p>
         </div>
         <div className="grid-4">
-          {t.solutions.items.map((item) => (
-              <div className="card">
+          {t.solutions.items.map((item, index) => (
+              <div key={index} className="card">
                 <div className="num-badge" key={item.icon}>
                   {SolutionIcons[item.icon]}
                 </div>

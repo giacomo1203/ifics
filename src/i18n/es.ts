@@ -188,6 +188,7 @@ export const es = {
       messageError: 'El mensaje es obligatorio.',
 
       send: 'Enviar mensaje',
+      sending: 'Enviando...',
       successMessage: '¡Mensaje enviado correctamente!',
     },
   },

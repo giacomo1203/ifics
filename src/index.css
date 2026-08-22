@@ -55,7 +55,7 @@
     0%{transform:scale(1);opacity:.85;}
     100%{transform:scale(9);opacity:0;}
   }
-  @media (max-width:900px){.signal-ping{display:none;}}
+  @media (max-width:600px){.signal-ping{display:none;}}
   .eyebrow{display:inline-block;background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.25);padding:6px 14px;border-radius:999px;font-size:12px;letter-spacing:.6px;text-transform:uppercase;margin-bottom:22px;}
   .hero h1{font-size:60px;font-weight:700;line-height:1.08;letter-spacing:-1px;margin-bottom:28px;}
   .hero h1 em{color:#FFB37A;font-style:normal;}
@@ -105,7 +105,7 @@
   .alliances .section-head p{color:#B9C6DA;}
   .logos-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:36px;}
   .logo-chip{background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.18);padding:9px 16px;border-radius:8px;font-size:13px;font-weight:600;color:#EAF1F8;}
-  .partner-highlight{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:24px 26px;}
+  .partner-highlight{margin-top:12px;background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:24px 26px;}
   .partner-highlight h4{color:#FFB37A;font-size:15px;margin-bottom:8px;}
   .partner-highlight p{font-size:14px;color:#D6E1EC;}
 
@@ -134,8 +134,7 @@
     position: relative;
   }
 
-  .form-error,
-  .form-success {
+  .form-error {
     display: none;
   }
 
