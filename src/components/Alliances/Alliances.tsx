@@ -1,13 +1,17 @@
+import { useLanguage } from '../../i18n/LanguageContext';
+
 interface AlliancesProps {}
 
 const Alliances: React.FC<AlliancesProps> = () => {
+  const { t } = useLanguage();
+
   return (
     <section className="alliances" id="alianzas">
       <div className="wrap">
         <div className="section-head">
-          <div className="kicker">Alianzas y clientes</div>
-          <h2>Organismos con los que hemos trabajado</h2>
-          <p>Proyectos y colaboraciones con agencias de cooperación, organismos multilaterales y entidades públicas de la región.</p>
+          <div className="kicker">{t.alliances.tag}</div>
+          <h2>{t.alliances.title}</h2>
+          <p>{t.alliances.description}</p>
         </div>
         <div className="logos-row">
           <div className="logo-chip">CAF</div>
@@ -25,10 +29,13 @@ const Alliances: React.FC<AlliancesProps> = () => {
           <div className="logo-chip">CEPAL</div>
           <div className="logo-chip">UN/CEFACT</div>
         </div>
-        <div className="partner-highlight">
-          <h4>Araujo Ibarra &amp; Asociados — Colombia</h4>
-          <p>Alianza con una de las consultoras líderes del mundo en Zonas Económicas Especiales, que nos permite brindar servicios de alta especialización en la instalación y expansión de inversiones en ZEE en toda la región.</p>
-        </div>
+
+        {t.alliances.projects.map((item) => (
+          <div className="partner-highlight">
+            <h4>{item.title}</h4>
+            <p>{item.description}</p>
+          </div>)
+        )}
       </div>
     </section>
   )

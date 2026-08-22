@@ -1,17 +1,46 @@
-import React from 'react'
+import { useLanguage } from '../../i18n/LanguageContext';
 
 interface HeroProps {}
 
 const Hero: React.FC<HeroProps> = () => {
+  const { t } = useLanguage();
+
+  interface AnchorClickEvent extends React.MouseEvent<HTMLAnchorElement> {
+    currentTarget: HTMLAnchorElement;
+  }
+
+  const handleAnchorClick = (event: AnchorClickEvent): void => {
+    const href = event.currentTarget.getAttribute('href');
+
+    if (!href?.startsWith('#')) return;
+
+    const target = document.querySelector(href) as HTMLElement | null;
+
+    if (!target) return;
+
+    event.preventDefault();
+
+    const offset = parseFloat(
+      getComputedStyle(target).paddingTop,
+    ) || 0;
+
+    window.scrollTo({
+      top: target.getBoundingClientRect().top + window.scrollY - offset,
+      behavior: 'smooth',
+    });
+
+    window.history.pushState(null, '', href);
+  };
+
   return (
     <section className="hero">
       <div className="wrap hero-flex">
         <div className="hero-inner">
-          <h1>Comercio que fluye.<br /><em>Instituciones que confían.</em></h1>
-          <p>Desde 2013 brindamos soluciones de consultoría e investigación en facilitación del comercio y logística del transporte internacional, promoviendo procesos de comercio exterior eficientes que reducen los costos de internacionalización de las empresas.</p>
+          <h1>{t.hero.title}<br /><em>{t.hero.subtitle}</em></h1>
+          <p>{t.hero.description}</p>
           <div className="btn-row">
-            <a className="btn btn-primary" href="#soluciones">Conoce nuestras soluciones</a>
-            <a className="btn btn-ghost" href="#contacto">Hablemos</a>
+            <a className="btn btn-primary" href="#soluciones" onClick={handleAnchorClick}>{t.hero.primaryButton}</a>
+            <a className="btn btn-ghost" href="#contacto" onClick={handleAnchorClick}>{t.hero.secondaryButton}</a>
           </div>
         </div>
         <span className="signal-ping" style={{ left: '76%', top: '16%', animationDelay: '0s' }}></span>

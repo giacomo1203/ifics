@@ -1,7 +1,8 @@
 import { useEffect, useRef, useState } from 'react';
+import { useLanguage } from '../../i18n/LanguageContext';
 
 const Header = () => {
-
+  const { language, setLanguage, t } = useLanguage();
   const [menuOpen, setMenuOpen] = useState(false);
   const menuRef = useRef<HTMLUListElement>(null);
   const toggleRef = useRef<HTMLButtonElement>(null);
@@ -65,25 +66,69 @@ const Header = () => {
         </div>
         <nav>
           <ul ref={menuRef} className={menuOpen ? 'is-open' : ''}>
-            <li><a href="#nosotros" onClick={handleAnchorClick}>Nosotros</a></li>
-            <li><a href="#areas" onClick={handleAnchorClick}>Áreas de Trabajo</a></li>
-            <li><a href="#soluciones" onClick={handleAnchorClick}>Soluciones</a></li>
-            <li><a href="#alianzas" onClick={handleAnchorClick}>Alianzas</a></li>
-            <li><a href="#equipo" onClick={handleAnchorClick}>Equipo</a></li>
-            <li><a href="#contacto" onClick={handleAnchorClick}>Contacto</a></li>
+            <li><a href="#nosotros" onClick={handleAnchorClick}>{t.nav.about}</a></li>
+            <li><a href="#areas" onClick={handleAnchorClick}>{t.nav.areas}</a></li>
+            <li><a href="#soluciones" onClick={handleAnchorClick}>{t.nav.solutions}</a></li>
+            <li><a href="#alianzas" onClick={handleAnchorClick}>{t.nav.alliances}</a></li>
+            <li><a href="#equipo" onClick={handleAnchorClick}>{t.nav.team}</a></li>
+            <li><a href="#contacto" onClick={handleAnchorClick}>{t.nav.contact}</a></li>
             <li>
-              <div className="language-switcher" aria-label="Selector de idioma">
-                <a href="/es/" className="is-active" lang="es">ES</a>
-                <span aria-hidden="true">|</span>
-                <a href="/en/" lang="en">EN</a>
-              </div>
+            <div className="language-switcher" aria-label="Selector de idioma">
+              <a
+                href="#"
+                className={language === 'es' ? 'is-active' : ''}
+                lang="es"
+                onClick={(event) => {
+                  event.preventDefault();
+                  setLanguage('es');
+                }}
+              >
+                ES
+              </a>
+
+              <span aria-hidden="true">|</span>
+
+              <a
+                href="#"
+                className={language === 'en' ? 'is-active' : ''}
+                lang="en"
+                onClick={(event) => {
+                  event.preventDefault();
+                  setLanguage('en');
+                }}
+              >
+                EN
+              </a>
+            </div>
             </li>
           </ul>
         </nav>
         <div className="language-switcher" aria-label="Selector de idioma">
-          <a href="/es/" className="is-active" lang="es">ES</a>
+          <a
+            href="#"
+            className={language === 'es' ? 'is-active' : ''}
+            lang="es"
+            onClick={(event) => {
+              event.preventDefault();
+              setLanguage('es');
+            }}
+          >
+            ES
+          </a>
+
           <span aria-hidden="true">|</span>
-          <a href="/en/" lang="en">EN</a>
+
+          <a
+            href="#"
+            className={language === 'en' ? 'is-active' : ''}
+            lang="en"
+            onClick={(event) => {
+              event.preventDefault();
+              setLanguage('en');
+            }}
+          >
+            EN
+          </a>
         </div>
        
         <button

@@ -14,7 +14,7 @@ import React from 'react';
 import Header from './components/Header';
 import Hero from './components/Hero/Hero';
 import Footer from './components/Footer';
-import Stats from './components/Stats/Stats';
+// import Stats from './components/Stats/Stats';
 import About from './components/About/About';
 import Areas from './components/Areas/Areas';
 import Solution from './components/Solution/Solution';
@@ -78,7 +78,7 @@ const App: React.FC = () => {
     <div>
       <Header />
       <Hero />
-      <Stats />
+      {/* <Stats /> */}
       <About />
       <Areas />
       <Solution />
