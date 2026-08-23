@@ -14,7 +14,7 @@ export const en = {
   hero: {
     title: 'Trade that flows.',
     subtitle: 'Institutions that trust.',
-    description: 'Since 2013 we deliver solutions in consultancy and research in trade facilitation and international transport logísticos, promoting efficient cross-border trade processes',
+    description: 'Since 2013 we have delived solutions in consultancy and research in trade facilitation and international transport logistics, promoting efficient cross-border trade processes',
     primaryButton: 'Discover our solutions',
     secondaryButton: 'Let’s talk',
   },
@@ -23,7 +23,7 @@ export const en = {
 
   about: {
     tag: 'About us',
-    title: 'Systemic approach of cross-border trade',
+    title: 'Systemic approach to cross-border trade',
     description: 'The Institute for Sustainable Trade Facilitation is a private organization that has, since 2013, delivered solutions in trade facilitation and international transport logistics through consultancy, IT development, and applied research.\n\nIFCOM takes a systemic approach to the processes that converge in cross-border trade — commercial transactions, logistics services, and public controls over cargo and means of transport. We help governments modernize regulation by applying efficiency parameters and a “digital-first approach”.\n\nWe champion paperless trade and the adoption of advanced technology and artificial intelligence, and we build capacity among the professionals who operate international supply chains — particularly in the public sector, where risk management is essential to reducing processing times while safeguarding the public interest entrusted to it by law. Guided by international best practices, we standardize processes to enable efficient, intelligent trade management.',
     quote: 'The word “facilitate” means to make something simple or simpler, and this is precisely the objective of trade facilitation: to make crossborder trade processes and procedures as simple and efficient as possible for traders, authorities and governments.',
     quoteFooter: 'United Nations Centre for Trade Facilitation and Electronic Business (UN/CEFACT).',
@@ -47,7 +47,7 @@ export const en = {
       {
         icon: 'logistics' as AreaIcon,
         title: "Logistics processes and customs service",
-        description: "nefficiencies in cross-border trade logistics can have effects equivalent to tariff barriers. We therefore analyze these processes in multimodal logistics environments in order to promote an optimal supply chain. International transport logistics must operate in harmony with customs processes.\n\nCustoms performs the most relevant public function in trade facilitation, given its direct responsibility over the movement of goods across borders. Because customs processing accounts for a substantial share of total clearance time, any inefficiency in its operations translates directly into reduced competitiveness for the country as a whole"
+        description: "Inefficiencies in cross-border trade logistics can have effects equivalent to tariff barriers. We therefore analyze these processes in multimodal logistics environments in order to promote an optimal supply chain. International transport logistics must operate in harmony with customs processes.\n\nCustoms performs the most relevant public function in trade facilitation, given its direct responsibility over the movement of goods across borders. Because customs processing accounts for a substantial share of total clearance time, any inefficiency in its operations translates directly into reduced competitiveness for the country as a whole"
       },
       {
         icon: 'quality' as AreaIcon,
