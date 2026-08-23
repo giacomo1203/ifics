@@ -6,7 +6,7 @@ export const en = {
     about: 'About us',
     areas: 'Working Areas',
     solutions: 'Solutions',
-    alliances: 'Alliances',
+    alliances: 'Projects',
     team: 'Team',
     contact: 'Contact',
   },
@@ -96,7 +96,7 @@ export const en = {
   },
 
   alliances: {
-    tag: 'Partnerships & Clients',
+    tag: 'Projects',
     title: 'Organizations We Have Worked With',
     description: 'Projects and collaborations with cooperation agencies, multilateral organizations, and public entities across the region.',
     projects: [
