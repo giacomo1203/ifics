@@ -68,7 +68,7 @@ export const es = {
   },
 
   solutions: {
-    tag: '',
+    tag: 'Qué ofrecemos',
     title: 'Soluciones',
     description: 'El instituto provee servicios que aspiran a ser una alternativa de calidad para empresas y entidades públicas. Ambos servicios han sido diseñados con arreglo a elevados estándares y con metodologías sustentadas en mejores prácticas internacionales.',
     items: [

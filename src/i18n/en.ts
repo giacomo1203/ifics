@@ -14,7 +14,7 @@ export const en = {
   hero: {
     title: 'Trade that flows.',
     subtitle: 'Institutions that trust.',
-    description: 'Since 2013, XXXXXXXXXX',
+    description: 'Since 2013 we deliver solutions in consultancy and research in trade facilitation and international transport logísticos, promoting efficient cross-border trade processes',
     primaryButton: 'Discover our solutions',
     secondaryButton: 'Let’s talk',
   },
@@ -23,14 +23,14 @@ export const en = {
 
   about: {
     tag: 'About us',
-    title: 'XXXXX',
+    title: 'Systemic approach of cross-border trade',
     description: 'The Institute for Sustainable Trade Facilitation is a private organization that has, since 2013, delivered solutions in trade facilitation and international transport logistics through consultancy, IT development, and applied research.\n\nIFCOM takes a systemic approach to the processes that converge in cross-border trade — commercial transactions, logistics services, and public controls over cargo and means of transport. We help governments modernize regulation by applying efficiency parameters and a “digital-first approach”.\n\nWe champion paperless trade and the adoption of advanced technology and artificial intelligence, and we build capacity among the professionals who operate international supply chains — particularly in the public sector, where risk management is essential to reducing processing times while safeguarding the public interest entrusted to it by law. Guided by international best practices, we standardize processes to enable efficient, intelligent trade management.',
     quote: 'The word “facilitate” means to make something simple or simpler, and this is precisely the objective of trade facilitation: to make crossborder trade processes and procedures as simple and efficient as possible for traders, authorities and governments.',
     quoteFooter: 'United Nations Centre for Trade Facilitation and Electronic Business (UN/CEFACT).',
   },
 
   areas: {
-    tag: 'XXXXX',
+    tag: 'Specialization',
     title: 'Working Areas',
     description: 'Since its foundation, IFCOM’s areas of work have evolved in response to changing needs and demand for services. These areas share a systemic approach and a common foundation, which enables us to anticipate and assess the expected impact',
     items: [
@@ -68,7 +68,7 @@ export const en = {
   },
 
   solutions: {
-    tag: 'xxxxx',
+    tag: 'Our Offerings',
     title: 'Solutions',
     description: 'The Institute provides services that seek to offer a high-quality alternative for companies and public entities. These services have been designed in accordance with high standards and methodologies based on international best practices.',
     items: [
@@ -96,9 +96,9 @@ export const en = {
   },
 
   alliances: {
-    tag: 'XXX',
-    title: 'XXX',
-    description: 'XXX',
+    tag: 'Partnerships & Clients',
+    title: 'Organizations We Have Worked With',
+    description: 'Projects and collaborations with cooperation agencies, multilateral organizations, and public entities across the region.',
     projects: [
       {
         title: 'Maritime Single Window',
@@ -125,7 +125,7 @@ export const en = {
 
   team: {
     tag: 'Team',
-    title: 'XXXXXXXXX',
+    title: 'Experts in International Trade, Customs, and Technology',
     description: 'IFCOM is made up of experts in the management and operation of international trade from different areas of specialization, including law, industrial and systems engineering, logistics and international business. We also have a network of consultants abroad that has enabled us to carry out highly complex projects in other countries of the Latin American region.',
     items: [
       {
