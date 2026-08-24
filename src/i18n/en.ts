@@ -96,8 +96,8 @@ export const en = {
   },
 
   alliances: {
-    tag: 'Projects',
-    title: 'Organizations We Have Worked With',
+    tag: 'Selected Experience',
+    title: 'Projects',
     description: 'Projects and collaborations with cooperation agencies, multilateral organizations, and public entities across the region.',
     projects: [
       {

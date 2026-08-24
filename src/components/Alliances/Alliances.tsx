@@ -11,9 +11,9 @@ const Alliances: React.FC<AlliancesProps> = () => {
         <div className="section-head">
           <div className="kicker">{t.alliances.tag}</div>
           <h2>{t.alliances.title}</h2>
-          <p>{t.alliances.description}</p>
+          {/* <p>{t.alliances.description}</p> */}
         </div>
-        <div className="logos-row">
+        {/* <div className="logos-row">
           <div className="logo-chip">CAF</div>
           <div className="logo-chip">IFC</div>
           <div className="logo-chip">BID</div>
@@ -28,7 +28,7 @@ const Alliances: React.FC<AlliancesProps> = () => {
           <div className="logo-chip">TFO Canada</div>
           <div className="logo-chip">CEPAL</div>
           <div className="logo-chip">UN/CEFACT</div>
-        </div>
+        </div> */}
 
         {t.alliances.projects.map((item, index) => (
           <div key={index} className="partner-highlight">
