@@ -36,7 +36,7 @@ const Hero: React.FC<HeroProps> = () => {
     <section className="hero">
       <div className="wrap hero-flex">
         <div className="hero-inner">
-          <h1>{t.hero.title}<br /><em>{t.hero.subtitle}</em></h1>
+          <h1 style={{ whiteSpace: 'pre-line' }}>{t.hero?.title || ""}<br /><em>{t.hero.subtitle}</em></h1>
           <p>{t.hero.description}</p>
           <div className="btn-row">
             <a className="btn btn-primary" href="#soluciones" onClick={handleAnchorClick}>{t.hero.primaryButton}</a>

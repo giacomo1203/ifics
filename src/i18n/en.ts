@@ -12,8 +12,8 @@ export const en = {
   },
 
   hero: {
-    title: 'Trade that flows.',
-    subtitle: 'Institutions that trust.',
+    title: '',
+    subtitle: 'Solutions for\nthe New Era of\nCross-Border\u00a0Trade',
     description: 'Since 2013 we have delived solutions in consultancy and research in trade facilitation and international transport logistics, promoting efficient cross-border trade processes',
     primaryButton: 'Discover our solutions',
     secondaryButton: 'Let’s talk',
