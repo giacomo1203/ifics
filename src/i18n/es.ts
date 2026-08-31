@@ -13,7 +13,7 @@ export const es = {
 
   hero: {
     title: '',
-    subtitle: 'Soluciones para\nla Nueva Era del Comercio\u00a0Trasfronterizo',
+    subtitle: 'Soluciones para\nla Nueva Era del Comercio\u00a0Transfronterizo',
     description: 'Desde 2013 brindamos soluciones de consultoría e investigación en facilitación del comercio y logística del transporte internacional, promoviendo procesos de comercio exterior eficientes que reducen los costos de internacionalización de las empresas.',
     primaryButton: 'Conoce nuestras soluciones',
     secondaryButton: 'Hablemos',
