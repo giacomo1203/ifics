@@ -126,7 +126,7 @@ export const es = {
   team: {
     tag: 'Equipo',
     title: 'Expertos en comercio, regulación y tecnología',
-    description: 'FCOM está conformada por expertos en la gestión y operación del comercio internacional desde distintas especialidades como el derecho, ingeniería industrial y de sistemas, logística y negocios internacionales. Asimismo, contamos una red de consultores en el extranjero que nos ha permitido ejecutar proyectos de alta complejidad en otros países de la región latinoamericana.',
+    description: 'IFCOM está conformada por expertos en la gestión y operación del comercio internacional desde distintas especialidades como el derecho, ingeniería industrial y de sistemas, logística y negocios internacionales. Asimismo, contamos una red de consultores en el extranjero que nos ha permitido ejecutar proyectos de alta complejidad en otros países de la región latinoamericana.',
     items: [
       {
         pic: 'eg',
